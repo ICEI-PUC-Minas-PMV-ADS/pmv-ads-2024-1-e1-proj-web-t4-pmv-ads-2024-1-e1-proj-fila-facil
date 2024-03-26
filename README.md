@@ -1,48 +1,46 @@
-# Título do Projeto
+# Fila Fácil
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas - PUC Minas`
 
-`DISCIPLINA`
+`Desenvolvimento de aplicação web front-end`
 
-`SEMESTRE`
+`1º Semestre/2024`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
+O objetivo geral desse projeto é desenvolver uma solução voltada para a melhoria da experiência do cliente em shopping centers, com foco nos estabelecimentos gastronômicos.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Diego Chaves dos Anjos
+* Gabriel Avner Gorenstein Brasil
+* Gabriel Roeder
+* Laura Furtado Amaral
+* Thiago Emanuel da Costa
+* Ytallo Bruno Canuto Guedes
 
 ## Orientador
 
-* Nome completo do professor
+* Marco Rodrigo Costa
 
-# Documentação
+## Documentação
 
-<ol>
-<li><a href="documentos/01-Documentação de Contexto.md"> Documentação de Contexto</a></li>
-<li><a href="documentos/02-Especificação do Projeto.md"> Especificação do Projeto</a></li>
-<li><a href="documentos/03-Metodologia.md"> Metodologia</a></li>
-<li><a href="documentos/04-Projeto de Interface.md"> Projeto de Interface</a></li>
-<li><a href="documentos/05-Template padrão da Aplicação.md"> Template padrão da Aplicação</a></li>
-<li><a href="documentos/06-Programação de Funcionalidades.md"> Programação de Funcionalidades</a></li>
-<li><a href="documentos/07-Plano de Testes de Software.md"> Plano de Testes de Software</a></li>
-<li><a href="documentos/08-Registro de Testes de Software.md"> Registro de Testes de Software</a></li>
-<li><a href="documentos/09-Referências.md"> Referências Bibliográficas</a></li>
-</ol>
+1. [Documentação de Contexto](documentos/01-Documentação%20de%20Contexto.md)
+2. [Especificação do Projeto](documentos/02-Especificação%20do%20Projeto.md)
+3. [Metodologia](documentos/03-Metodologia.md)
+4. [Projeto de Interface](documentos/04-Projeto%20de%20Interface.md)
+5. [Template padrão da Aplicação](documentos/05-Template%20padrão%20da%20Aplicação.md)
+6. [Programação de Funcionalidades](documentos/06-Programação%20de%20Funcionalidades.md)
+7. [Plano de Testes de Software](documentos/07-Plano%20de%20Testes%20de%20Software.md)
+8. [Registro de Testes de Software](documentos/08-Registro%20de%20Testes%20de%20Software.md)
+9. [Referências Bibliográficas](documentos/09-Referências.md)
 
-# Hospedagem
+## Hospedagem
 
-* Insira o endereço eletrônico público de acesso ao conteúdo publicado. 
+* O site em HTML/CSS/JS é um projeto estático, logo pode ser utilizado tanto em servidores como em navegadores web. Clique [aqui](url-ainda-nao-disponivel) para acessá-lo.
 
-# Código-Fonte
+## Código-Fonte
 
-* <a href="codigo-fonte/README.md">Código Fonte</a>
+* [Código Fonte](codigo-fonte/README.md)
 
-# Apresentação
+## Apresentação
 
-* <a href="apresentacao/README.md">Apresentação do Projeto</a>
+* [Apresentação do Projeto](apresentacao/README.md)
