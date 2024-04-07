@@ -73,18 +73,25 @@ Donos de restaurante localizados em shoppings.
 
 ## Requisitos do Projeto
 
-[Com base nas Histórias de Usuários, enumere os requisitos da solução. Lembre-se que cada requisito deve corresponder a uma, e somente uma, característica alvo da solução. Além disso, certifique-se de que todos os aspectos capturados nas Histórias de Usuário foram cobertos.]
-
 ### Requisitos Funcionais
+| ID    | Descrição                                                                                            | Prioridade |
+| ----- | ---------------------------------------------------------------------------------------------------- | ---------- |
+| RF-01 | A aplicação deve permitir que o usuário cadastre uma conta.                                          | ALTA       |
+| RF-02 | A aplicação deve permitir que o usuário faça o login na sua conta.                                   | ALTA       |
+| RF-03 | A aplicação deve permitir que o usuário visualize os restaurantes cadastrados.                       | ALTA       |
+| RF-04 | A aplicação deve permitir que o usuário visualize o cardápio completo.                               | ALTA       |
+| RF-05 | A aplicação deve permitir que o usuário realize a compra de itens no restaurante remotamente.        | ALTA       |
+| RF-06 | A aplicação deve permitir que o usuário realize o pagamento online do pedido.                        | ALTA       |
+| RF-07 | A aplicação deve permitir que o usuário visualize o status do seu pedido.                            | MÉDIA      |
+| RF-08 | A aplicação deve permitir que o usuário filtre pratos pelo tipo de refeição.                         | MÉDIA      |
+| RF-09 | A aplicação deve permitir que o usuário avalie o pedido e o restaurante.                             | BAIXA      |
+| RF-10 | A aplicação deve permitir o uso de cupons promocionais.                                              | MÉDIA      |
+| RF-11 | A aplicação deve conseguir calcular a capacidade de entrega de pratos de cada restaurante (estoque). | ALTA       |
+| RF-12 | A aplicação deve permitir donos de restaurantes cadastrarem e removerem pratos do cardápio.          | ALTA       |
+| RF-13 | A aplicação deve permitir que os donos acessem suas receitas de venda.                               | MÉDIA      |
+| RF-14 | A aplicação deve permitir que o cliente e restaurante se comuniquem via chat.                        | BAIXA      |
 
-[Utilize o modelo de tabela abaixo para apresentar os requisitos funcionais]
-
-|ID    | Descrição                | Prioridade |
-|-------|---------------------------------|----|
-| RF-01 |  ...                    | ...   | 
-|  ...  |  ...                    | ...   |
-
-**Prioridade: Alta / Média / Baixa. 
+**Prioridade: Alta / Média / Baixa.
 
 ### Requisitos não Funcionais
 
