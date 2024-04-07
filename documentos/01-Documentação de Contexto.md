@@ -1,11 +1,16 @@
 # Introdução
 
-[Aqui a equipe deve criar um texto descritivo com a visão geral do problema abordado, apresentando o ambiente e as situações envolvidas no problema.]
+Atualmente, a experiência de frequentar shopping centers como clientes tem  revelado desafios notáveis, especialmente no que diz respeito aos estabelecimentos  gastronômicos. O consumidor depara-se frequentemente com longas filas nos  restaurantes, desencorajando os clientes no momento de efetuar seus pedidos.
+
+Surpreendentemente, a implementação de sistemas de filas online ainda é uma  prática escassa nesse cenário. Além disso, no âmbito dos comerciantes que operam nesses ambientes, destaca-se a questão das aglomerações na praça de alimentação durante o horário de almoço. Esse fenômeno resulta em extensas filas, revelando uma lacuna notável na gestão de demanda por parte de alguns restaurantes, os quais muitas vezes não dispõem de um sistema eficaz (ou otimizado) para lidar com essa crescente procura.
+
+Diante desse contexto, é notório que que existem espaços a serem explorados  nesse campo de sistemas de atendimento e gestão de demanda nesse ambiente, destacando oportunidades para melhorias significativa
 
 ## Problema
-[Aqui a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.]
 
-Este link pode ajudar a equipe a entender mais sobre definição do problema: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
+O desafio central consiste na ineficiência da gestão de filas e demanda nos  restaurantes de shopping centers, onde os clientes enfrentam longas filas e aglomerações durante os horários de pico, principalmente no almoço.
+
+Com isso, os clientes tendem a ter um tempo de espera elevado para conseguir  adquirir uma refeição e se sentar a uma mesa na praça de  alimentação.
 
 
 ## Objetivos
