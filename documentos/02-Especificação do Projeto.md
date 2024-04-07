@@ -56,17 +56,20 @@ Donos de restaurante localizados em shoppings.
 
 ## Histórias de Usuários
 
-[Apresente aqui as histórias de usuários que são relevantes para o projeto da solução.]
-
-> **Link Útil**:
-> - [Como escrever boas histórias de usuário](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-
-[Utilize o modelo de tabela abaixo para apresentar as histórias de usuários.]
-
-|EU COMO... `QUEM`   | QUERO/PRECISO ... `O QUE` |PARA ... `PORQUE`                 |
-|--------------------|---------------------------|----------------------------------|
-| ...                | ...                       | ...                              |
-| ...                | ...                       | ...                              |
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`                                             |PARA ... `MOTIVO/VALOR`                 |
+|--------------------|--------------------------------------------------------------------------------|----------------------------------------|
+|Cliente | perder menos tempo esperando em filas  | otimizar meu horário de almoço. |
+|Cliente | a adoção de tecnologias para atendimento de pedidos  | reduzir a espera em filas.  |
+|Dono de restaurante |utilizar tecnologias que permitam aos clientes realizarem pedidos online  | reduzir o tempo de fila e aumentar a satisfação doccliente.  |
+|Dono de restaurante |um cardápio digital em que o cliente possa realizar pedidos   | melhor gerenciamento do cardápio. |
+|Cliente | realizar o pagamento online  | agilizar o checkout do pedido. |
+|Dono de restaurante |flexibilização no pagamento |agilidade no gerenciamento do caixa e evitar roubos/erros. |
+|Cliente |acesso fácil a restaurantes que contenham opções veganas | garantir que minha escolha de restaurante atenda às preferências alimentares.|
+|Dono de restaurante | uma avaliação dos meus clientes | visualizar pontos de melhorias. |
+|Cliente | variedade nas formas de pagamento  | poder utilizar a forma que for mais conveniente para mim naquele momento (pix, vale,cartão de crédito). |
+|Cliente | Efetuar avaliações sobre os restaurantes nos quais efetuei pedidos  | dar meu parecer sobre o pedido recebido.  |
+|Cliente | consultar avaliações de outros clientes sobre os restaurantes disponíveis  | basear minhas escolhas quando estiver em dúvida. |
+|Dono de restaurante | oferecer descontos quando me for conveniente  | preços atrativos atraem clientes.  |
 
 ## Requisitos do Projeto
 
