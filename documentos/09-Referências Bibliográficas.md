@@ -1,7 +1,3 @@
 # Referências Bibliográficas
 
-[Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.]
-
-> **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+STONE, Alex. Why Waiting In Line Is Torture. The New York Times, 2012. Disponível em `https://www.nytimes.com/2012/08/19/opinion/sunday/why-waiting-in-line-is-torture.html`. Acesso em: 03 de março de 2024.
