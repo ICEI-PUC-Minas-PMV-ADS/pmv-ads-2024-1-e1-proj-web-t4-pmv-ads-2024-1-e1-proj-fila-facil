@@ -15,26 +15,26 @@ Com isso, os clientes tendem a ter um tempo de espera elevado para conseguir  ad
 
 ## Objetivos
 
-[Aqui a equipe deve realizar uma descrição detalhada dos objetivos do trabalho, ressaltando quais as questões principais do problema a serem resolvidas pelo projeto, não é a hora de apresentar requisitos detalhados.]
- 
-Este link pode ajudar a equipe a entender mais sobre definição dos objetivos: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
+O objetivo geral desse projeto é desenvolver uma solução voltada para a melhoria da experiência do cliente em shopping centers, com foco nos estabelecimentos gastronômicos. 
+
+Destacam-se os seguintes pontos:  
+
+* Reduzir filas presenciais, proporcionando aos clientes a conveniência de realizarem seus pedidos antecipadamente;  
+
+* Flexibilizar o pagamento, podendo adotar novas tecnologias com mais facilidade;  
+
+* Acessar promoções e descontos em produtos dos cardápios;  
+
+* Melhorar a eficiência operacional dos restaurantes, proporcionando uma experiência mais satisfatória tanto para os clientes quanto para os estabelecimentos. 
 
 ## Justificativa
 
-[Aqui a equipe deve descrever a importância ou a motivação para trabalhar com o problema definido. Indique as razões pelas quais a equipe escolheu o problema e definiu os objetivos.
+Há anos este problema ocorre no setor de alimentação em todas as grandes cidades do Brasil. Pessoas em seu horário de almoço, muitas vezes deixam de almoçar, por não ter tempo suficiente ou paciência para enfrentar filas nas portas de restaurantes em shopping centers para realizarem e/ou buscarem seus devidos pedidos. 
 
-Devem ser apresentados dados de fontes relevantes e confiáveis sobre o problema, inserindo-o como alvo de estudo. Sugere-se que a equipe utilize questionários, entrevistas e dados estatísticos, que devem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pela equipe.]
+Segundo o artigo “Why Waiting In Line Is Torture” pela The New York Times (2012): 
 
-Este link pode ajudar a equipe a formular a justificativa: [Como montar a justificativa.](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+>                “Os americanos gastam cerca de 37 milhões de horas por ano esperando em filas. O custo dominante da espera é emocional: estresse, tédio, aquela sensação incômoda de que a vida está se esvaindo. A última coisa que queremos fazer com o nosso tempo de lazer cada vez menor é desperdiçá-lo de maneira ociosa.”
 
-## Público-Alvo
+Diante da constante frustração e desconforto vivenciados pelos consumidores que enfrentam longas filas em seus horários de almoço, torna-se imprescindível encontrar maneiras mais humanizadas de lidar com esse problema recorrente no setor de alimentação. O impacto emocional e o desperdício de tempo associados à espera em filas não devem ser subestimados, pois afetam diretamente a qualidade de vida e o bem-estar das pessoas. 
 
-[Aqui é necessário descrever os atores envolvidos no problema, destacando os diferentes perfis de usuários. O propósito é apresentar as características, necessidades, conhecimentos prévios e experiência com a tecnologia do público-alvo.
-
-Sugere-se que a equipe utilize questionários e/ou entrevistas a fim de conhecer os atores que compõem o público alvo.]
-
-Os links abaixo podem ajudar a equipe a conhecer um pouco mais sobre o público-alvo. 
-
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-
+É essencial buscar soluções que respeitem a experiência e o tempo dos clientes, proporcionando-lhes uma jornada mais agradável e eficiente. Investir em alternativas que minimizem o tempo de espera e promovam um ambiente acolhedor e eficiente é fundamental para aprimorar o setor de alimentação e garantir a satisfação e o bem-estar daqueles que o frequentam. 
