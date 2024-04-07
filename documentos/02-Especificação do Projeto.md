@@ -95,12 +95,14 @@ Donos de restaurante localizados em shoppings.
 
 ### Requisitos não Funcionais
 
-[Utilize o modelo de tabela abaixo para apresentar os requisitos não-funcionais]
+| ID     | Descrição                                                                                                                    | Prioridade |
+| ------ | ---------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| RNF-01 | A aplicação deve ser acessível por qualquer pessoa pela internet.                                                            | ALTA       |
+| RNF-02 | A aplicação deve ser responsíva, podendo ser visualizada em qualquer dispositivo                                             | ALTA       |
+| RNF-03 | A aplicação deve ser compatível com os principais navegadores do mercado: Google Chrome, Firefox e Microsoft Edge.           | ALTA       |
+| RNF-04 | A aplicação deve garantir a segurança dos dados do usuário, utilizando criptografia SSL para todas as transmissões de dados. | ALTA       |
+| RNF-05 | A aplicação deve fornecer uma interface de usuário intuitiva e fácil de usar.                                                | ALTA       |
+| RNF-06 | A aplicação deve garantir uma boa usabilidade para pessoas com deficiência visual que utilizam leitores de tela.             | MÉDIA      |
 
-|ID      | Descrição               |Prioridade |
-|--------|-------------------------|----|
-| RNF-01 |  ...                    | ...   | 
-| ...    |  ...                    | ...   | 
-
-**Prioridade: Alta / Média / Baixa. 
+**Prioridade: Alta / Média / Baixa.
 
