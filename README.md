@@ -23,15 +23,15 @@ O objetivo geral desse projeto é desenvolver uma solução voltada para a melho
 
 ## Documentação
 
-1. [Documentação de Contexto](documentos/01-Documentação%20de%20Contexto.md)
-2. [Especificação do Projeto](documentos/02-Especificação%20do%20Projeto.md)
-3. [Metodologia](documentos/03-Metodologia.md)
-4. [Projeto de Interface](documentos/04-Projeto%20de%20Interface.md)
-5. [Template padrão da Aplicação](documentos/05-Template%20padrão%20da%20Aplicação.md)
-6. [Programação de Funcionalidades](documentos/06-Programação%20de%20Funcionalidades.md)
-7. [Plano de Testes de Software](documentos/07-Plano%20de%20Testes%20de%20Software.md)
-8. [Registro de Testes de Software](documentos/08-Registro%20de%20Testes%20de%20Software.md)
-9. [Referências Bibliográficas](documentos/09-Referências.md)
+1. [Documentação de Contexto](./doc/01-Documentação%20de%20Contexto.md)
+2. [Especificação do Projeto](./doc/02-Especificação%20do%20Projeto.md)
+3. [Metodologia](./doc/03-Metodologia.md)
+4. [Projeto de Interface](./doc/04-Projeto%20de%20Interface.md)
+5. [Template padrão da Aplicação](./doc/05-Template%20padrão%20da%20Aplicação.md)
+6. [Programação de Funcionalidades](./doc/06-Programação%20de%20Funcionalidades.md)
+7. [Plano de Testes de Software](./doc/07-Plano%20de%20Testes%20de%20Software.md)
+8. [Registro de Testes de Software](./doc/08-Registro%20de%20Testes%20de%20Software.md)
+9. [Referências Bibliográficas](./doc/09-Referências.md)
 
 ## Hospedagem
 
@@ -39,8 +39,8 @@ O objetivo geral desse projeto é desenvolver uma solução voltada para a melho
 
 ## Código-Fonte
 
-* [Código Fonte](codigo-fonte/README.md)
+* [Código Fonte](./src/README.md)
 
 ## Apresentação
 
-* [Apresentação do Projeto](apresentacao/README.md)
+* [Apresentação do Projeto](./presensation/README.md)
