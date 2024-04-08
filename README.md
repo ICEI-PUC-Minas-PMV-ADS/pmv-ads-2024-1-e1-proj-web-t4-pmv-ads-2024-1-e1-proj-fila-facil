@@ -43,4 +43,4 @@ O objetivo geral desse projeto é desenvolver uma solução voltada para a melho
 
 ## Apresentação
 
-* [Apresentação do Projeto](./presensation/README.md)
+* [Apresentação do Projeto](./presentation/README.md)
