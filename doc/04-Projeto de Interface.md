@@ -1,8 +1,10 @@
 # Projeto de Interface
 
+Esta seção descreve o Projeto de Interface para o sistema Fila Fácil. Ele apresenta o fluxo de interação do usuário através das telas do sistema, ilustrado por um fluxograma. Cada tela é detalhada na seção de Wireframes. O documento também descreve a estrutura comum de suas telas.
+
 ## User Flow
 
-O fluxograma apresentado na figura 3 mostra o fluxo de interação do usuário pelas telas do sistema. Cada uma das telas deste fluxo é detalhada na seção de Wireframes que se segue. Para visualizar o wireframe interativo, acesse o [ambiente MarvelApp do projeto](https://marvelapp.com/prototype/6h3ejdf/screen/94356822).
+O fluxograma apresentado na Figura 3 mostra o fluxo de interação do usuário pelas telas do sistema. Cada uma das telas deste fluxo é detalhada na Seção de Wireframes que se segue. Para visualizar o wireframe interativo, acesse o [ambiente MarvelApp do projeto](https://marvelapp.com/prototype/6h3ejdf/screen/94356822).
 
 ![Fluxo de telas do usuário](./img/Flowmap_Fila_Facil.png)
 
