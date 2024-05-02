@@ -13,14 +13,14 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 ## Histórico de versões
 ### [0.1.0] - 01/05/2024
 
-Adicionado
+#### Adicionado
 Página home e sua estilização
 Arquivo javascript para funcionalidade do Carousel contido na home
 
-Alterado
+#### Alterado
 Ajustes nas documentações 01, 02 e 04
 
 ## [0.1.1] - 02/05/2024
 
-Adicionado
+#### Adicionado
 Página de Login e sua estilização
