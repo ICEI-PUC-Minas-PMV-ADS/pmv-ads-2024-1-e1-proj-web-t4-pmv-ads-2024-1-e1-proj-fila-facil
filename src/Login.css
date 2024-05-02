@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    text-decoration: none;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+}
+
+header 
+{
+    background-color: #ffffff;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo 
+{
+    margin-left: 57px;
+    height: 43px;
+}
+
+.cabecalho 
+{
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    text-decoration: none;
+    line-height: 2px;
+    margin-right: 20px;
+}
+
+.cabecalho_links 
+{
+    color: #000000;
+    font-family: Lato;
+    font-size: 18px;
+    line-height: 62px;
+    text-align: center;
+    text-decoration: none;
+}
+
+body 
+{
+    background-color: #F7DCDC;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+main 
+{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6% 35.42%;
+    border-radius: 10px;
+    width: 360px;
+    height: 362px;  
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+.formulario 
+{
+    color: #343F4B;
+    font-family: Lato;
+    font-size: 40px;
+    line-height: 51px;
+    width: 420px;
+    text-align: center;
+    margin-top: 6.5%;
+}
+
+.formulario_input 
+{
+    align-self: center;
+    background-color: #FFFFFF;
+    border: 1px solid #8492A6;
+    border-radius: 5px;
+    width: 280px;
+    height: 38px;
+    color: #8190A5;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 62px;
+    text-align: left;
+    padding: 10px;
+}
+
+.formulario_botao 
+{
+    background-color: #9A2727;
+    align-self: center;
+    border-radius: 5px;
+    width: 280px;
+    height: 38px;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 18px;
+ }
+
+.Loginn 
+{
+    color: #343F4B;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.link-vermelho 
+{
+    color: #D74F4F;
+    text-decoration: none;
+}
+
+footer 
+{
+    background-color: #f8f9fa;
+    width: 100%;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 15px;
+    position: fixed;
+    bottom: 0;
+}
+
+.icones-rodape 
+{
+    width: 20px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 00px) {
+  main {
+      margin: 12px; /* Adjusted margin for smaller screens */
+      text-align: center;
+  }
+}
