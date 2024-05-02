@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    text-decoration: none;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: calc(100% - 50px);
+}
+
+:root {
+  --max-branco: #fff;
+  --branco: #f2f2f2;
+  --cinza: #e4e4e4;
+  --vermelho-claro: #f7dcdc;
+  --vermelho-medio: #d74f4f;
+  --vermelho-escuro: #b13a3a;
+  --vermelho-escuro-2: #750000;
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--branco);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--vermelho-escuro);
+  border: 0.2rem solid var(--branco);
+}
+
+.navbar-nav > .nav-item a {
+  font-weight: 500;
+  transition: ease-in-out 0.2s;
+}
+
+.navbar-nav > .nav-item a:hover {
+  color: var(--vermelho-medio);
+}
+
+.body {
+    background-color: #F7DCDC;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh  
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 420px;
+    height: 477px;
+    align-content: space-between;
+    margin: auto auto;
+    margin-top: 10%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario__titulo {
+    color: #343F4B;
+    font-family: Lato;
+    font-size: 40px;
+    line-height: 51px;
+    width: 420px;
+    text-align: center;
+    margin-top: 6.5%;
+}
+
+.formulario__input {
+    align-self: center;
+    background-color: #FFFFFF;
+    border: 1px solid #8492A6;
+    border-radius: 5px;
+    width: 280px;
+    height: 38px;
+    color: #8190A5;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 62px;
+    text-align: left;
+    padding: 10px;
+}
+
+.formulario__botao__ativo {
+    background-color: #9A2727;
+    align-self: center;
+    border-radius: 5px;
+    width: 280px;
+    height: 38px;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 18px;
+}
+
+.formulario__botao__inativo {
+    background-color: lightgrey;
+    align-self: center;
+    border-radius: 5px;
+    width: 280px;
+    height: 38px;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 18px;
+}
+
+.cadastro {
+    color: #343F4B;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.link-login {
+    color: #D74F4F;
+    text-decoration: none;
+}
+
+footer > .container > .nav > .nav-item > .nav-link {
+    color: var(--vermelho-medio);
+    transition: ease-in-out 0.2s;
+}
+  
+footer > .container > .nav > .nav-item > .nav-link:hover {
+    color: var(--vermelho-escuro);
+}
