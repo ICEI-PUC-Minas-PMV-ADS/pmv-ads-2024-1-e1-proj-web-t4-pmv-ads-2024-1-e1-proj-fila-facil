@@ -62,7 +62,6 @@ footer > .container > .nav > .nav-item > .nav-link:hover {
 
 .section__main {
   height: 100vh;
-  padding: 6rem 0;
   font: 1.6em/1.5em;
   position: relative;
   overflow: hidden;
@@ -131,7 +130,7 @@ footer > .container > .nav > .nav-item > .nav-link:hover {
 
 .section__services {
   background-color: var(--vermelho-escuro);
-  padding: 3em 2em;
+  padding: 0em 2em 6em;
 }
 
 .testimonial-title {
@@ -187,9 +186,6 @@ footer > .container > .nav > .nav-item > .nav-link:hover {
 }
 
 @media only screen and (max-width: 767px) {
-  .section__main {
-    height: calc(100vh - 350px);
-  }
   .section__main .container {
     max-width: 100%;
   }
@@ -201,9 +197,6 @@ footer > .container > .nav > .nav-item > .nav-link:hover {
   }
   .section__main--btn {
     font-size: 1em;
-  }
-  .section__services {
-    height: calc(100vh - 350px);
   }
   .section__about--title {
     font-size: 2.4rem;
