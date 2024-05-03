@@ -31,7 +31,13 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 - Correção de ajustes na página home
 
-### [0.1.2] - DD/MM/AAA
+### [0.1.2] - 03/05/2024
+
+#### Adicionado
+
+- Página de cadastro e sua estilização
+
+### [0.1.3] - DD/MM/AAA
 
 #### Adicionado/Removido/Alterado
 
