@@ -44,8 +44,16 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 - Página de cardápio e sua estilização
 - Arquivo javascript para funcionalidade do Carousel dos itens do cardápio
 
-### [0.1.4] - DD/MM/AAA
+### [0.1.4] - 05/05/2024
+
+#### Adicionado
+
+-Página de pedidos.
+-Arquivo javascript para funcionalidade de avaliação e tempo do pedido. 
+
+### [0.1.5] - 00/00/0000
 
 #### Adicionado/Removido/Alterado
+
 
 -
