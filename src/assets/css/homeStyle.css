@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: calc(100% - 50px);
+}
+
+:root {
+  --max-branco: #fff;
+  --branco: #f2f2f2;
+  --cinza: #e4e4e4;
+  --vermelho-claro: #f7dcdc;
+  --vermelho-medio: #d74f4f;
+  --vermelho-escuro: #b13a3a;
+  --vermelho-escuro-2: #750000;
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--branco);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--vermelho-escuro);
+  border: 0.2rem solid var(--branco);
+}
+
+.section__height {
+  height: calc(100vh - 250px);
+}
+
+.navbar-nav > .nav-item a {
+  font-weight: 500;
+  transition: ease-in-out 0.2s;
+}
+
+.navbar-nav > .nav-item a:hover {
+  color: var(--vermelho-medio);
+}
+
+footer > .container > .nav > .nav-item > .nav-link {
+  color: var(--vermelho-medio);
+  transition: ease-in-out 0.2s;
+}
+
+footer > .container > .nav > .nav-item > .nav-link:hover {
+  color: var(--vermelho-escuro);
+}
+
+.section__main {
+  height: 100vh;
+  font: 1.6em/1.5em;
+  position: relative;
+  overflow: hidden;
+}
+
+.section__main::before,
+.section__main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.section__main::before {
+  background: url(../img/bannerMain.jpg) no-repeat center center/cover;
+  filter: blur(5px);
+}
+
+.section__main::after {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), var(--vermelho-escuro));
+  z-index: 2;
+}
+
+.section__main > * {
+  position: relative;
+  z-index: 3;
+}
+
+.section__main--title,
+.section__main--description,
+.section__main--btn {
+  color: var(--max-branco);
+}
+
+.section__main--title {
+  font-weight: 700;
+}
+
+.section__main--description {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.section__main--btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: var(--vermelho-medio);
+  border: 0.2rem solid var(--vermelho-medio);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+
+.section__main--btn:hover {
+  background-color: var(--vermelho-escuro);
+  border-color: var(--vermelho-escuro);
+  color: var(--max-branco);
+}
+
+.section__services {
+  background-color: var(--vermelho-escuro);
+  padding: 0em 2em 6em;
+}
+
+.testimonial-title {
+  color: var(--max-branco);
+}
+
+.testimonial-title h2 {
+  padding-left: 0.2em;
+}
+
+.section__services--card {
+  margin: 0 0.5em;
+  border: none;
+  height: 100%;
+}
+
+.img-wrapper {
+  overflow: hidden;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.section__services--card,
+.carousel-control-prev,
+.carousel-control-next,
+.section__about .img-fluid {
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: var(--max-branco);
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  top: 60%;
+  transform: translateY(-20%);
+}
+
+.services__card--img {
+  border-radius: 5px;
+  filter: grayscale(55%);
+  transition: ease-in-out 0.3s;
+}
+
+.services__card--img:hover {
+  filter: grayscale(0);
+  transform: scale(1.02);
+}
+
+.section__about {
+  background: linear-gradient(var(--branco), var(--max-branco));
+}
+
+@media only screen and (max-width: 767px) {
+  .section__main .container {
+    max-width: 100%;
+  }
+  .section__main--title {
+    font-size: 3em;
+  }
+  .section__main--description {
+    font-size: 1.4em;
+  }
+  .section__main--btn {
+    font-size: 1em;
+  }
+  .section__about--title {
+    font-size: 2.4rem;
+  }
+  .section__about--description {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 50%;
+    display: block;
+  }
+  .carousel-inner {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .carousel-inner {
+    padding: 1em;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    left: 1em;
+    top: 90%;
+    opacity: 1;
+  }
+  .carousel-control-next {
+    left: 4.5em;
+  }
+}
