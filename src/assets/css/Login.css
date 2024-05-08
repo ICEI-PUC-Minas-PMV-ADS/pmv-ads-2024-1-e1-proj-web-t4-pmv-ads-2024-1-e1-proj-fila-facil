@@ -1,1 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    background-color: var(--vermelho-claro)!important;
+    width: 100%;
+    height: calc(100% - 50px);
+}
+
+:root {
+    --max-branco: #fff;
+    --branco: #f2f2f2;
+    --cinza: #e4e4e4;
+    --vermelho-claro: #f7dcdc;
+    --vermelho-medio: #d74f4f;
+    --vermelho-escuro: #b13a3a;
+    --vermelho-escuro-2: #750000;
+}
+
+::-webkit-scrollbar {
+    width: 0.8rem;
+}
+  
+::-webkit-scrollbar-track {
+    background: var(--branco);
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: var(--vermelho-escuro);
+    border: 0.2rem solid var(--branco);
+}
+
+main {
+    height: 90vh;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login__form 
+{
+    padding: 5vh;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+.formulario 
+{
+    color: #343F4B;
+    font-family: Lato;
+}
+
+.formulario_input 
+{
+    align-self: center;
+    background-color: #FFFFFF;
+    border: 1px solid #8492A6;
+    border-radius: 5px;
+    width: 280px;
+    height: 38px;
+    color: #8190A5;
+    font-family: Lato;
+    font-size: 16px;
+    text-align: left;
+    padding: 10px;
+}
+
+.formulario_botao 
+{
+    background-color: #9A2727;
+    align-self: center;
+    border-radius: 5px;
+    width: 280px;
+    height: 38px;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 18px;
+ }
+
+.formulario_botao:hover
+{
+    background-color: #af5b5b;
+}
+
+.login 
+{
+    color: #343F4B;
+    font-family: Lato;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.link-vermelho 
+{
+    color: #D74F4F;
+    text-decoration: none;
+}
+
+footer > .container > .nav > .nav-item > .nav-link {
+    color: var(--vermelho-medio);
+    transition: ease-in-out 0.2s;
+  }
+  
+  footer > .container > .nav > .nav-item > .nav-link:hover {
+    color: var(--vermelho-escuro);
+  }
+  
+
+@media screen and (max-width: 00px) {
+  main {
+      margin: 12px; /* Adjusted margin for smaller screens */
+      text-align: center;
+  }
+}
