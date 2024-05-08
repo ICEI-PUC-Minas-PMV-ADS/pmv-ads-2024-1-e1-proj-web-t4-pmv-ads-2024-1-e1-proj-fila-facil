@@ -46,5 +46,8 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 ### [0.1.4] - DD/MM/AAA
 
-#### Adicionado/Removido/Alterado
+#### Adicionado
+
+- Página de Login e sua estilização
+- Arquivo Javascript para funcionalidades na página de Login
 
