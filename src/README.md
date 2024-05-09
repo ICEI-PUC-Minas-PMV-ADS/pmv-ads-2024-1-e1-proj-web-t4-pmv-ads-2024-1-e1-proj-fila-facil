@@ -51,9 +51,14 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 -Página de pedidos.
 -Arquivo javascript para funcionalidade de avaliação e tempo do pedido. 
 
-### [0.1.5] - 00/00/0000
+### [0.1.5] - 08/05/2024
+
+#### Alterado
+
+Correção na Página de pedidos e ajustes no arquivo javascript.
+
+### [0.1.6] - 00/00/0000
 
 #### Adicionado/Removido/Alterado
-
 
 -
