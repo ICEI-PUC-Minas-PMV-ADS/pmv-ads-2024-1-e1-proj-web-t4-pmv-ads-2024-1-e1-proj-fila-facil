@@ -1,57 +1,60 @@
-var usuario1 , usuario2 , usuario3;
-var senha1 , senha2 , senha3;
+authenticatedUser = JSON.parse(sessionStorage.getItem('authenticatedUser') || '[]');
+if (authenticatedUser.length != 0) {
+    redirectToIndex()
+}
+
+const formSection = document.querySelector('.mensagem');
+const loginButton = document.getElementById('BtnEntrar');
+const emailInput = document.getElementById('email_user');
+const passwordInput = document.getElementById('senha_user');
+
+function createAlertMessage(alertType, message) {
+    
+    return `
+        <div class="alert alert-${alertType} alert-dismissible fade show" role="alert">
+            <strong>Erro!</strong> ${message}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>`;
+}
+
+function redirectToIndex() {
+    
+    window.location.href = '../index.html';
+}
 
 
-usuario1 = "admin1@gmail.com";
-senha1   = "adm1pass";
-username1 = "admin1";
-
-usuario2 = "admin2@gmail.com";
-senha2   = "adm2pass";
-username2 = "admin2";
-
-usuario3 = "admin3@gmail.com";
-senha3   = "adm3pass";
-username3 = "admin3";
-
-document.getElementById('BtnEntrar').addEventListener(
-'click', function() 
+loginButton.addEventListener('click', function(element) 
 {
-    var emailuser = document.getElementById('email_user').value;
-    var senhauser = document.getElementById('senha_user').value;
+    element.preventDefault();
 
-    if (emailuser.trim() === '') 
-    {
-        alert('É necessário preencher o campo de email.');
-        return;
-    }
-    else if (senhauser.trim() === '') 
-    {
-        alert('É necessário preencher o campo de senha.');
-        return;
-    }
-    else if (emailuser.trim() === '' || senhauser.trim() === '')
-    {
-        alert('É necessário preencher os campos de email e senha.');
-        return;
+   
+    const existingAlert = formSection.querySelector('.alert');
+    if (existingAlert) {
+        formSection.removeChild(existingAlert);
     }
 
+    
+    const email = emailInput.value.trim();
+    const password = passwordInput.value;
 
-    if (emailuser === usuario1 && senhauser === senha1) 
-    {
-        alert('Bem-vindo ' + username1);
-        //window.location.href = '../../pages/cardapio.html';
-    } 
-    else if (emailuser === usuario2 && senhauser === senha2)
-    {
-        alert('Bem-vindo ' + username2);
+    
+    if (!email || !password) {
+        const alertMessage = createAlertMessage('warning', 'Os campos de email e senha não podem ser vazios.');
+        formSection.insertAdjacentHTML('afterbegin', alertMessage);
+        return;
     }
-    else if (emailuser === usuario3 && senhauser === senha3)
-    {
-        alert('Bem-vindo ' + username3);
+
+    let userInfo = JSON.parse(localStorage.getItem(email));
+
+    
+    if(userInfo && password === userInfo.password) {
+        
+        sessionStorage.setItem('authenticatedUser', JSON.stringify(userInfo));
+        redirectToIndex();
+        return;
     }
-    else
-    {
-        alert('Credenciais inválidas. Por favor, tente novamente.');
-    }
+
+    
+    const alertMessage = createAlertMessage('danger', 'Usuário ou senha inválido. Tente novamente.');
+    formSection.insertAdjacentHTML('afterbegin', alertMessage);
 });
