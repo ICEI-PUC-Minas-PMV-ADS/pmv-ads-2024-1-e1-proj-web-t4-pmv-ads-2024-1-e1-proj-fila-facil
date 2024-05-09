@@ -25,8 +25,28 @@ body {
     --vermelho-escuro-2: #750000;
 }
 
-/* Seção do Banner */
+/*Ajustes Navbar*/
+.navbar-nav > .nav-item a {
+  font-weight: 500;
+  transition: ease-in-out 0.2s;
+}
 
+.navbar-nav > .nav-item a:hover {
+    color: var(--vermelho-medio);
+  }
+
+
+/* Configurações carrinho */
+.fa-cart-shopping {
+  cursor: pointer;
+}
+
+.fa-cart-shopping:hover {
+  color: var(--vermelho-escuro);
+  transition: ease-in-out 0.2s;
+}
+
+/* Seção do Banner */
 .banner-section {
     background-color: rgba(215, 79, 79, 0.);
     height: 200px;
@@ -46,6 +66,8 @@ body {
     font-size: 26px;
 }
 
+/* Seção do rodapé */
+
 footer > .container > .nav > .nav-item > .nav-link {
     color: var(--vermelho-medio);
     transition: ease-in-out 0.2s;
@@ -54,6 +76,9 @@ footer > .container > .nav > .nav-item > .nav-link {
 footer > .container > .nav > .nav-item > .nav-link:hover {
     color: var(--vermelho-escuro);
 }
+
+/* Seção da barra de busca */
+
 .search-section {
     width: 300px;
     height: 43px;
@@ -77,19 +102,28 @@ footer > .container > .nav > .nav-item > .nav-link:hover {
     align-items: flex-start;
     color: #FFF;
 }
+
+/* Seção do CARD */
+
 aside {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 550px;
-    font-family: "Arial";
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     gap:16px;
     background-image: url("");
-    background-color: rgba(215, 79, 79, 0.2);
+    background-color: rgba(215, 79, 79, 0.2);    
 }
+
 main{
     background-color: rgba(215, 79, 79, 0.1);
 }
+
+
+/* Seção de avaliação */
 
 button {
     padding: 10px 20px;
@@ -108,59 +142,88 @@ button {
   .estrela {
     font-size: 20px;
     cursor: pointer;
-    color: #ffd700;
-    
+    color: #ffd700;         
   }
-  
+  .selecionada {
+    color: #d74f4f;    
+  }
+
   .estrela:hover,
   .estrela.active {
-    color: #d74f4f;
-    
+    color: #d74f4f;     
   }
   
+  /* Seção de temporizador */
+
   #timer {
     font-size: 20px;
     margin-top: auto;
     color: #d74f4f;
-    font-family: Arial, Helvetica, sans-serif;
-       
+    font-family: Arial, Helvetica, sans-serif;       
   }
   
   #temporizador {
     font-size: 20px;
     margin-top: auto;
     color: #d74f4f;
-    
-    
+    font-family: Arial, Helvetica, sans-serif;     
   }
   
   #elementoTemporizador {
     font-size: 20px;
     margin-top: auto;
     color: #d74f4f;
-    
+    font-family: Arial, Helvetica, sans-serif;    
   }
+
   #botaoInicio {
     background-color: #d74f4f;
     border-radius: 14px;
     display: block;
     margin: auto;
   }
+
   #iniciarBotao {
     background-color: #d74f4f;
     border-radius: 14px;
     display: block;
     margin: auto;
   }
+
   #startButton{
     background-color: #d74f4f;
     border-radius: 14px;
     display: block;
     margin: auto;
   }
+
   #avaliarBtn {
     background-color: #d74f4f;
     border-radius: 14px;
     display: block;
     margin: auto;
-  }
+    }
+  
+
+    /* Responsividade */
+
+    aside {
+        height: auto;
+        padding: 20px;
+    }
+
+@media only screen and (max-width: 767px) {
+    .banner-text {
+        max-width: 100%;
+    }
+
+    .search-section {
+        width: 100%;
+    }
+
+    /* Ajustes para a seção "aside" */
+    aside {
+        height: auto;
+        padding: 10px;
+    }
+}
