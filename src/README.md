@@ -57,7 +57,18 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 Correção na Página de pedidos e ajustes no arquivo javascript.
 
-### [0.1.6] - 00/00/0000
+### [0.1.6] - 09/05/2024
+
+#### Adicionado
+
+- Adicionada funcionalidades javascript da página de cadastro
+
+#### Alterado
+
+- HTML e CSS da página de cadastro.
+- Link para cadastro na navbar da página home
+
+### [0.1.7] - 00/00/0000
 
 #### Adicionado/Removido/Alterado
 

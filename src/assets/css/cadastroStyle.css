@@ -1,21 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    box-sizing: border-box;
-    font-size: 100%;
-    text-decoration: none;
-    vertical-align: baseline;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  text-decoration: none;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
 }
 
 html,
 body {
-  width: 100%;
-  height: calc(100% - 50px);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--vermelho-claro) !important;
+}
+
+html,
+body,
+main {
+  height: 100%;
+}
+
+main {
+  margin: 6rem 0 3rem;
 }
 
 :root {
@@ -41,108 +52,66 @@ body {
   border: 0.2rem solid var(--branco);
 }
 
-.navbar-nav > .nav-item a {
-  font-weight: 500;
+input {
+  caret-color: var(--vermelho-medio);
+}
+
+::selection {
+  background-color: var(--vermelho-medio);
+}
+
+.navbar-nav > .nav-item a,
+footer > .container > .nav > .nav-item > .nav-link,
+.link-login {
   transition: ease-in-out 0.2s;
 }
 
-.navbar-nav > .nav-item a:hover {
-  color: var(--vermelho-medio);
+.navbar-nav > .nav-item a:hover,
+footer > .container > .nav > .nav-item > .nav-link:hover,
+.link-login:hover {
+  color: var(--vermelho-escuro);
 }
 
-.body {
-    background-color: #F7DCDC;
-    display:flex;
-    flex-direction: column;
-    min-height: 100vh  
-}
-
-.flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFFFF;
-    flex-direction: column;
-    border-radius: 10px;
-    width: 420px;
-    height: 477px;
-    align-content: space-between;
-    margin: auto auto;
-    margin-top: 10%;
-}
-
-form{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.formulario__titulo {
-    color: #343F4B;
-    font-family: Lato;
-    font-size: 40px;
-    line-height: 51px;
-    width: 420px;
-    text-align: center;
-    margin-top: 6.5%;
-}
-
-.formulario__input {
-    align-self: center;
-    background-color: #FFFFFF;
-    border: 1px solid #8492A6;
-    border-radius: 5px;
-    width: 280px;
-    height: 38px;
-    color: #8190A5;
-    font-family: Lato;
-    font-size: 16px;
-    line-height: 62px;
-    text-align: left;
-    padding: 10px;
-}
-
-.formulario__botao__ativo {
-    background-color: #9A2727;
-    align-self: center;
-    border-radius: 5px;
-    width: 280px;
-    height: 38px;
-    color: #FFFFFF;
-    font-family: Lato;
-    font-size: 18px;
-}
-
-.formulario__botao__inativo {
-    background-color: lightgrey;
-    align-self: center;
-    border-radius: 5px;
-    width: 280px;
-    height: 38px;
-    color: #FFFFFF;
-    font-family: Lato;
-    font-size: 18px;
-}
-
-.cadastro {
-    color: #343F4B;
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 22px;
-    text-align: center;
-    padding-top: 10px;
-}
-
-.link-login {
-    color: #D74F4F;
-    text-decoration: none;
+.navbar-nav > .nav-item a {
+  font-weight: 500;
 }
 
 footer > .container > .nav > .nav-item > .nav-link {
-    color: var(--vermelho-medio);
-    transition: ease-in-out 0.2s;
+  color: var(--vermelho-medio);
 }
-  
-footer > .container > .nav > .nav-item > .nav-link:hover {
-    color: var(--vermelho-escuro);
+
+#repeatPasswordError {
+  color: var(--vermelho-medio);
+  margin: 0.4rem;
+}
+
+.form-control:focus {
+  /* border-color: var(--vermelho-claro) !important; */
+  box-shadow: 0 0 0 0.2rem rgba(215, 79, 79, 0.25) !important;
+}
+
+.section__form {
+  background-color: var(--max-branco);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.2);
+}
+
+.cadastro {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.link-login {
+  font-weight: 600;
+  color: var(--vermelho-medio);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  html,
+  body,
+  main {
+    height: 100%;
+  }
 }
