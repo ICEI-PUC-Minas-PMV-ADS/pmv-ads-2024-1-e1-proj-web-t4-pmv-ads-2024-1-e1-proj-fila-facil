@@ -176,7 +176,7 @@
     background-image: url('../img/banner-res.png');
     background-size: cover;
     background-position: center;
-    height: 100px; /* Altura da imagem */
+    height: 150px; /* Altura da imagem */
     position: relative;
   }
   
