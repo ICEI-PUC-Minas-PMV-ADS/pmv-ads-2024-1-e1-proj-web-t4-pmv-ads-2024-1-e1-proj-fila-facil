@@ -70,6 +70,12 @@ Correção na Página de pedidos e ajustes no arquivo javascript.
 
 ### [0.1.7] - 09/05/2024
 
+#### Adicionado
+
 - Página Restaurates e suas estilização.
 
-#### Adicionado/alterado
+### [0.1.8] - 00/00/0000
+
+#### Adicionado/Removido/Alterado
+
+-
