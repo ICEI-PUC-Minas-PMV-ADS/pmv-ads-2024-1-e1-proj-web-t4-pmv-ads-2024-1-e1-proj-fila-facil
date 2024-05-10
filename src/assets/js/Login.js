@@ -22,18 +22,16 @@ function redirectToIndex() {
     window.location.href = '../index.html';
 }
 
-
 loginButton.addEventListener('click', function(element) 
 {
     element.preventDefault();
 
-   
+    
     const existingAlert = formSection.querySelector('.alert');
     if (existingAlert) {
         formSection.removeChild(existingAlert);
     }
 
-    
     const email = emailInput.value.trim();
     const password = passwordInput.value;
 
