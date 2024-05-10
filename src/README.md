@@ -68,10 +68,16 @@ Correção na Página de pedidos e ajustes no arquivo javascript.
 - HTML e CSS da página de cadastro.
 - Link para cadastro na navbar da página home
 
-### [0.1.7] - 10/05/2024
+### [0.1.7] - 09/05/2024
 
 #### Adicionado
 
-- Página de Login e sua estilização.
+- Página Restaurates e suas estilização.
+
+### [0.1.8] - 10/05/2024
+
+#### Adicionado
+
+- Página do Login e sua estilização.
 - Arquivo Javascript para funcionalidades na página de Login.
 
