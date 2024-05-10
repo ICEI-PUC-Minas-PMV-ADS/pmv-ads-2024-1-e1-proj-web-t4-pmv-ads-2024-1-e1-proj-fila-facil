@@ -74,8 +74,9 @@ Correção na Página de pedidos e ajustes no arquivo javascript.
 
 - Página Restaurates e suas estilização.
 
-### [0.1.8] - 00/00/0000
+### [0.1.8] - 10/05/2024
 
-#### Adicionado/Removido/Alterado
+#### Adicionado
 
--
+- Página do Login e sua estilização.
+- Arquivo Javascript para funcionalidades na página de Login.
