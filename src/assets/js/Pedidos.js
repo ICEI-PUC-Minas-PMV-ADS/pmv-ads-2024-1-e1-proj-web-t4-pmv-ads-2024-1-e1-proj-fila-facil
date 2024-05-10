@@ -1,41 +1,52 @@
-const MINUTE = 60000
-const minutesSpan = document.querySelectorAll('.minutos')
+const MINUTES_MS = 60000;
+const MAX_RATING = 5;
 
-minutesSpan.forEach(element => {
-  let minutesLeft = element.textContent;
-  setInterval(function(){
+const minutesSpans = document.querySelectorAll('.minutos')
+const ratingSections = document.querySelectorAll('.rating');
+
+// Atualiza os minutos restantes e exibe a mensagem de atraso
+minutesSpans.forEach(span => {
+  let minutesLeft = span.textContent;
+
+  function updateMinutes() {
     if(minutesLeft > 0) {
-      minutesLeft = minutesLeft - 1;
-      element.textContent = minutesLeft
+      minutesLeft--;
+      span.textContent = minutesLeft;
     } else {
-      element.parentElement.parentElement.textContent = 'PEDIDO ATRASADO!'
-    }
-  }, MINUTE)
-});
-
-const STARQUANTITY = 5
-
-const ratingSection = document.querySelector('.rating');
-for (let index = 5; index > 0; index--) {
-  ratingSection.insertAdjacentHTML('afterbegin',
-    `<i class="fa-regular fa-star" data-star-id=${index} style="cursor: pointer;" onclick="starClicked(this)"></i>`
-  )
-}
-
-function starClicked(element) {
-  const starPosition = element.getAttribute('data-star-id')
-  document.querySelectorAll('.fa-star').forEach(elementStar => {
-    elementStar.remove()
-  });
-  for(let index = 5; index > 0; index--) {
-    if(index <= starPosition) {
-      ratingSection.insertAdjacentHTML('afterbegin',
-        `<i class="fa-solid fa-star" data-star-id=${index}"></i>`
-      )
-    } else {
-      ratingSection.insertAdjacentHTML('afterbegin',
-        `<i class="fa-regular fa-star" data-star-id=${index}"></i>`
-      )
+      span.closest('.order-container').textContent = 'PEDIDO ATRASADO!';
     }
   }
+
+  setInterval(updateMinutes, MINUTES_MS);
+});
+
+
+// Adiciona as estrelas de avaliação
+for (let index = MAX_RATING; index > 0; index--) {
+  ratingSections.forEach(element => {
+    element.insertAdjacentHTML('afterbegin',
+      `<i class="fa-regular fa-star" data-star-id=${index} style="cursor: pointer;" onclick="handleStarClick(this)"></i>`
+    )
+  });
+}
+
+function handleStarClick(clickedStar) {
+  const ratingDiv = clickedStar.closest('.rating');
+  const clickedStarId = parseInt(clickedStar.dataset.starId, 10);
+
+  while(ratingDiv.firstChild) {
+    ratingDiv.removeChild(ratingDiv.firstChild);
+  }
+
+
+  for(let index = MAX_RATING; index > 0; index--) {
+    if(index <= clickedStarId) {
+      ratingDiv.insertAdjacentHTML('afterbegin',
+        `<i class="fa-solid fa-star" data-star-id=${index}></i>`
+      )
+    } else {
+      ratingDiv.insertAdjacentHTML('afterbegin',
+        `<i class="fa-regular fa-star" data-star-id=${index}></i>`
+      )}
+    }
 }
