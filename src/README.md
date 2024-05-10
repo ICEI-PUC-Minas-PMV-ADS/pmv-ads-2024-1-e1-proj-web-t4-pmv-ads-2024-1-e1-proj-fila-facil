@@ -80,4 +80,3 @@ Correção na Página de pedidos e ajustes no arquivo javascript.
 
 - Página do Login e sua estilização.
 - Arquivo Javascript para funcionalidades na página de Login.
-
