@@ -21,7 +21,7 @@ Foram empregadas três fontes distintas no desenvolvimento da aplicação, visan
   
 ## Logotipo
 
-Para a criação do logotipo da aplicação, utilizamos as cores vermelho e branco. A utilização da cor vermelha remete aos empreendimentos gastronômicos, estimula reações cerebrais e corporais, como a aceleração dos batimentos cardíacos e da respiração, álem de aumentar o apetite, de acordo com [SEBRAE](https://sebrae.com.br/sites/PortalSebrae/artigos/cores-que-estimulam-a-fome-saiba-como-usar-no-seu-restaurante,b2c3425ef7156810VgnVCM1000001b00320aRCRD).
+Para a criação do logotipo da aplicação, foi utilizado apenas o vermelho. A utilização da cor vermelha remete aos empreendimentos gastronômicos, estimula reações cerebrais e corporais, como a aceleração dos batimentos cardíacos e da respiração, álem de aumentar o apetite, de acordo com [SEBRAE](https://sebrae.com.br/sites/PortalSebrae/artigos/cores-que-estimulam-a-fome-saiba-como-usar-no-seu-restaurante,b2c3425ef7156810VgnVCM1000001b00320aRCRD).
   
 ![Logo da aplicação](img/logoFilaFacil.png)
 
