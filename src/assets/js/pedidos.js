@@ -9,11 +9,13 @@ minutesSpans.forEach(span => {
   let minutesLeft = span.textContent;
 
   function updateMinutes() {
+    minutesLeft--;
     if(minutesLeft > 0) {
-      minutesLeft--;
       span.textContent = minutesLeft;
     } else {
-      span.closest('.order-container').textContent = 'PEDIDO ATRASADO!';
+      const orderStatus = span.closest('.order-container')
+      orderStatus.textContent = 'PEDIDO ATRASADO!';
+
     }
   }
 
