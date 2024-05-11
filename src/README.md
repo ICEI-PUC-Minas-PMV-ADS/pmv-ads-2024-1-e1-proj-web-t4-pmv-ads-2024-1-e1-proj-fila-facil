@@ -80,3 +80,10 @@ Correção na Página de pedidos e ajustes no arquivo javascript.
 
 - Página do Login e sua estilização.
 - Arquivo Javascript para funcionalidades na página de Login.
+
+### [0.1.9] - 10/05/2024
+
+#### Adicionado
+
+- Página de carrinho e sua estilização.
+- Arquivo Javascript para funcionalidades do carrinho.
