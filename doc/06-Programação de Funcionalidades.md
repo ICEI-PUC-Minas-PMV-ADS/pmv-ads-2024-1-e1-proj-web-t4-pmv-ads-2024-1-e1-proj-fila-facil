@@ -93,7 +93,7 @@ RF-03: A aplicação deve permitir que o usuário visualize os restaurantes cada
 O acesso a tela de cardápio poderá ser feito ao clicar em algum restaurante após o usuário estar logado. As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
 
 Exemplo da tela de cardápio:
-![Tela de cardápio](img/funcionalidades-restaurantes.png)
+![Tela de cardápio](img/funcionalidades-cardapio.png)
 
 #### Requisito atendido
 RF-03: A aplicação deve permitir que o usuário visualize o cardápio completo.	
