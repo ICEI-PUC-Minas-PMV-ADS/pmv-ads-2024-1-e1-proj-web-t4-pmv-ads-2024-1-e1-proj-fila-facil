@@ -48,14 +48,14 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 #### Adicionado
 
--Página de pedidos.
--Arquivo javascript para funcionalidade de avaliação e tempo do pedido. 
+- Página de pedidos.
+- Arquivo javascript para funcionalidade de avaliação e tempo do pedido. 
 
 ### [0.1.5] - 08/05/2024
 
 #### Alterado
 
-Correção na Página de pedidos e ajustes no arquivo javascript.
+- Correção na Página de pedidos e ajustes no arquivo javascript.
 
 ### [0.1.6] - 09/05/2024
 
@@ -87,3 +87,10 @@ Correção na Página de pedidos e ajustes no arquivo javascript.
 
 - Página de carrinho e sua estilização.
 - Arquivo Javascript para funcionalidades do carrinho.
+
+### [0.1.10] - 11/05/2024
+
+#### Alterado
+
+- Padronização da página de pedidos
+- Ajustes no JavaScript de avaliação e contagem regressiva
