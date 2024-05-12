@@ -61,7 +61,7 @@ RF-02: A aplicação deve permitir que o usuário faça o login na sua conta.
 
 ### Tela de restaurantes (RF-03)
 
-O acesso a tela de restaurantes poderá ser feito através da opção de menu "Restaurantes" após o usuário estar logado. As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
+O acesso a tela de restaurantes poderá ser feito através da opção de menu "Restaurantes". As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
 
 Exemplo da tela de restaurantes:
 ![Tela de restaurantes](img/funcionalidades-restaurantes.png)
@@ -81,8 +81,7 @@ RF-03: A aplicação deve permitir que o usuário visualize os restaurantes cada
 #### Instruções de acesso
 
 1. Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/src/index.html
-2. Clique em "Cadastro" e realize a criação da sua conta
-3. Insira suas informações de usuário e senha ao ser redirecionado para a página de login e clique em "Entrar"
+2. Ao clicar em "Restaurantes" no canto superior direito da tela, terá acesso à página de restaurantes.
 
 #### Responsável
 
@@ -90,13 +89,13 @@ RF-03: A aplicação deve permitir que o usuário visualize os restaurantes cada
 
 ### Tela de cardápio (RF-04)
 
-O acesso a tela de cardápio poderá ser feito ao clicar em algum restaurante após o usuário estar logado. As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
+O acesso a tela de cardápio poderá ser feito ao clicar em algum restaurante. As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
 
 Exemplo da tela de cardápio:
 ![Tela de cardápio](img/funcionalidades-cardapio.png)
 
 #### Requisito atendido
-RF-03: A aplicação deve permitir que o usuário visualize o cardápio completo.	
+RF-04: A aplicação deve permitir que o usuário visualize o cardápio completo.	
 
 #### Artefatos da funcionalidade
 
@@ -110,10 +109,155 @@ RF-03: A aplicação deve permitir que o usuário visualize o cardápio completo
 #### Instruções de acesso
 
 1. Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/src/index.html
-2. Clique em "Cadastro" e realize a criação da sua conta
-3. Insira suas informações de usuário e senha ao ser redirecionado para a página de login e clique em "Entrar"
+3. Clique em "Restaurantes" no menu
 4. Clique em um dos restaurantes para visualizar seu cardápio
 
 #### Responsável
 
 - Gabriel Roeder
+
+### Realizar e pagar pedidos online (RF-05 e RF-06)
+
+Para pagar e realizar pedidos online, é necessário adicionar um item no carrinho, ir ao carrinho, selecionar um meio de pagamento e clicar em "Finalizar pedido". As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
+
+Exemplo da finalização de um pedido:
+![Finalização de um pedido](img/funcionalidades-compra.png)
+
+#### Requisito atendido
+RF-05: A aplicação deve permitir que o usuário realize a compra de itens no restaurante remotamente.
+RF-06: A aplicação deve permitir que o usuário realize o pagamento online do pedido.
+
+#### Artefatos da funcionalidade
+
+- [carrinho.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/carrinho.html)
+- [carrinho.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/carrinho.js)
+
+#### Estrutura de Dados
+
+- [carrinho.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/carrinho.html)
+
+#### Instruções de acesso
+
+1. Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/src/index.html
+2. Clique em Restaurantes no menu
+3. Clique em um dos restaurantes para visualizar seu cardápio
+4. Adicione um dos itens no carrinho
+5. Clique no ícone de carrinho
+6. Selecione uma forma de pagamento
+7. Clique em "Finalizar Pedidos"
+
+#### Responsável
+
+- Laura Furtado Amaral
+
+### Tela de status do pedido (RF-07)
+
+O acesso a tela de pedidos poderá ser feito através da opção de menu "Pedidos". As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
+
+Exemplo da tela de pedidos:
+![Tela de status](img/funcionalidades-status.png)
+
+#### Requisito atendido
+RF-07: A aplicação deve permitir que o usuário visualize o status do seu pedido.
+
+#### Artefatos da funcionalidade
+
+- [pedidos.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/pedidos.html)
+- [pedidos.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/pedidos.js)
+
+#### Estrutura de Dados
+
+- [pedidos.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/pedidos.html)
+
+#### Instruções de acesso
+
+1. Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/src/index.html
+3. Ao clicar em "Pedidos" no menu, terá acesso à página de pedidos e seu status.
+
+#### Responsável
+
+- Thiago Emanuel da Costa
+
+### Filtragem de pratos (RF-08)
+
+O acesso a filtragem de pratos poderá ser feita na página de cardápio, ao clicar nas categorias ou utilizar o campo de busca. As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
+
+Exemplo da tela de pedidos:
+![Filtragem de pratos](img/funcionalidades-filtro.png)
+
+#### Requisito atendido
+RF-08: A aplicação deve permitir que o usuário filtre pratos pelo tipo de refeição.
+
+#### Artefatos da funcionalidade
+
+- [cardapio.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/cardapio.html)
+- [cardapioCarouselScript.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/cardapioCarouselScript.js)
+
+#### Estrutura de Dados
+
+- [cardapio.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/cardapio.html)
+
+#### Instruções de acesso
+
+1. Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/src/index.html
+2. Clique em "Restaurantes" no menu
+3. Selecione um dos restaurantes para visualizer seu cardápio
+5. Clique em uma das opções acima do campo de busca ou utilize o campo de busca para realizar a filtragem
+
+#### Responsável
+
+- Gabriel Roeder
+
+### Avaliação dos pedidos (RF-09)
+
+O acesso a avaliação de pedidos poderá ser feita na página de pedidos ao clicar em "Pedidos realizados" e na respectiva estrela. As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
+
+Exemplo da tela de pedidos:
+![Avaliação dos pedidos](img/funcionalidades-avaliacao.png)
+
+#### Requisito atendido
+RF-09: A aplicação deve permitir que o usuário avalie o pedido e o restaurante.
+
+#### Artefatos da funcionalidade
+
+- [pedidos.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/pedidos.html)
+- [pedidos.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/pedidos.js)
+
+#### Estrutura de Dados
+
+- [pedidos.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/pedidos.html)
+
+#### Instruções de acesso
+
+1. Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/src/index.html
+2. Clique em "Pedidos" no menu
+3. Clique em "Pedidos realizados" e dê a nota clicando em uma das estrelas do card do pedido
+
+#### Responsável
+
+- Gabriel Roeder e Thiago Emanuel da Costa
+
+### Tela inicial
+
+O acesso a tela inicial é a primeira tela que o usuário visualiza ao entrar no site. As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
+
+Exemplo da tela de pedidos:
+![Tela inicial](img/funcionalidades-index.png)
+
+#### Artefatos da funcionalidade
+
+- [index.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/index.html)
+- [homeCarouselScript.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/homeCarouselScript.js)
+
+#### Estrutura de Dados
+
+- [index.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/index.html)
+
+#### Instruções de acesso
+
+1. Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/src/index.html
+
+#### Responsável
+
+- Ytallo Bruno Canuto Guedes
+
