@@ -4,7 +4,7 @@ Pré-requisitos: [especificações do projeto](https://github.com/ICEI-PUC-Minas
 
 ### Tela de cadastro (RF-01)
 
-O acesso a tela de cadastro poderá ser feito através da opção de menu "Cadastro". As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
+O acesso à tela de cadastro poderá ser feito através da opção de menu "Cadastro". As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
 
 Exemplo da tela de cadastro:
 ![Tela de cadastro](img/funcionalidades-cadastro.png)
@@ -16,10 +16,7 @@ RF-01: A aplicação deve permitir que o usuário cadastre uma conta.
 
 - [cadastro.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/cadastro.html)
 - [cadastro.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/cadastro.js)
-
-#### Estrutura de Dados
-
-- [cadastro.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/cadastro.html)
+- [cadastroStyle.css](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/css/cadastroStyle.css)
 
 #### Instruções de acesso
 
@@ -33,7 +30,7 @@ RF-01: A aplicação deve permitir que o usuário cadastre uma conta.
 
 ### Tela de login (RF-02)
 
-O acesso a tela de login poderá ser feito através da opção de menu "Entrar". As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
+O acesso à tela de login poderá ser feito através da opção de menu "Entrar". As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
 
 Exemplo da tela de login:
 ![Tela de login](img/funcionalidades-login.png)
@@ -44,11 +41,8 @@ RF-02: A aplicação deve permitir que o usuário faça o login na sua conta.
 #### Artefatos da funcionalidade
 
 - [login.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/login.html)
-- [cadastro.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/login.js)
-
-#### Estrutura de Dados
-
-- [login.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/login.html)
+- [login.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/login.js)
+- [login.css](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/css/login.css)
 
 #### Instruções de acesso
 
@@ -61,7 +55,7 @@ RF-02: A aplicação deve permitir que o usuário faça o login na sua conta.
 
 ### Tela de restaurantes (RF-03)
 
-O acesso a tela de restaurantes poderá ser feito através da opção de menu "Restaurantes". As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
+O acesso à tela de restaurantes poderá ser feito através da opção de menu "Restaurantes". As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
 
 Exemplo da tela de restaurantes:
 ![Tela de restaurantes](img/funcionalidades-restaurantes.png)
@@ -73,10 +67,7 @@ RF-03: A aplicação deve permitir que o usuário visualize os restaurantes cada
 
 - [restaurantes.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/restaurantes.html)
 - [cardapioCarouselScript.js](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/src/assets/js/cardapioCarouselScript.js)
-
-#### Estrutura de Dados
-
-- [restaurantes.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/restaurantes.html)
+- [restauranteStyle.css](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/css/restauranteStyle.css)
 
 #### Instruções de acesso
 
@@ -89,7 +80,7 @@ RF-03: A aplicação deve permitir que o usuário visualize os restaurantes cada
 
 ### Tela de cardápio (RF-04)
 
-O acesso a tela de cardápio poderá ser feito ao clicar em algum restaurante. As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
+O acesso à tela de cardápio poderá ser feito ao clicar em algum restaurante. As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
 
 Exemplo da tela de cardápio:
 ![Tela de cardápio](img/funcionalidades-cardapio.png)
@@ -101,16 +92,13 @@ RF-04: A aplicação deve permitir que o usuário visualize o cardápio completo
 
 - [cardapio.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/cardapio.html)
 - [cardapioCarouselScript.js](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/src/assets/js/cardapioCarouselScript.js)
-
-#### Estrutura de Dados
-
-- [cardapio.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/cardapio.html)
+- [cardapioStyle.css](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/css/cardapioStyle.css)
 
 #### Instruções de acesso
 
 1. Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/src/index.html
-3. Clique em "Restaurantes" no menu
-4. Clique em um dos restaurantes para visualizar seu cardápio
+2. Clique em "Restaurantes" no menu
+3. Clique em um dos restaurantes para visualizar seu cardápio
 
 #### Responsável
 
@@ -118,7 +106,7 @@ RF-04: A aplicação deve permitir que o usuário visualize o cardápio completo
 
 ### Realizar e pagar pedidos online (RF-05 e RF-06)
 
-Para pagar e realizar pedidos online, é necessário adicionar um item no carrinho, ir ao carrinho, selecionar um meio de pagamento e clicar em "Finalizar pedido". As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
+Para pagar e realizar pedidos online, é necessário adicionar um item no carrinho, ir ao carrinho clicando em seu respectivo ícone no menu, selecionar um meio de pagamento e clicar em "Finalizar pedido". As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
 
 Exemplo da finalização de um pedido:
 ![Finalização de um pedido](img/funcionalidades-compra.png)
@@ -131,10 +119,7 @@ RF-06: A aplicação deve permitir que o usuário realize o pagamento online do 
 
 - [carrinho.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/carrinho.html)
 - [carrinho.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/carrinho.js)
-
-#### Estrutura de Dados
-
-- [carrinho.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/carrinho.html)
+- [carrinhoStyle.css](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/css/carrinhoStyle.css)
 
 #### Instruções de acesso
 
@@ -152,7 +137,7 @@ RF-06: A aplicação deve permitir que o usuário realize o pagamento online do 
 
 ### Tela de status do pedido (RF-07)
 
-O acesso a tela de pedidos poderá ser feito através da opção de menu "Pedidos". As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
+O acesso à tela de pedidos poderá ser feito através da opção de menu "Pedidos". As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
 
 Exemplo da tela de pedidos:
 ![Tela de status](img/funcionalidades-status.png)
@@ -164,10 +149,7 @@ RF-07: A aplicação deve permitir que o usuário visualize o status do seu pedi
 
 - [pedidos.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/pedidos.html)
 - [pedidos.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/pedidos.js)
-
-#### Estrutura de Dados
-
-- [pedidos.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/pedidos.html)
+- [pedidosstyle.css](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/css/pedidosstyle.css)
 
 #### Instruções de acesso
 
@@ -180,7 +162,7 @@ RF-07: A aplicação deve permitir que o usuário visualize o status do seu pedi
 
 ### Filtragem de pratos (RF-08)
 
-O acesso a filtragem de pratos poderá ser feita na página de cardápio, ao clicar nas categorias ou utilizar o campo de busca. As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
+O acesso à filtragem de pratos poderá ser feita na página de cardápio, ao clicar nas categorias ou utilizar o campo de busca. As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
 
 Exemplo da tela de pedidos:
 ![Filtragem de pratos](img/funcionalidades-filtro.png)
@@ -192,10 +174,7 @@ RF-08: A aplicação deve permitir que o usuário filtre pratos pelo tipo de ref
 
 - [cardapio.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/cardapio.html)
 - [cardapioCarouselScript.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/cardapioCarouselScript.js)
-
-#### Estrutura de Dados
-
-- [cardapio.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/cardapio.html)
+- [cardapioStyle.css](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/css/cardapioStyle.css)
 
 #### Instruções de acesso
 
@@ -210,7 +189,7 @@ RF-08: A aplicação deve permitir que o usuário filtre pratos pelo tipo de ref
 
 ### Avaliação dos pedidos (RF-09)
 
-O acesso a avaliação de pedidos poderá ser feita na página de pedidos ao clicar em "Pedidos realizados" e na respectiva estrela. As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
+O acesso à avaliação de pedidos poderá ser feita na página de pedidos ao clicar em "Pedidos realizados" e na respectiva estrela. As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
 
 Exemplo da tela de pedidos:
 ![Avaliação dos pedidos](img/funcionalidades-avaliacao.png)
@@ -222,10 +201,7 @@ RF-09: A aplicação deve permitir que o usuário avalie o pedido e o restaurant
 
 - [pedidos.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/pedidos.html)
 - [pedidos.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/pedidos.js)
-
-#### Estrutura de Dados
-
-- [pedidos.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/pedidos.html)
+- [pedidosstyle.css](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/css/pedidosstyle.css)
 
 #### Instruções de acesso
 
@@ -239,7 +215,7 @@ RF-09: A aplicação deve permitir que o usuário avalie o pedido e o restaurant
 
 ### Tela inicial
 
-O acesso a tela inicial é a primeira tela que o usuário visualiza ao entrar no site. As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
+O acesso à tela inicial é a primeira tela que o usuário visualiza ao entrar no site. As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
 
 Exemplo da tela de pedidos:
 ![Tela inicial](img/funcionalidades-index.png)
@@ -248,10 +224,7 @@ Exemplo da tela de pedidos:
 
 - [index.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/index.html)
 - [homeCarouselScript.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/homeCarouselScript.js)
-
-#### Estrutura de Dados
-
-- [index.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/index.html)
+- [homeStyle.css](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/css/homeStyle.css)
 
 #### Instruções de acesso
 

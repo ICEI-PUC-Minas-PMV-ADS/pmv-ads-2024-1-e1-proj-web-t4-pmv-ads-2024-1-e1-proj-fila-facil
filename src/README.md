@@ -100,3 +100,9 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 #### Alterado
 
 - Ajustes dos links nos arquivos HTML
+
+### [0.1.12] - 12/05/2024
+
+#### Alterado
+
+- Padronização do nome dos arquivos para incial minúscula
