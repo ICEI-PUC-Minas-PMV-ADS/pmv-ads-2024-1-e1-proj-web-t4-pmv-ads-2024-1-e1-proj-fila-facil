@@ -1,3 +1,23 @@
+import { restaurantes } from './restauranteJson.js';
+
+// Obtém o ID do restaurante da URL e renderiza o menu se o restaurante for encontrado.
+const id = getRestaurantId();
+if (id) {
+    const restauranteObj = restaurantes.find(restaurante => restaurante.idRestaurante == id);
+    if (restauranteObj) {
+        const categoriesItems = getCategoriesArray(restauranteObj)
+        renderMenu(restauranteObj);
+        renderCardapio(categoriesItems, restauranteObj)
+        document.querySelector('.restaurante-nome').textContent = restauranteObj.nomeRestaurante;
+    } else {
+        window.location.href = "../pages/restaurantes.html"
+    }
+} else {
+    window.location.href = "../pages/restaurantes.html"
+}
+
+// seção que gerencia as categorias e o carrossel
+
 const produtos = document.querySelectorAll(".filtros-cardapio>li>button");
 
 produtos.forEach(element => {
@@ -32,6 +52,7 @@ function updateCardSize(cardQuantity, carouselItem, cardapioSection) {
     carouselItem.forEach(element => {
         element.style.flex = `0 0 calc(100%/${cardQuantity})`
         if (window.matchMedia("(min-width:576px)").matches) {
+            let percentage = 0;
             switch (cardQuantity) {
                 case 1:
                     percentage = '25%'

@@ -106,3 +106,9 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 #### Alterado
 
 - Padronização do nome dos arquivos para incial minúscula
+
+### [0.1.13] - 14/05/2024
+
+#### Alterado
+
+- Alteração para a página de cardápio renderizar via JSON
