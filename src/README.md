@@ -112,3 +112,9 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 #### Alterado
 
 - Alteração para a página de cardápio renderizar via JSON
+
+### [0.1.14] - 17/05/2024
+
+#### Adicionado
+
+- Adicionado botão de pesquisa funcional na página de cardápio

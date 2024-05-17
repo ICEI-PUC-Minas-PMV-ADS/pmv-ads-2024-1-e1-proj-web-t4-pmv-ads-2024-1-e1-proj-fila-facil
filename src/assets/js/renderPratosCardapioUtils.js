@@ -153,9 +153,11 @@ function createCarouselControls(formattedCategory) {
 /**
  * Renderiza a seção de cardápio com carousels.
  * @param {Array} categories - Lista de categorias.
+ * @param {Array} restaurant - Lista de restaurantes.
+ * @param {String} pratoSearch - Conteúdo a ser procurado no nome do prato
  * @param {Object} restaurant - Dados do restaurante.
  */
-function renderCardapio(categories, restaurant) {
+function renderCardapio(categories, restaurant, pratoSearch=null) {
     const cardapioSection = document.querySelector('.tab-content');
 
     categories.forEach((category, index) => {
@@ -180,7 +182,17 @@ function renderCardapio(categories, restaurant) {
         const carouselInner = document.createElement('div');
         carouselInner.classList.add('carousel-inner');
 
-        const pratos = restaurant.cardapio.filter(prato => prato.categoriaPrato === category);
+        let pratos;
+        if (pratoSearch) {
+            pratoSearch = pratoSearch.toLowerCase();
+            pratos = restaurant.cardapio.filter(prato =>
+                prato.categoriaPrato === category && 
+                (prato.nomePrato.toLowerCase().includes(pratoSearch) || prato.descricaoPrato.toLowerCase().includes(pratoSearch))
+            );
+        } else {
+            pratos = restaurant.cardapio.filter(prato => prato.categoriaPrato === category);
+        }
+
         pratos.forEach((prato, pratoIndex) => {
             const carouselItem = createCarouselItem(prato, pratoIndex === 0, pratoIndex);
             carouselInner.appendChild(carouselItem);

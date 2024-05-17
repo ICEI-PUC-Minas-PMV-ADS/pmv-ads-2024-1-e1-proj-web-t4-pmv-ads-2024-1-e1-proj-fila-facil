@@ -1,11 +1,12 @@
 /**
- * Obtém o ID do restaurante a partir da URL
- * @returns {string|null} ID do restaurante, ou null se query id não estiver presente na URL
+ * Obtém o parâmetro passado na URL
+ * @param {String} - parâmetro a ser buscado na URL
+ * @returns {string|null} o conteúdo do parâmetro
  */
-function getRestaurantId() {
+function getParameter(parameter) {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    return urlParams.get('id');
+    return urlParams.get(parameter);
 }
 
 /**
@@ -69,10 +70,13 @@ function renderNav(categories) {
 /**
  * Renderiza o menu do restaurante na seção correspondente.
  * @param {Object} restaurant - Objeto do restaurante contendo o cardápio.
+ * @param {String} query - String usada para a busca do prato no JSON
  */
-function renderMenu(restaurant) {
-    // mapeia as categorias dos pratos do cardápio, usa o Set para obter valores únicos e converte para array
-    const categorias = getCategoriesArray(restaurant);
+function renderMenu(restaurant, query=null) {
+    const categorias = getCategoriesArray(restaurant, query);
+    if (categorias.length === 0) {
+        window.location.href = window.location.protocol + "//" + window.location.host + window.location.pathname + "?id=" + getParameter('id') + "&errorSearch=1";
+    }
     const produtosSection = document.querySelector('.produtos');
 
     const nav = renderNav(categorias);
@@ -82,8 +86,15 @@ function renderMenu(restaurant) {
 /**
  * Busca as categorias dos pratos do cardápio do restaurante.
  * @param {Object} restaurant - Objeto do restaurante contendo o cardápio.
+ * @param {String} query - String usada para a busca do prato no JSON
  * @returns {Array<string>} Array de categorias dos pratos do cardápio.
  */
-function getCategoriesArray(restaurant) {
+function getCategoriesArray(restaurant, query=null) {
+    if (query != null) {
+        return Array.from(new Set(restaurant.cardapio.
+            filter(prato => prato.nomePrato.toLowerCase().includes(query) || prato.descricaoPrato.toLowerCase().includes(query)).
+            map(prato => prato.categoriaPrato))
+        );
+    }
     return Array.from(new Set(restaurant.cardapio.map(prato => prato.categoriaPrato)));
 }
