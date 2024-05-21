@@ -69,11 +69,13 @@ function createUser() {
     email: emailInput.value,
     phone: phoneInput.value,
     password: passwordInput.value,
+    creditCards: [],
   };
 }
 
 function saveUserToLocalStorage(user) {
   localStorage.setItem(user.email, JSON.stringify(user));
+  localStorage.setItem('lastEmail', user.email);
 }
 
 form.addEventListener("submit", function (event) {
