@@ -1,6 +1,6 @@
-authenticatedUser = JSON.parse(sessionStorage.getItem('authenticatedUser') || '[]');
-if (authenticatedUser.length != 0) {
-    redirectToIndex()
+const authenticatedUser = JSON.parse(sessionStorage.getItem('authenticatedUser') || '[]');
+if (authenticatedUser.length !== 0) {
+    redirectToIndex();
 }
 
 const formSection = document.querySelector('.mensagem');
@@ -9,7 +9,6 @@ const emailInput = document.getElementById('email_user');
 const passwordInput = document.getElementById('senha_user');
 
 function createAlertMessage(alertType, message) {
-    
     return `
         <div class="alert alert-${alertType} alert-dismissible fade show" role="alert">
             <strong>Erro!</strong> ${message}
@@ -17,16 +16,19 @@ function createAlertMessage(alertType, message) {
         </div>`;
 }
 
+
 function redirectToIndex() {
-    
     window.location.href = '../index.html';
 }
 
-loginButton.addEventListener('click', function(element) 
-{
-    element.preventDefault();
 
-    
+function redirectToRestaurantes() {
+    window.location.href = 'restaurantes.html';
+}
+
+loginButton.addEventListener('click', function(event) {
+    event.preventDefault();
+
     const existingAlert = formSection.querySelector('.alert');
     if (existingAlert) {
         formSection.removeChild(existingAlert);
@@ -35,24 +37,18 @@ loginButton.addEventListener('click', function(element)
     const email = emailInput.value.trim();
     const password = passwordInput.value;
 
-    
     if (!email || !password) {
         const alertMessage = createAlertMessage('warning', 'Os campos de email e senha não podem ser vazios.');
         formSection.insertAdjacentHTML('afterbegin', alertMessage);
         return;
     }
 
-    let userInfo = JSON.parse(localStorage.getItem(email));
-
-    
-    if(userInfo && password === userInfo.password) {
-        
+    if (email === 'admin' && password === 'adm123') {
+        const userInfo = { email: 'admin', password: 'adm123' };
         sessionStorage.setItem('authenticatedUser', JSON.stringify(userInfo));
-        redirectToIndex();
-        return;
+        redirectToRestaurantes();
+    } else {
+        const alertMessage = createAlertMessage('danger', 'Usuário ou senha inválido. Tente novamente.');
+        formSection.insertAdjacentHTML('afterbegin', alertMessage);
     }
-
-    
-    const alertMessage = createAlertMessage('danger', 'Usuário ou senha inválido. Tente novamente.');
-    formSection.insertAdjacentHTML('afterbegin', alertMessage);
 });
