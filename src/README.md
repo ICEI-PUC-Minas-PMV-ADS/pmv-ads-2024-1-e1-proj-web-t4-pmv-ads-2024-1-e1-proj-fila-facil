@@ -113,8 +113,24 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 - Alteração para a página de cardápio renderizar via JSON
 
-### [0.1.14] - 17/05/2024
+### [0.1.14] - 23/05/2024
 
 #### Adicionado
 
-- Adicionado botão de pesquisa funcional na página de cardápio
+- Página de login e todas as suas funcionalidades
+
+#### Alterado
+
+- Objeto inicial do usuário para conter os cartões de crédito e armazenamento do e-mail do usuário separadamente para utilização, na lógica de cadastro
+
+### [0.1.15] - 14/05/2024
+
+#### Adicionado
+
+- Campo de pesquisa funcional na página de cardápio
+
+### [0.1.16] - 14/05/2024
+
+#### Adicionado, Alterado, Removido
+
+- 
