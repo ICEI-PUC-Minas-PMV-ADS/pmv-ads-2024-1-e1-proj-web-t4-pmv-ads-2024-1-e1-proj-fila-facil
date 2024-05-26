@@ -94,22 +94,40 @@
         </div>
       </section>
 
+      <!-- Modal do Bootstrap -->
+      <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="errorModalLabel">Erro!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="errorMessage"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary fechar-modal" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
       <section class="cardapio-section">
         <!-- Seção que renderiza as categorias pelo javascript -->
         <section class="produtos pt-4 pb-4"></section>
 
         <section class="pb-4 mx-auto search-section">
-          <div class="input-group">
-            <input
-              class="form-control border-end-0 border rounded-start-pill"
-              type="search"
-              placeholder="Procurar por itens"
-              id="search-input"
-            />
-            <button class="input-group-append rounded-end-circle lupa">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </div>
+            <form class="input-group" method="get">
+              <input
+                class="form-control border-end-0 border rounded-start-pill"
+                type="search"
+                placeholder="Procurar por itens"
+                id="search-input"
+              />
+              <button type="submit" class="input-group-append rounded-end-circle lupa">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
         </section>
 
         <!-- Seção que renderiza os produtos pelo javascript -->
