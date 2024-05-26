@@ -131,6 +131,6 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 ### [0.1.16] - 14/05/2024
 
-#### Adicionado, Alterado, Removido
+#### Adicionado
 
-- 
+- Foi adicionado a verificação de login na tela de Login.
