@@ -262,7 +262,7 @@ function deleteCreditCard(cardNumber) {
 }
 
 function createDeleteButtonElement(creditCard) {
-  var button = createElement("button", "btn btn-sm btn-danger ms-auto");
+  var button = createElement("button", "btn btn-sm btn-outline-danger");
   button.type = "button";
   button.id = `delete-credit-card${creditCard.number}`;
   button.innerHTML = '<i class="bi bi-x-lg"></i>';
