@@ -112,3 +112,10 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 #### Alterado
 
 - Alteração para a página de cardápio renderizar via JSON
+
+### [0.1.14] - 28/05/2024
+
+#### Adicionado.
+
+- Adição javascript para a página restaurantes.
+- Alteração para a página restaurantes renderizar via JSON.
