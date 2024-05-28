@@ -74,6 +74,15 @@ footer > .container > .nav > .nav-item > .nav-link:hover {
   border-radius: 5px;
 }
 
+.file-upload .square img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .btn-success-soft {
   color: #28a745;
   background-color: rgba(40, 167, 69, 0.1);
