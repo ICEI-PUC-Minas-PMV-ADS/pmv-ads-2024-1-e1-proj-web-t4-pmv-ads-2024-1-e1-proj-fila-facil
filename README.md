@@ -1,46 +1,150 @@
-# Fila Fácil
+# Instruções de utilização
 
-`Análise e Desenvolvimento de Sistemas - PUC Minas`
+## Estratégia de Organização de Codificação
 
-`Desenvolvimento de aplicação web front-end`
+Nesse primeiro eixo do curso, para simplificar a utilização do Git e a organização das pastas e artefatos de implementação no sistema de arquivos, sugerimos que o projeto seja estruturado de modo que cada aluno trabalhe com seus arquivos nas suas respectivas pastas, identificadas por nomes das suas respectivas telas. Por exemplo:
 
-`1º Semestre/2024`
+- Pasta src (root do projeto): index.html, index.css, index.js - Desenvolvedora responsável: Aluna X.
+- Pasta src\clientes: clientes.html, clientes.css, clientes.js - Desenvolvedor responsável: Aluno Y.
+- Pasta src\funcionarios: funcionarios.html, funcionarios.css, funcionarios.js - Desenvolvedora responsável: Aluna Z.
 
-O objetivo geral desse projeto é desenvolver uma solução voltada para a melhoria da experiência do cliente em shopping centers, com foco nos estabelecimentos gastronômicos.
+## Instalação do Site
 
-## Integrantes
+O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um servidor web de sua preferência. Existem diversos servidores web gratuitos que podem ser utilizados, tal como GitHub Pages (GitHub.IO), Vercel, Render, Netlify, Surge.sh, entre outros. Nesse primeiro eixo, recomenda-se inclusive a utilização do GitHub Pages. [Insira o endereço eletrônico público para acessá-lo.]
 
-* Diego Chaves dos Anjos
-* Gabriel Avner Gorenstein Brasil
-* Gabriel Roeder
-* Laura Furtado Amaral
-* Thiago Emanuel da Costa
-* Ytallo Bruno Canuto Guedes
+## Histórico de versões
 
-## Orientador
+### [0.1.0] - 01/05/2024
 
-* Marco Rodrigo Costa
+#### Adicionado
 
-## Documentação
+- Página home e sua estilização
+- Arquivo javascript para funcionalidade do Carousel contido na home
 
-1. [Documentação de Contexto](./doc/01-Documentação%20de%20Contexto.md)
-2. [Especificação do Projeto](./doc/02-Especificação%20do%20Projeto.md)
-3. [Metodologia](./doc/03-Metodologia.md)
-4. [Projeto de Interface](./doc/04-Projeto%20de%20Interface.md)
-5. [Template padrão da Aplicação](./doc/05-Template%20padrão%20da%20Aplicação.md)
-6. [Programação de Funcionalidades](./doc/06-Programação%20de%20Funcionalidades.md)
-7. [Plano de Testes de Software](./doc/07-Plano%20de%20Testes%20de%20Software.md)
-8. [Registro de Testes de Software](./doc/08-Registro%20de%20Testes%20de%20Software.md)
-9. [Referências Bibliográficas](./doc/09-Referências.md)
+#### Alterado
 
-## Hospedagem
+- Ajustes nas documentações 01, 02 e 04
 
-* O site em HTML/CSS/JS é um projeto estático, logo pode ser utilizado tanto em servidores como em navegadores web. Clique [aqui](url-ainda-nao-disponivel) para acessá-lo.
+### [0.1.1] - 03/05/2024
 
-## Código-Fonte
+#### Alterado
 
-* [Código Fonte](./src/README.md)
+- Correção de ajustes na página home
 
-## Apresentação
+### [0.1.2] - 03/05/2024
 
-* [Apresentação do Projeto](./presentation/README.md)
+#### Adicionado
+
+- Página de cadastro e sua estilização
+
+### [0.1.3] - 04/05/2024
+
+#### Adicionado
+
+- Página de cardápio e sua estilização
+- Arquivo javascript para funcionalidade do Carousel dos itens do cardápio
+
+### [0.1.4] - 05/05/2024
+
+#### Adicionado
+
+- Página de pedidos.
+- Arquivo javascript para funcionalidade de avaliação e tempo do pedido.
+
+### [0.1.5] - 08/05/2024
+
+#### Alterado
+
+- Correção na Página de pedidos e ajustes no arquivo javascript.
+
+### [0.1.6] - 09/05/2024
+
+#### Adicionado
+
+- Adicionada funcionalidades javascript da página de cadastro
+
+#### Alterado
+
+- HTML e CSS da página de cadastro.
+- Link para cadastro na navbar da página home
+
+### [0.1.7] - 09/05/2024
+
+#### Adicionado
+
+- Página Restaurates e suas estilização.
+
+### [0.1.8] - 10/05/2024
+
+#### Adicionado
+
+- Página do Login e sua estilização.
+- Arquivo Javascript para funcionalidades na página de Login.
+
+### [0.1.9] - 10/05/2024
+
+#### Adicionado
+
+- Página de carrinho e sua estilização.
+- Arquivo Javascript para funcionalidades do carrinho.
+
+### [0.1.10] - 11/05/2024
+
+#### Alterado
+
+- Padronização da página de pedidos
+- Ajustes no JavaScript de avaliação e contagem regressiva
+
+### [0.1.11] - 11/05/2024
+
+#### Alterado
+
+- Ajustes dos links nos arquivos HTML
+
+### [0.1.12] - 12/05/2024
+
+#### Alterado
+
+- Padronização do nome dos arquivos para incial minúscula
+
+### [0.1.13] - 14/05/2024
+
+#### Alterado
+
+- Alteração para a página de cardápio renderizar via JSON
+
+### [0.1.14] - 23/05/2024
+
+#### Adicionado
+
+- Página de login e todas as suas funcionalidades
+
+#### Alterado
+
+- Objeto inicial do usuário para conter os cartões de crédito e armazenamento do e-mail do usuário separadamente para utilização, na lógica de cadastro
+
+### [0.1.15] - 23/05/2024
+
+#### Adicionado
+
+- Campo de pesquisa funcional na página de cardápio
+
+### [0.1.16] - 24/05/2024
+
+#### Adicionado
+
+- Foi adicionado a verificação de login na tela de Login.
+
+### [0.1.17] - 28/05/2024
+
+#### Alterado
+
+- Corrigida responsividade da página de perfil.
+- Reorganização do histórico de versões.
+
+### [0.1.18] - 28/05/2024
+
+#### Adicionado
+
+- Foi adicionado a manipulação do arquivo json na página Restaurantes.
+- Adicionado os cards da página restaurante em javascript.
