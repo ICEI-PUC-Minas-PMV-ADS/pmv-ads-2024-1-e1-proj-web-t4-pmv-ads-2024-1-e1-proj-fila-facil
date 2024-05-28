@@ -141,3 +141,11 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 - Corrigida responsividade da página de perfil.
 - Reorganização do histórico de versões.
+
+### [0.1.18] - 28/05/2024
+
+#### Alterado
+
+- Criação de página restaurante e manipulação de json.
+- Adiconado cards via javascript e suas estilização.
+- Remoção e adição na pasta img/ imagens dos cards.
