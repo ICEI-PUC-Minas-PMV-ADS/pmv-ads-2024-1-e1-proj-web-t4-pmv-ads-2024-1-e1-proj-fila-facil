@@ -39,9 +39,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
         prevBtn.disabled = page === 1;
         nextBtn.disabled = end >= restaurantData.length;
-    }
+    }// qual e o caminho do arquivo json
 
-    fetch('assets/js/restaurantes.json')
+    fetch('../assets/js/restaurantes.json')
         .then(response  => response.json())
         .then(data => {
             restaurantData = data;
