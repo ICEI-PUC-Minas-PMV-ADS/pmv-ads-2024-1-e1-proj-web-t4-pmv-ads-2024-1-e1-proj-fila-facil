@@ -141,3 +141,14 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 - Corrigida responsividade da página de perfil.
 - Reorganização do histórico de versões.
+
+### [0.1.18] - 29/05/2024
+
+#### Adicionado
+
+- Implementação das funcionalidades na página de cardápio
+- Implementação das funcionalidades do carrinho na página de cardápio
+
+#### Excluído
+
+- Arquivo carrinho.html
