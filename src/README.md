@@ -123,21 +123,28 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 - Objeto inicial do usuário para conter os cartões de crédito e armazenamento do e-mail do usuário separadamente para utilização, na lógica de cadastro
 
-### [0.1.15] - 14/05/2024
+### [0.1.15] - 23/05/2024
 
 #### Adicionado
 
 - Campo de pesquisa funcional na página de cardápio
 
-### [0.1.16] - 14/05/2024
+### [0.1.16] - 24/05/2024
 
 #### Adicionado
 
 - Foi adicionado a verificação de login na tela de Login.
 
-### [0.1.17] - 27/05/2024
+### [0.1.17] - 28/05/2024
+
+#### Alterado
+
+- Corrigida responsividade da página de perfil.
+- Reorganização do histórico de versões.
+
+### [0.1.18] - 29/05/2024
 
 #### Adicionado
 
-- Página de recuperar senha e sua estilização.
+- Página de redefinir senha e sua estilização.
 - Arquivo Javascript para funcionalidades da pagina recuperar senha.
