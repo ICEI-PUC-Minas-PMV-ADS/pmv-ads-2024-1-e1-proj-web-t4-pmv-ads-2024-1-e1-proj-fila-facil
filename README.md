@@ -35,7 +35,7 @@ O objetivo geral desse projeto é desenvolver uma solução voltada para a melho
 
 ## Hospedagem
 
-* O site em HTML/CSS/JS é um projeto estático, logo pode ser utilizado tanto em servidores como em navegadores web. Clique [aqui](url-ainda-nao-disponivel) para acessá-lo.
+* O site em HTML/CSS/JS é um projeto estático, logo pode ser utilizado tanto em servidores como em navegadores web. Clique [aqui](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/src/index.html) para acessá-lo.
 
 ## Código-Fonte
 

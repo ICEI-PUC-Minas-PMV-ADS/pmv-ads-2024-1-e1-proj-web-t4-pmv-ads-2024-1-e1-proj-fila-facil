@@ -1,20 +1,110 @@
 import { restaurantes } from './restauranteJson.js';
 
-// Obtém o ID do restaurante da URL e renderiza o menu se o restaurante for encontrado.
-const id = getRestaurantId();
-if (id) {
-    const restauranteObj = restaurantes.find(restaurante => restaurante.idRestaurante == id);
-    if (restauranteObj) {
-        const categoriesItems = getCategoriesArray(restauranteObj)
-        renderMenu(restauranteObj);
-        renderCardapio(categoriesItems, restauranteObj)
-        document.querySelector('.restaurante-nome').textContent = restauranteObj.nomeRestaurante;
-    } else {
-        window.location.href = "../pages/restaurantes.html"
-    }
-} else {
-    window.location.href = "../pages/restaurantes.html"
+const searchForm = document.querySelector('.input-group');
+const baseUrl = `${window.location.protocol}//${window.location.host}${window.location.pathname}`;
+const searchParam = getParameter('query');
+const id = getParameter('id');
+
+handleSearchForm();
+handleRestauranteRendering();
+handleSearchNotification();
+checkForErrorSearch();
+
+/**
+ * Função para tratar o submit do formulário de pesquisa
+ */
+function handleSearchForm() {
+    searchForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const searchQuery = document.getElementById('search-input').value;
+        const url = `${baseUrl}?id=${id}&query=${encodeURIComponent(searchQuery).toLowerCase()}`; 
+        window.location.href = url;
+    });
 }
+
+/**
+ * Renderiza o cardápio se o ID do restaurante foi encontrado
+ */
+function handleRestauranteRendering() {
+    if (id) {
+        const restauranteObj = restaurantes.find(restaurante => restaurante.idRestaurante == id);
+        if (restauranteObj) {
+            const categoriesItems = getCategoriesArray(restauranteObj, searchParam);
+            renderMenu(restauranteObj, searchParam);
+            renderCardapio(categoriesItems, restauranteObj, searchParam);
+            document.querySelector('.restaurante-nome').textContent = restauranteObj.nomeRestaurante;
+        } else {
+            redirectToRestaurantesPage();
+        }
+    } else {
+        redirectToRestaurantesPage();
+    }
+}
+
+/**
+ * Função que checa se há uma pesquisa feita e exibe botão de remover pesquisa
+ */
+function handleSearchNotification() {
+    if (searchParam) {
+        const searchAviso = document.querySelector('.search-section');
+        const div = createRemoveFilterDiv();
+
+        searchAviso.append(div);
+        document.querySelector('.tab-content').style.marginTop = '1em';
+
+        div.addEventListener('click', () => {
+            window.location.href = `${baseUrl}?id=${id}`;
+        });
+    }
+}
+
+/**
+ * Exibe um modal de erro caso houver um erro na pesquisa
+ */
+function checkForErrorSearch() {
+    if (getParameter("errorSearch") == 1) {
+        showErrorModal("A pesquisa informada não retornou nenhum resultado");
+    }
+}
+
+/**
+ * Redireciona para a página de restaurantes
+ */
+function redirectToRestaurantesPage() {
+    window.location.href = "../pages/restaurantes.html";
+}
+
+/**
+ * Cria a div que contem a opção de remover filtros
+ */
+function createRemoveFilterDiv() {
+    const div = document.createElement('div');
+    div.classList.add('d-flex', 'justify-content-end', 'remove-search');
+
+    const removeIcon = document.createElement('i');
+    removeIcon.classList.add('fa-solid', 'fa-eraser', 'mt-1');
+    removeIcon.style.cursor = 'pointer';
+    removeIcon.style.color = '#b13a3a';
+
+    const span = document.createElement('span');
+    span.textContent = 'Remover filtro';
+    span.style.cursor = 'pointer';
+    span.style.color = '#b13a3a';
+
+    div.append(removeIcon, span);
+    return div;
+}
+
+/**
+ * Exibe o modal de erro com a mensagem passada
+ * @param {String} message 
+ */
+function showErrorModal(message) {
+    document.getElementById('errorMessage').textContent = message;
+    const errorModal = new bootstrap.Modal(document.getElementById('errorModal'));
+    errorModal.show();
+}
+
 
 // seção que gerencia as categorias e o carrossel
 
@@ -67,7 +157,6 @@ function updateCardSize(cardQuantity, carouselItem, cardapioSection) {
             cardapioSection.style.maxWidth = percentage;
         }
     });
-
 }
 
 const carousels = document.querySelectorAll('.carousel-inner');

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,6 +25,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../assets/css/cardapioStyle.css" />
+    <link rel="stylesheet" href="../assets/css/carrinhoStyle.css" />
+
     <title>Fila Fácil - Cardápio</title>
   </head>
   <body>
@@ -94,22 +96,60 @@
         </div>
       </section>
 
+      <!-- Modal do Bootstrap -->
+      <div
+        class="modal fade"
+        id="errorModal"
+        tabindex="-1"
+        aria-labelledby="errorModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="errorModalLabel">Erro!</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p id="errorMessage"></p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary fechar-modal"
+                data-bs-dismiss="modal"
+              >
+                Fechar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <section class="cardapio-section">
         <!-- Seção que renderiza as categorias pelo javascript -->
         <section class="produtos pt-4 pb-4"></section>
 
         <section class="pb-4 mx-auto search-section">
-          <div class="input-group">
+          <form class="input-group" method="get">
             <input
               class="form-control border-end-0 border rounded-start-pill"
               type="search"
               placeholder="Procurar por itens"
               id="search-input"
             />
-            <button class="input-group-append rounded-end-circle lupa">
+            <button
+              type="submit"
+              class="input-group-append rounded-end-circle lupa"
+            >
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
-          </div>
+          </form>
         </section>
 
         <!-- Seção que renderiza os produtos pelo javascript -->
@@ -117,6 +157,46 @@
       </section>
     </main>
 
+    <!-- Carrinho -->
+    <div class="cartTab">
+      <button
+        type="button"
+        class="btn-close"
+        aria-label="Close"
+        style="--bs-btn-close-width: 45px; --bs-btn-close-height: 45px"
+      ></button>
+
+      <!-- Ítens Carrinho -->
+      <div class="listCart" id="listCart"></div>
+
+      <!-- BOX DE PAGAMENTO -->
+      <div class="boxPagamento">
+        <div>
+          <select class="form-control" id="formaDePagamento">
+            <option>Selecionar forma de pagamento</option>
+            <option>Elo Crédito **** **** **** 5698</option>
+            <option>Elo Débito **** **** **** 5698</option>
+            <option>VR Refeição **** **** **** 2357</option>
+          </select>
+        </div>
+        <div class="total">
+          <h1>Total</h1>
+          <h2 id="valorFinal">R$00,00</h2>
+        </div>
+        <div class="btn">
+          <button
+            onClick="pagar()"
+            type="button"
+            id="pagarButton"
+            class="checkout"
+          >
+            Finalizar pedido
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rodapé -->
     <footer class="bg-light text-white py-4">
       <div class="container">
         <ul class="nav justify-content-center border-bottom pb-2 mb-2">
@@ -145,6 +225,7 @@
     </footer>
     <script src="../assets/js/renderCategoriesCardapioUtils.js"></script>
     <script src="../assets/js/renderPratosCardapioUtils.js"></script>
+    <script type="module" src="../assets/js/carrinho.js"></script>
     <script type="module" src="../assets/js/cardapioCarouselScript.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
