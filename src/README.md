@@ -148,4 +148,28 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 - Criação de página restaurante e manipulação de json.
 - Adiconado cards via javascript e suas estilização.
-- Remoção e adição na pasta img/ imagens dos cards.
+
+### [0.1.18] - 29/05/2024
+
+#### Adicionado
+
+- Implementação das funcionalidades na página de cardápio
+- Implementação das funcionalidades do carrinho na página de cardápio
+
+#### Excluído
+
+- Arquivo carrinho.html
+
+### [0.1.19] - 31/05/2024
+
+#### Adicionado
+
+- Página de redefinir senha e sua estilização.
+- Arquivo Javascript para funcionalidades da pagina recuperar senha.
+
+### [0.1.20] - 01/06/2024
+
+#### Adicionado
+
+- Alteração na importação do arquivo Json
+- Ajuste e estilização da página restaurante renderizada via Java Script.

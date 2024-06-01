@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             const descriptionElement = document.createElement('p');
             descriptionElement.className = 'card-description';
-            descriptionElement.textContent = restaurant.descricaoRestaurante; // Corrigido para acessar a descrição do restaurante
+            descriptionElement.textContent = restaurant.descricaoRestaurante; 
             cardContent.appendChild(descriptionElement);
 
             cardElement.appendChild(cardContent);
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
         nextBtn.disabled = end >= restaurantData.length;
     }
 
-    renderRestaurants(currentPage); // Render the initial set of restaurants
+    renderRestaurants(currentPage); // Render 
 
     prevBtn.addEventListener('click', () => {
         if (currentPage > 1) {
