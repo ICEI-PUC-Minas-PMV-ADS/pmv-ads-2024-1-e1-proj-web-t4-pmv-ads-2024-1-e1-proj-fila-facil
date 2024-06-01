@@ -142,14 +142,7 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 - Corrigida responsividade da página de perfil.
 - Reorganização do histórico de versões.
 
-### [0.1.18] - 28/05/2024
-
-#### Alterado
-
-- Criação de página restaurante e manipulação de json.
-- Adiconado cards via javascript e suas estilização.
-
-### [0.1.19] - 29/05/2024
+### [0.1.18] - 29/05/2024
 
 #### Adicionado
 
@@ -160,16 +153,16 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 - Arquivo carrinho.html
 
-### [0.1.20] - 31/05/2024
+### [0.1.19] - 31/05/2024
 
 #### Adicionado
 
 - Página de redefinir senha e sua estilização.
 - Arquivo Javascript para funcionalidades da pagina recuperar senha.
 
-### [0.1.21] - 01/06/2024
+### [0.1.20] - 01/06/2024
 
 #### Adicionado
 
-- Alteração na importação do arquivo Json
-- Ajuste e estilização da página restaurante renderizada via Java Script.
+- Alteração na importação do arquivo json na página Restaurates.
+- Ajuste na estilização da página Restaurantes para sua funcionalidade via Java Script.
