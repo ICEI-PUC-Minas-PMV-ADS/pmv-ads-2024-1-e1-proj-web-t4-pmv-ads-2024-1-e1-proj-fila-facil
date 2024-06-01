@@ -2,9 +2,9 @@ export const restaurantes =
     [
       {
         "idRestaurante": 1,
-        "nomeRestaurante": "Restaurante Sabor Brasileiro",
-        "imagemRestaurante": "https://placehold.co/600x400/EEE/31343C",
-        "descricaoRestaurante": "Restaurante tradicional brasileiro oferecendo pratos típicos com um toque moderno.",
+        "nomeRestaurante": "Sabor Brasileiro",
+        "imagemRestaurante": "../assets/img/saborbrasil.jpeg",
+        "descricaoRestaurante": "Restaurante tradicional brasileiro oferecendo pratos típicos.",
         "cardapio": [
           {
             "idPrato": 101,
@@ -65,7 +65,7 @@ export const restaurantes =
       {
         "idRestaurante": 2,
         "nomeRestaurante": "Cantina Italiana",
-        "imagemRestaurante": "https://placehold.co/600x400/EEE/31343C",
+        "imagemRestaurante": "../assets/img/cantinaitalia.png",
         "descricaoRestaurante": "Autêntica cozinha italiana com massas frescas e vinhos importados.",
         "cardapio": [
           {
@@ -136,8 +136,8 @@ export const restaurantes =
       {
         "idRestaurante": 3,
         "nomeRestaurante": "Sushi Zen",
-        "imagemRestaurante": "https://placehold.co/600x400/EEE/31343C",
-        "descricaoRestaurante": "Experiência de sushi e pratos japoneses com ingredientes frescos e de alta qualidade.",
+        "imagemRestaurante": "../assets/img/sushizen.png",
+        "descricaoRestaurante": "Experiência de pratos japoneses com ingredientes de alta qualidade.",
         "cardapio": [
           {
             "idPrato": 301,
@@ -216,8 +216,8 @@ export const restaurantes =
       {
         "idRestaurante": 4,
         "nomeRestaurante": "Burger House",
-        "imagemRestaurante": "https://placehold.co/600x400/EEE/31343C",
-        "descricaoRestaurante": "Hamburgueria gourmet com hambúrgueres artesanais e ingredientes frescos.",
+        "imagemRestaurante": "../assets/img/burgerhouse.jpeg",
+        "descricaoRestaurante": "Hambúrgueres artesanais e batatas crocantes.",
         "cardapio": [
           {
             "idPrato": 401,
@@ -305,8 +305,8 @@ export const restaurantes =
       {
         "idRestaurante": 5,
         "nomeRestaurante": "Pizzaria Bella Napoli",
-        "imagemRestaurante": "https://placehold.co/600x400/EEE/31343C",
-        "descricaoRestaurante": "Pizzas artesanais italianas assadas em forno a lenha, feitas com ingredientes frescos.",
+        "imagemRestaurante": "../assets/img/bela.png",
+        "descricaoRestaurante": "Pizzas artesanais italianas assadas em forno a lenha.",
         "cardapio": [
           {
             "idPrato": 501,
@@ -405,7 +405,7 @@ export const restaurantes =
       {
         "idRestaurante": 6,
         "nomeRestaurante": "Taco Fiesta",
-        "imagemRestaurante": "https://placehold.co/600x400/EEE/31343C",
+        "imagemRestaurante": "../assets/img/taco.png",
         "descricaoRestaurante": "Autêntica comida mexicana com tacos, burritos e margaritas.",
         "cardapio": [
           {

@@ -159,3 +159,10 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 - Página de redefinir senha e sua estilização.
 - Arquivo Javascript para funcionalidades da pagina recuperar senha.
+
+### [0.1.20] - 01/06/2024
+
+#### Adicionado
+
+- Alteração na importação do arquivo json na página Restaurates.
+- Ajuste na estilização da página Restaurantes para sua funcionalidade via Java Script.
