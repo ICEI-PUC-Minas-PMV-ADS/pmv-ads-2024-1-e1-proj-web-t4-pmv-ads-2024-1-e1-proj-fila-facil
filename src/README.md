@@ -178,6 +178,20 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 - Classes utilizadas nas páginas para que não haja conflito de estilização.
 - Estilização de inputs nas páginas.
 
-### [0.1.22] - xx/xx/xxxx
+### [0.1.22] - 02/06/2024
 
-#### Adicionado / Alterado / Removido
+#### Adicionado
+
+- Arquivo JavaScript para o carrossel da página de pedidos.
+- Funções para renderizar a página de pedidos com base nos itens do localStorage
+
+#### Atualizado
+
+- Adição da chave contendo o tempo de preparo de cada prato
+- Ajuste no localStorage dos pedidos finalizados no carrinho.js
+
+### [0.1.23] - DD/MM/AAAA
+
+#### Adicionado/Atualizado/Removido
+
+- 

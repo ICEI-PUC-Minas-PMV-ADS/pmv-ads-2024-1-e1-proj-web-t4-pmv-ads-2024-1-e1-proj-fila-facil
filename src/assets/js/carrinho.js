@@ -276,16 +276,29 @@ if (localStorage.getItem("pedidos") === null) {
 function pedidoFeito() {
   var cards = document.querySelectorAll("#listCart .card");
   var itensDoPedido = [];
+  const restauranteId = getParameter('id');
+  const restauranteObj = restaurantes.find(restaurante => restaurante.idRestaurante == restauranteId)
+  let tempoPreparo = 0;
   cards.forEach((card) => {
     var idComprado = card.getAttribute("data-id-prato");
     var quantidadeComprada = card.querySelector(".quantidade").textContent;
+    const pratoObj = restauranteObj.cardapio.find(prato => prato.idPrato == idComprado)
     var itemComprado = {
-      idComprado: idComprado,
+      "nomePrato": pratoObj.nomePrato,
       quantidadeComprada: quantidadeComprada,
     };
+    if (pratoObj.minutosPreparo > tempoPreparo) tempoPreparo = pratoObj.minutosPreparo;
     itensDoPedido.push(itemComprado);
   });
-  var pedido = { pedido: numeroPedido, itens: itensDoPedido };
+  var pedido = { 
+    pedido: numeroPedido,
+    "finalizado": false,
+    "precoTotal": valorFinal.textContent,
+    "avaliacao": 0,
+    "imagemRestaurante": restauranteObj.imagemRestaurante,
+    "horarioPedido": new Date(),
+    "tempoPreparo": tempoPreparo,
+    itens: itensDoPedido };
   pedidos.push(pedido);
   console.log(pedidos);
   numeroPedido++;
@@ -307,4 +320,10 @@ function alteraQuantidadeEstoque() {
     // Salva a nova quantidade em estoque no localStorage
     localStorage.setItem("restaurantes", JSON.stringify(restaurantes));
   });
+}
+
+function getParameter(parameter) {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  return urlParams.get(parameter);
 }

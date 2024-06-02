@@ -13,6 +13,7 @@ export const restaurantes =
             "descricaoPrato": "Um prato clássico brasileiro com feijão preto, carne suína e acompanhamentos.",
             "quantidadeEstoque": 10,
             "precoPrato": 29.90,
+            "minutosPreparo": 60,
             "categoriaPrato": "La carte"
           },
           {
@@ -22,6 +23,7 @@ export const restaurantes =
             "descricaoPrato": "Peixe cozido em leite de coco, azeite de dendê e pimentões, servido com arroz.",
             "quantidadeEstoque": 8,
             "precoPrato": 34.50,
+            "minutosPreparo": 60,
             "categoriaPrato": "La carte"
           },
           {
@@ -31,6 +33,7 @@ export const restaurantes =
             "descricaoPrato": "Salgadinho brasileiro recheado com frango desfiado e temperado.",
             "quantidadeEstoque": 50,
             "precoPrato": 5.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Petisco"
           },
           {
@@ -40,6 +43,7 @@ export const restaurantes =
             "descricaoPrato": "Picanha suculenta grelhada na chapa, servida com farofa e vinagrete.",
             "quantidadeEstoque": 6,
             "precoPrato": 45.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "La carte"
           },
           {
@@ -49,6 +53,7 @@ export const restaurantes =
             "descricaoPrato": "Doce brasileiro feito com leite condensado, chocolate e granulado.",
             "quantidadeEstoque": 30,
             "precoPrato": 2.50,
+            "minutosPreparo": 60,
             "categoriaPrato": "Sobremesa"
           },
           {
@@ -58,6 +63,7 @@ export const restaurantes =
             "descricaoPrato": "Bebida tradicional brasileira feita com cachaça, limão e açúcar.",
             "quantidadeEstoque": 20,
             "precoPrato": 15.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Bebida"
           }
         ]
@@ -75,6 +81,7 @@ export const restaurantes =
             "descricaoPrato": "Tradicional prato italiano feito com ovos, queijo, pancetta e pimenta preta.",
             "quantidadeEstoque": 15,
             "precoPrato": 22.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "La carte"
           },
           {
@@ -84,6 +91,7 @@ export const restaurantes =
             "descricaoPrato": "Lasanha clássica com molho bolognese, queijo e massa fresca.",
             "quantidadeEstoque": 12,
             "precoPrato": 26.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "La carte"
           },
           {
@@ -93,6 +101,7 @@ export const restaurantes =
             "descricaoPrato": "Sobremesa italiana feita com mascarpone, café e cacau.",
             "quantidadeEstoque": 20,
             "precoPrato": 12.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Sobremesa"
           },
           {
@@ -102,6 +111,7 @@ export const restaurantes =
             "descricaoPrato": "Pizza clássica italiana com molho de tomate, mozzarella e manjericão.",
             "quantidadeEstoque": 10,
             "precoPrato": 30.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Pizzas"
           },
           {
@@ -111,6 +121,7 @@ export const restaurantes =
             "descricaoPrato": "Risoto cremoso com cogumelos frescos e queijo parmesão.",
             "quantidadeEstoque": 10,
             "precoPrato": 24.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "La carte"
           },
           {
@@ -120,6 +131,7 @@ export const restaurantes =
             "descricaoPrato": "Sobremesa italiana suave feita com creme de leite, açúcar e baunilha.",
             "quantidadeEstoque": 15,
             "precoPrato": 10.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Sobremesa"
           },
           {
@@ -129,6 +141,7 @@ export const restaurantes =
             "descricaoPrato": "Vinho tinto italiano da região da Toscana, perfeito para acompanhar massas.",
             "quantidadeEstoque": 25,
             "precoPrato": 45.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Bebida"
           }
         ]
@@ -146,6 +159,7 @@ export const restaurantes =
             "descricaoPrato": "Fatias finas de salmão fresco servidas com molho de soja e wasabi.",
             "quantidadeEstoque": 20,
             "precoPrato": 28.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "La carte"
           },
           {
@@ -155,6 +169,7 @@ export const restaurantes =
             "descricaoPrato": "Cone de alga nori recheado com arroz e atum fresco temperado.",
             "quantidadeEstoque": 25,
             "precoPrato": 18.50,
+            "minutosPreparo": 60,
             "categoriaPrato": "La carte"
           },
           {
@@ -164,6 +179,7 @@ export const restaurantes =
             "descricaoPrato": "Rolo de sushi invertido com abacate, kani e pepino, coberto com gergelim.",
             "quantidadeEstoque": 30,
             "precoPrato": 22.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "La carte"
           },
           {
@@ -173,6 +189,7 @@ export const restaurantes =
             "descricaoPrato": "Rolo de sushi empanado e frito, recheado com salmão e cream cheese.",
             "quantidadeEstoque": 15,
             "precoPrato": 20.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "La carte"
           },
           {
@@ -182,6 +199,7 @@ export const restaurantes =
             "descricaoPrato": "Sopa tradicional japonesa feita com pasta de miso, tofu e cebolinha.",
             "quantidadeEstoque": 25,
             "precoPrato": 12.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Entrada"
           },
           {
@@ -191,6 +209,7 @@ export const restaurantes =
             "descricaoPrato": "Legumes e frutos do mar fritos em uma massa leve e crocante.",
             "quantidadeEstoque": 20,
             "precoPrato": 24.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "La carte"
           },
           {
@@ -200,6 +219,7 @@ export const restaurantes =
             "descricaoPrato": "Bebida alcoólica tradicional japonesa feita a partir da fermentação do arroz.",
             "quantidadeEstoque": 30,
             "precoPrato": 18.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Bebida"
           },
           {
@@ -209,6 +229,7 @@ export const restaurantes =
             "descricaoPrato": "Uma seleção de peixe cru, arroz temperado e algas marinhas, habilmente enrolados e cortados em pedaços pequenos, servidos com wasabi e molho de soja.",
             "quantidadeEstoque": 20,
             "precoPrato": 24.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "La carte"
           }
         ]
@@ -226,6 +247,7 @@ export const restaurantes =
             "descricaoPrato": "Hambúrguer clássico com carne bovina, queijo cheddar, alface e tomate.",
             "quantidadeEstoque": 20,
             "precoPrato": 19.90,
+            "minutosPreparo": 60,
             "categoriaPrato": "Hambúrguer"
           },
           {
@@ -235,6 +257,7 @@ export const restaurantes =
             "descricaoPrato": "Hambúrguer com bacon crocante, molho barbecue, queijo e cebola caramelizada.",
             "quantidadeEstoque": 15,
             "precoPrato": 24.90,
+            "minutosPreparo": 60,
             "categoriaPrato": "Hambúrguer"
           },
           {
@@ -244,6 +267,7 @@ export const restaurantes =
             "descricaoPrato": "Hambúrguer vegetariano feito com grão-de-bico, quinoa e especiarias.",
             "quantidadeEstoque": 10,
             "precoPrato": 22.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Hambúrguer"
           },
           {
@@ -253,6 +277,7 @@ export const restaurantes =
             "descricaoPrato": "Hambúrguer de frango grelhado com queijo suíço, alface e maionese.",
             "quantidadeEstoque": 12,
             "precoPrato": 20.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Hambúrguer"
           },
           {
@@ -262,6 +287,7 @@ export const restaurantes =
             "descricaoPrato": "Anéis de cebola empanados e fritos, crocantes por fora e macios por dentro.",
             "quantidadeEstoque": 25,
             "precoPrato": 8.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Acompanhamento"
           },
           {
@@ -271,6 +297,7 @@ export const restaurantes =
             "descricaoPrato": "Milkshake cremoso feito com sorvete de chocolate e chantilly.",
             "quantidadeEstoque": 18,
             "precoPrato": 14.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Bebida"
           },
           {
@@ -280,6 +307,7 @@ export const restaurantes =
             "descricaoPrato": "Batatas fritas crocantes, servidas com ketchup e maionese.",
             "quantidadeEstoque": 30,
             "precoPrato": 10.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Acompanhamento"
           },
           {
@@ -289,6 +317,7 @@ export const restaurantes =
             "descricaoPrato": "Torta de queijo cremosa com calda de frutas vermelhas.",
             "quantidadeEstoque": 12,
             "precoPrato": 15.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Sobremesa"
           },
           {
@@ -298,6 +327,7 @@ export const restaurantes =
             "descricaoPrato": "Bebida refrescante feita com suco de limão fresco, água e açúcar.",
             "quantidadeEstoque": 20,
             "precoPrato": 7.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Bebida"
           }
         ]
@@ -315,6 +345,7 @@ export const restaurantes =
             "descricaoPrato": "Pizza clássica com molho de tomate, mozzarella de búfala e manjericão.",
             "quantidadeEstoque": 15,
             "precoPrato": 35.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Pizzas"
           },
           {
@@ -324,6 +355,7 @@ export const restaurantes =
             "descricaoPrato": "Pizza com mistura de quatro queijos: mozzarella, gorgonzola, parmesão e provolone.",
             "quantidadeEstoque": 12,
             "precoPrato": 38.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Pizzas"
           },
           {
@@ -333,6 +365,7 @@ export const restaurantes =
             "descricaoPrato": "Pizza fechada recheada com presunto, queijo, tomate e orégano.",
             "quantidadeEstoque": 10,
             "precoPrato": 32.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Pizzas"
           },
           {
@@ -342,6 +375,7 @@ export const restaurantes =
             "descricaoPrato": "Pizza com molho de tomate, mozzarella e fatias de pepperoni picante.",
             "quantidadeEstoque": 18,
             "precoPrato": 36.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Pizzas"
           },
           {
@@ -351,6 +385,7 @@ export const restaurantes =
             "descricaoPrato": "Pizza com presunto, ovo, cebola, azeitona e mozzarella.",
             "quantidadeEstoque": 14,
             "precoPrato": 37.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Pizzas"
           },
           {
@@ -360,6 +395,7 @@ export const restaurantes =
             "descricaoPrato": "Pizza com calabresa, cebola, azeitona e orégano.",
             "quantidadeEstoque": 20,
             "precoPrato": 35.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Pizzas"
           },
           {
@@ -369,9 +405,8 @@ export const restaurantes =
             "descricaoPrato": "Pizza com frango desfiado, catupiry, milho e orégano.",
             "quantidadeEstoque": 16,
             "precoPrato": 34.00,
-            "categoriaPrato":
-  
-    "Pizzas"
+            "minutosPreparo": 60,
+            "categoriaPrato": "Pizzas"
           },
           {
             "idPrato": 508,
@@ -380,6 +415,7 @@ export const restaurantes =
             "descricaoPrato": "Pizza com legumes grelhados, mozzarella e manjericão.",
             "quantidadeEstoque": 15,
             "precoPrato": 33.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Pizzas"
           },
           {
@@ -389,6 +425,7 @@ export const restaurantes =
             "descricaoPrato": "Pizza doce coberta com Nutella e morangos frescos.",
             "quantidadeEstoque": 8,
             "precoPrato": 28.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Sobremesa"
           },
           {
@@ -398,6 +435,7 @@ export const restaurantes =
             "descricaoPrato": "Cerveja artesanal produzida localmente, perfeita para acompanhar uma pizza.",
             "quantidadeEstoque": 30,
             "precoPrato": 15.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Bebida"
           }
         ]
@@ -415,6 +453,7 @@ export const restaurantes =
             "descricaoPrato": "Taco recheado com carne bovina temperada, alface, queijo e salsa.",
             "quantidadeEstoque": 20,
             "precoPrato": 12.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "La carte"
           },
           {
@@ -424,6 +463,7 @@ export const restaurantes =
             "descricaoPrato": "Burrito com frango grelhado, feijão preto, arroz, queijo e guacamole.",
             "quantidadeEstoque": 15,
             "precoPrato": 18.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "La carte"
           },
           {
@@ -433,6 +473,7 @@ export const restaurantes =
             "descricaoPrato": "Tortilhas crocantes cobertas com queijo derretido e jalapeños.",
             "quantidadeEstoque": 25,
             "precoPrato": 10.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Petisco"
           },
           {
@@ -442,6 +483,7 @@ export const restaurantes =
             "descricaoPrato": "Quesadilla recheada com queijo derretido e acompanhada de salsa.",
             "quantidadeEstoque": 12,
             "precoPrato": 14.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "La carte"
           },
           {
@@ -451,6 +493,7 @@ export const restaurantes =
             "descricaoPrato": "Pasta de abacate temperada com limão, cebola e coentro.",
             "quantidadeEstoque": 20,
             "precoPrato": 8.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Petisco"
           },
           {
@@ -460,6 +503,7 @@ export const restaurantes =
             "descricaoPrato": "Taco recheado com peixe grelhado, repolho, molho de iogurte e limão.",
             "quantidadeEstoque": 18,
             "precoPrato": 15.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "La carte"
           },
           {
@@ -469,6 +513,7 @@ export const restaurantes =
             "descricaoPrato": "Massa frita coberta com açúcar e canela, servida com doce de leite.",
             "quantidadeEstoque": 30,
             "precoPrato": 10.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Sobremesa"
           },
           {
@@ -478,6 +523,7 @@ export const restaurantes =
             "descricaoPrato": "Bebida refrescante feita com tequila, suco de limão e licor de laranja.",
             "quantidadeEstoque": 25,
             "precoPrato": 20.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "Bebida"
           },
           {
@@ -487,6 +533,7 @@ export const restaurantes =
             "descricaoPrato": "Tostada crocante com feijão preto refrito, alface, queijo e salsa.",
             "quantidadeEstoque": 15,
             "precoPrato": 12.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "La carte"
           },
           {
@@ -496,6 +543,7 @@ export const restaurantes =
             "descricaoPrato": "Carne bovina grelhada com pimentões e cebola, servida com tortilhas.",
             "quantidadeEstoque": 10,
             "precoPrato": 22.00,
+            "minutosPreparo": 60,
             "categoriaPrato": "La carte"
           }
         ]
