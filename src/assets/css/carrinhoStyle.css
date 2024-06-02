@@ -32,7 +32,7 @@ body.activeTabCart .carousel-control-next {
   }
 }
 
-.btn-close {
+.close-cart {
   font-size: 20px;
   padding-top: 10px;
   grid-row: 1 / 2;
@@ -70,7 +70,7 @@ body.activeTabCart .carousel-control-next {
   grid-column-end: 2;
 }
 
-#card-body {
+#body-cart-item {
   padding: 0%;
   align-self: center;
   grid-column-start: 2;
@@ -170,7 +170,7 @@ p.quantidade {
   font-size: 24px;
 }
 
-.btn {
+.pay-button {
   padding: 0;
 }
 

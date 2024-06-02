@@ -20,7 +20,7 @@ if (localStorage.getItem("restaurantes") === null) {
 
 // Abre e fecha a lateral do carrinho
 const iconCart = document.querySelector(".icon-cart");
-const closeBtn = document.querySelector(".btn-close");
+const closeBtn = document.querySelector(".close-cart");
 const body = document.querySelector(".body");
 iconCart.addEventListener("click", () => {
   document.body.classList.toggle("activeTabCart");
@@ -83,14 +83,14 @@ function criarCardCarrinho(idPrato) {
 // Código HTML do card no carrinho
 function desenhaCard(prato, idPrato) {
   var div = document.createElement("div");
-  div.innerHTML = `<div class="card mb-6" id="card-item-carrinho" style="max-width: 370px" id="card-item-carrinho" data-id-prato="${idPrato}">
+  div.innerHTML = `<div class="card card-div mb-6" id="card-item-carrinho" style="max-width: 370px" id="card-item-carrinho" data-id-prato="${idPrato}">
   <div class="col-md-3">
   <img src="${
     prato.imagemPrato
   }"  id="imagemPrato" style="max-width: 70px" alt="${prato.nomePrato}">
   </div>
-  <div class="col-md-3" id="card-body">
-    <p class="card-title">${prato.nomePrato}</p>
+  <div class="col-md-3" id="body-cart-item">
+    <p class="card-title food-name">${prato.nomePrato}</p>
     <p class="card-price">R$ ${prato.precoPrato
       .toFixed(2)
       .replace(".", ",")}</p>

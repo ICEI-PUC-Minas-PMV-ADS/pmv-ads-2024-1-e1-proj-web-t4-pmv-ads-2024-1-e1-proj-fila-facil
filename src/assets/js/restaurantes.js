@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
         restaurantsToDisplay.forEach(restaurant => {
             const cardElement = document.createElement('div');
-            cardElement.className = 'card';
+            cardElement.classList.add('card', 'card-div');
 
             const imgElement = document.createElement('img');
             imgElement.src = restaurant.imagemRestaurante;

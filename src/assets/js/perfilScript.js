@@ -18,11 +18,20 @@ const cardCVVInput = document.getElementById("card-cvv");
 const createCreditCardButton = document.getElementById("create-credit-card");
 const creditCardsElement = document.getElementById("credit-cards");
 
+/**
+ * Recupera o usuário atual a partir do armazenamento local utilizando o email cadastrado.
+ * @returns {Object} - O usuário atual.
+ */
 function getUser() {
   const email = localStorage.getItem("lastEmail");
   return JSON.parse(localStorage.getItem(email));
 }
 
+/**
+ * Divide um nome completo em nome e sobrenome.
+ * @param {string} fullName - O nome completo.
+ * @returns {Object} - O nome e sobrenome.
+ */
 function splitName(fullName) {
   const names = fullName.split(" ");
   const firstName = names.shift();
@@ -30,6 +39,11 @@ function splitName(fullName) {
   return { firstName, lastName };
 }
 
+/**
+ * Formata um número de telefone no formato (XX) XXXXX-XXXX.
+ * @param {string} phoneNumber - O número de telefone a ser formatado.
+ * @returns {string} - O número de telefone formatado.
+ */
 function formatPhoneNumber(phoneNumber) {
   var match = phoneNumber.match(/^(\d{2})(\d{5})(\d{4})$/);
   if (match) {
@@ -38,6 +52,11 @@ function formatPhoneNumber(phoneNumber) {
   return phoneNumber;
 }
 
+/**
+ * Define os dados do usuário nos campos de entrada.
+ * @param {Object} user - O usuário atual.
+ * @returns {void}
+ */
 function setUserData(user) {
   if (!user) {
     alert("Usuário não encontrado, cadastre-se por favor!");
@@ -50,6 +69,13 @@ function setUserData(user) {
   userPhoneInput.value = formatPhoneNumber(user.phone);
 }
 
+/**
+ * Cria um elemento HTML.
+ * @param {string} tag - A tag do elemento.
+ * @param {string} className - A classe do elemento.
+ * @param {string} src - O source da elemento.
+ * @returns {HTMLElement} - O elemento criado.
+ */
 function createElement(tag, className, src) {
   var element = document.createElement(tag);
   element.className = className;
@@ -59,10 +85,20 @@ function createElement(tag, className, src) {
   return element;
 }
 
+/**
+ * Substitui um elemento antigo por um novo.
+ * @param {HTMLElement} oldElement - O elemento antigo.
+ * @param {HTMLElement} newElement - O novo elemento.
+ * @returns {void}
+ */
 function replaceElement(oldElement, newElement) {
   oldElement.parentNode.replaceChild(newElement, oldElement);
 }
 
+/**
+ * Carrega a foto do usuário a partir do armazenamento local.
+ * @returns {void}
+ */
 function loadUserPhoto() {
   var storageProfilePhoto = localStorage.getItem("profileImage");
   if (!storageProfilePhoto) return;
@@ -73,6 +109,10 @@ function loadUserPhoto() {
   replaceElement(iElement, img);
 }
 
+/**
+ * Carrega os dados do usuário.
+ * @returns {void}
+ */
 function loadUserData() {
   var user = getUser();
 
@@ -85,12 +125,22 @@ function loadUserData() {
   setUserData(user);
 }
 
+/**
+ * Define a foto de perfil do usuário.
+ * @param {FileReader} reader - O leitor de arquivo.
+ * @returns {void}
+ */
 function setProfilePhoto(reader) {
   var iconElement = document.querySelector(".fa-user");
   var img = createElement("img", "profile-photo", reader.result);
   replaceElement(iconElement, img);
 }
 
+/**
+ * Verifica se a senha antiga digitada é válida.
+ * @param {string} oldPassword - A senha antiga.
+ * @returns {boolean} - A autenticidade da senha antiga.
+ */
 function verifyOldPassword(oldPassword) {
   var user = getUser();
 
@@ -101,6 +151,12 @@ function verifyOldPassword(oldPassword) {
   return true;
 }
 
+/**
+ * Verifica se a nova senha é diferente da antiga.
+ * @param {string} oldPassword - A senha antiga.
+ * @param {string} newPassword - A nova senha.
+ * @returns {boolean} - A diferença entre as senhas.
+ */
 function isNewPasswordDifferent(oldPassword, newPassword) {
   if (oldPassword === newPassword) {
     alert("A nova senha não pode ser igual à antiga!");
@@ -109,6 +165,13 @@ function isNewPasswordDifferent(oldPassword, newPassword) {
   return true;
 }
 
+/**
+ * Atualiza a classe de um elemento.
+ * @param {HTMLElement} element - O elemento a ser atualizado.
+ * @param {boolean} compare - A comparação a ser feita.
+ * @param {string} className - A classe a ser adicionada ou removida.
+ * @returns {void}
+ */
 function updateClass(element, compare, className) {
   if (compare) {
     element.classList.add(className);
@@ -117,6 +180,10 @@ function updateClass(element, compare, className) {
   }
 }
 
+/**
+ * Compara as senhas digitadas pelo usuário nos inputs de nova senha e confirmação estão iguais.
+ * @returns {void}
+ */
 function comparePasswords() {
   const passwordsMatch =
     userNewPasswordInput.value === userConfirmPasswordInput.value;
@@ -131,12 +198,22 @@ function comparePasswords() {
 userNewPasswordInput.addEventListener("input", comparePasswords);
 userConfirmPasswordInput.addEventListener("input", comparePasswords);
 
+/**
+ * Atualiza a senha do usuário no armazenamento local.
+ * @param {string} email - O email do usuário.
+ * @param {string} newPassword - A nova senha do usuário.
+ * @returns {void}
+ */
 function updateUserPassword(email, newPassword) {
   var user = getUser();
   user.password = newPassword;
   localStorage.setItem(email, JSON.stringify(user));
 }
 
+/**
+ * Limpa os inputs de senha.
+ * @returns {void}
+ */
 function clearPasswordInputs() {
   const passwords = [
     userPasswordInput,
@@ -154,6 +231,10 @@ function clearPasswordInputs() {
   });
 }
 
+/**
+ * Adiciona um evento de clique ao botão de confirmação de alterações.
+ * @returns {void}
+ */
 confirmChangesButton.addEventListener("click", function () {
   var email = userEmailInput.value;
   var oldPassword = userPasswordInput.value;
@@ -170,6 +251,10 @@ confirmChangesButton.addEventListener("click", function () {
   alert("Senha alterada com sucesso!");
 });
 
+/**
+ * Adiciona um evento de mudança ao input de foto.
+ * @returns {void}
+ */
 photoInput.addEventListener("change", function (e) {
   var file = e.target.files[0];
   if (!file) return;
@@ -182,6 +267,10 @@ photoInput.addEventListener("change", function (e) {
   reader.readAsDataURL(file);
 });
 
+/**
+ * Adiciona um evento de clique ao botão de remoção de foto.
+ * @returns {void}
+ */
 removePhotoButton.addEventListener("click", function () {
   var imgElement = document.getElementsByClassName("profile-photo")[0];
   localStorage.removeItem("profileImage");
@@ -193,10 +282,19 @@ removePhotoButton.addEventListener("click", function () {
   replaceElement(imgElement, icon);
 });
 
+/**
+ * Adiciona um evento de input ao campo de telefone.
+ * @returns {void}
+ */
 userPhoneInput.addEventListener("input", function () {
   this.value = formatPhoneNumber(this.value);
 });
 
+/**
+ * Verifica se um cartão de crédito já está cadastrado.
+ * @param {string} newCardNumber - O número do novo cartão de crédito.
+ * @returns {boolean} - A existência do cartão de crédito.
+ */
 function cardAlreadyExists(newCardNumber) {
   var user = getUser();
 
@@ -210,6 +308,12 @@ function cardAlreadyExists(newCardNumber) {
   return false;
 }
 
+/**
+ * Valida os dados de um cartão de crédito.
+ * @param {Object} creditCard - Dados do cartão de crédito.
+ * @returns {void}
+ * @throws {Error}
+ */
 function validateCreditCard(creditCard) {
   if (cardAlreadyExists(creditCard.number)) {
     throw new Error("Cartão de crédito já cadastrado!");
@@ -225,6 +329,11 @@ function validateCreditCard(creditCard) {
   }
 }
 
+/**
+ * Cria um cartão de crédito e o adiciona ao usuário.
+ * @returns {void}
+ * @throws {Alert}
+ */
 function createCreditCard() {
   const creditCard = {
     number: cardNumberInput.value,
@@ -249,10 +358,19 @@ function createCreditCard() {
   location.reload();
 }
 
+/**
+ * Adiciona um evento de clique ao botão de criação de cartão de crédito.
+ * @returns {void}
+ */
 createCreditCardButton.addEventListener("click", function () {
   createCreditCard();
 });
 
+/**
+ * Deleta um cartão de crédito do usuário.
+ * @param {string} cardNumber - O número do cartão de crédito.
+ * @returns {void}
+ */
 function deleteCreditCard(cardNumber) {
   const user = getUser();
   user.creditCards = user.creditCards.filter(
@@ -261,6 +379,11 @@ function deleteCreditCard(cardNumber) {
   localStorage.setItem(user.email, JSON.stringify(user));
 }
 
+/**
+ * Cria um botão para deletar um cartão de crédito.
+ * @param {Object} creditCard - Dados do cartão de crédito.
+ * @returns {HTMLElement} - O elemento do botão.
+ */
 function createDeleteButtonElement(creditCard) {
   var button = createElement("button", "btn btn-sm btn-outline-danger");
   button.type = "button";
@@ -273,26 +396,53 @@ function createDeleteButtonElement(creditCard) {
   return button;
 }
 
+/**
+ * Cria um elemento span.
+ * @param {string} className - Nome da classe do elemento.
+ * @param {string} innerHTML - Conteúdo interno do elemento.
+ * @returns {HTMLElement} - O elemento span.
+ */
 function createSpan(className, innerHTML) {
   const span = createElement("span", className);
   span.innerHTML = innerHTML;
   return span;
 }
 
+/**
+ * Cria uma coluna div.
+ * @param {string} className - Nome da classe do elemento.
+ * @param {HTMLElement} childElement - Elemento filho da coluna.
+ * @returns {HTMLElement} - A coluna div.
+ */
 function createColumn(className, childElement) {
   const column = createElement("div", className);
   column.appendChild(childElement);
   return column;
 }
 
+/**
+ * Obtém os últimos quatro dígitos de um número de cartão.
+ * @param {string} cardNumber - Número do cartão de crédito.
+ * @returns {string} - Os últimos quatro dígitos do número do cartão.
+ */
 function getLastFourDigits(cardNumber) {
   return cardNumber.slice(-4);
 }
 
+/**
+ * Inverte uma data.
+ * @param {string} date - A data a ser invertida.
+ * @returns {string} - A data invertida.
+ */
 function invertDate(date) {
   return date.split("-").reverse().join("-");
 }
 
+/**
+ * Cria um elemento de cartão de crédito.
+ * @param {Object} creditCards - Objeto dos cartões de crédito.
+ * @returns {HTMLElement} - O elemento de cartão de crédito.
+ */
 function createCreditCardComponent(creditCards) {
   creditCards.forEach(function (creditCard) {
     const li = createElement(
@@ -336,12 +486,19 @@ function createCreditCardComponent(creditCards) {
   });
 }
 
+/**
+ * Cria um elemento para o caso de não haver cartões de crédito.
+ * @returns {HTMLElement} - O elemento de "sem cartões de crédito".
+ */
 function createNoCreditCardElement() {
   const noCreditCardsElement = createElement("p", "text-danger");
   noCreditCardsElement.innerHTML = "Ops, você não possui cartões cadastrados.";
   creditCardsElement.appendChild(noCreditCardsElement);
 }
 
+/**
+ * Carrega os cartões de crédito do usuário.
+ */
 function loadCreditCards() {
   const user = getUser();
   const creditCards = user.creditCards;

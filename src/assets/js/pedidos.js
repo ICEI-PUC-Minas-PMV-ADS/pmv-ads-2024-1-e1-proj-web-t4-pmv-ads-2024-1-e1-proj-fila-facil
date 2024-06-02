@@ -34,7 +34,7 @@ function createOrderItem(element, index, isFinalizado) {
   divCarouselItem.className = `carousel-item${index === 0 ? ' active' : ''}`;
 
   const divCard = document.createElement('div');
-  divCard.className = 'card h-100';
+  divCard.className = 'card card-div h-100';
 
   const imgRestaurant = document.createElement('img');
   imgRestaurant.alt = 'Logo do restaurante';
@@ -110,7 +110,7 @@ function createOrderItem(element, index, isFinalizado) {
       diffInMinutes = Math.floor(timeDifference / MINUTES_MS) + 1;
     } else {
       updateOrderStatus(element.pedido);
-      alert(`Pedido n° ${element.pedido} finalizado!`)
+      alert(`Pedido n° ${element.pedido} finalizado!`);
       location.reload();
     }
 
@@ -146,11 +146,17 @@ function renderOrders() {
   if (!orderJson) {
     return;
   }
-  orderJson.forEach((element, index) => {
+
+  let finalizadoIndex = 0;
+  let naoFinalizadoIndex = 0;
+
+  orderJson.forEach((element) => {
     if (element.finalizado) {
-      carouselClosed.appendChild(createOrderItem(element, index, true));
+      carouselClosed.appendChild(createOrderItem(element, finalizadoIndex, true));
+      finalizadoIndex++;
     } else {
-      carouselOpen.appendChild(createOrderItem(element, index, false));
+      carouselOpen.appendChild(createOrderItem(element, naoFinalizadoIndex, false));
+      naoFinalizadoIndex++;
     }
   });
 }
@@ -160,34 +166,34 @@ function renderOrders() {
  * @param {number} orderId - id do pedido
  */
 function updateOrderStatus(orderId) {
-  orderJson[orderId - 1].finalizado = true
+  orderJson[orderId - 1].finalizado = true;
   localStorage.setItem('pedidos', JSON.stringify(orderJson));
 }
 
 function alertOrderFinished(pedidoId) {
-  alert(`Pedido ${pedidoId} finalizado! `)
+  alert(`Pedido ${pedidoId} finalizado!`);
 }
 
 // chama a função pra renderizar os cards
 renderOrders();
 
 // Atualiza os minutos restantes e exibe a mensagem de finalizado
-const minutesSpans = document.querySelectorAll('.minutos')
+const minutesSpans = document.querySelectorAll('.minutos');
 minutesSpans.forEach(span => {
   let minutesLeft = span.textContent;
-  
+
   function updateMinutes() {
     minutesLeft--;
-    if(minutesLeft > 0) {
+    if (minutesLeft > 0) {
       span.textContent = minutesLeft;
     } else {
-      const orderStatus = span.closest('.order-container')
+      const orderStatus = span.closest('.order-container');
       orderStatus.innerHTML = '<span class="status_pedido">PEDIDO FINALIZADO!</span>';
       const orderId = span.dataset.pedidoId;
       alertOrderFinished(orderId);
       updateOrderStatus(orderId);
     }
   }
-  
+
   setInterval(updateMinutes, MINUTES_MS);
 });
