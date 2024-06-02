@@ -15,6 +15,10 @@ body {
   height: calc(100% - 50px);
 }
 
+main {
+  min-height: 100%;
+}
+
 :root {
   --branco: #f2f2f2;
   --cinza: #e4e4e4;
@@ -59,19 +63,19 @@ transition: ease-in-out 0.2s;
 
 .banner-section {
   background-color: rgba(215, 79, 79, 0.1);
-  /* background-image: url("../img/pedidos/pedidos-banner.jpg"); */
   height: 200px;
+  margin-top: 15px;
 }
 
 .banner-text {
-  background-color: #B13A3A;
+  background-color: var(--vermelho-escuro);
   border-radius: 10px;
   max-width: 605px;
   height: 120px;
 }
 
 .banner-text > p {
-  color: #F8F8F8;
+  color: var(--branco);
   font-family: Arvo;
   font-weight: 700;
   font-size: 26px;
@@ -87,11 +91,12 @@ footer > .container > .nav > .nav-item > .nav-link:hover {
 }
 
 .cardapio-section {
+  min-height: 75vh;
   background-color: rgba(215, 79, 79, 0.2);
 }
 
 .filtros-cardapio > li > .active{
-  background-color: #B13A3A!important;
+  background-color: var(--vermelho-escuro)!important;
 }
 
 .filtros-cardapio > li > button:hover {
@@ -124,7 +129,7 @@ footer > .container > .nav > .nav-item > .nav-link:hover {
 }
 
 .lupa {
-  background-color: #B13A3A;
+  background-color: var(--vermelho-escuro);
   width: 40px;
   border: none;
   align-items: flex-start;
@@ -196,7 +201,7 @@ img {
   margin: 0 .5em;
   border-radius: 0;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, .18);
-  color: #CD5C5C;
+  color: var(--vermelho-escuro);
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -219,6 +224,29 @@ img {
   color: #dc9b9b!important;
 }
 
+
+.price {
+  font-size: 20px;
+  font-weight: 850;
+}
+
+.fa-circle-minus, .fa-circle-plus {
+  cursor: pointer;
+}
+
+.dotted_line {
+  border-bottom: 1px dotted var(--vermelho-escuro);
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: 850;
+}
+
+.quantity {
+  color: #dc9b9b!important;
+}
+
 .dotted_line {
   border-bottom: 1px dotted #B13A3A;
 }
@@ -231,11 +259,6 @@ img {
 .fa-circle-minus, .fa-circle-plus {
   cursor: pointer;
 }
-
-
-
-
-
 
 .status_pedido, .tempo_espera, .preco_total {
   font-weight: 850;

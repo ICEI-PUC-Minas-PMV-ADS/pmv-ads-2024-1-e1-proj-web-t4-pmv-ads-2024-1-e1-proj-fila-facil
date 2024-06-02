@@ -166,3 +166,21 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 - Alteração na importação do arquivo json na página Restaurates.
 - Ajuste na estilização da página Restaurantes para sua funcionalidade via Java Script.
+
+### [0.1.21] - 02/06/2024
+
+#### Adicionado
+
+- Arquivo JavaScript para o carrossel da página de pedidos.
+- Funções para renderizar a página de pedidos com base nos itens do localStorage
+
+#### Atualizado
+
+- Adição da chave contendo o tempo de preparo de cada prato
+- Ajuste no localStorage dos pedidos finalizados no carrinho.js
+
+### [0.1.22] - DD/MM/AAAA
+
+#### Adicionado/Atualizado/Removido
+
+- 
