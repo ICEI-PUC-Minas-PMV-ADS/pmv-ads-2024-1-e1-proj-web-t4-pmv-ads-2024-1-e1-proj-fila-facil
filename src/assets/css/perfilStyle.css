@@ -97,3 +97,8 @@ footer > .container > .nav > .nav-item > .nav-link:hover {
   width: 100%;
   min-width: 80%;
 }
+
+.form-label ~ input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}

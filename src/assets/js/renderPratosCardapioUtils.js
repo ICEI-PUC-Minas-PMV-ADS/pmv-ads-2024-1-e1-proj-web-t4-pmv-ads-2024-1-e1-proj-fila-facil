@@ -20,17 +20,18 @@ function createCarouselItem(prato, isActive) {
   if (isActive) carouselItem.classList.add("active");
 
   const cardDiv = document.createElement("div");
-  cardDiv.classList.add("card", "h-100");
+  cardDiv.classList.add("card", "h-100", "card-div");
 
   const cardImg = document.createElement("img");
   cardImg.src = prato.imagemPrato;
+  cardImg.classList.add("img-card");
   cardImg.alt = `Imagem do prato ${prato.nomePrato}`;
 
   const cardBody = document.createElement("div");
   cardBody.classList.add("card-body", "d-flex", "flex-column", "text-center");
 
   const pratoName = document.createElement("h5");
-  pratoName.classList.add("card-title");
+  pratoName.classList.add("card-title", "food-name");
   pratoName.textContent = prato.nomePrato;
 
   const dottedLine = createDottedLine();

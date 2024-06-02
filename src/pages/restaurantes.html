@@ -1,90 +1,164 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/iconeFilaFacil.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurantes</title>
+    <link rel="stylesheet" href="../assets/css/restauranteStyle.css" />
+    <link rel="stylesheet" href="../assets/css/chatStyle.css" />
+  </head>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <link rel="shortcut icon" href="../assets/img/iconeFilaFacil.png" type="image/x-icon" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed&display=swap"
-    rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-    rel="stylesheet">
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-md bg-light fixed-top py-2 border-bottom px-5"
+        role="navigation"
+      >
+        <div class="container-fluid">
+          <a href="./index.html" class="navbar-brand">
+            <img
+              src="../assets/img/logoFilaFacil.png"
+              alt="Logo FilaFácil"
+              width="110"
+              height="40"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item active d-flex justify-content-end px-2">
+                <a href="../index.html" class="nav-link" aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item d-flex justify-content-end px-2">
+                <a href="../index.html#about" class="nav-link">Sobre</a>
+              </li>
+              <li class="nav-item d-flex justify-content-end px-2">
+                <a href="./restaurantes.html" class="nav-link">Restaurantes</a>
+              </li>
+              <li class="nav-item d-flex justify-content-end">
+                <a href="./pedidos.html" class="nav-link">Pedidos</a>
+              </li>
+              <li class="nav-item d-flex justify-content-end">
+                <a href="./perfil.html" class="nav-link">Perfil</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-  <title>Restaurantes</title>
-  <link rel="stylesheet" href="../assets/css/restauranteStyle.css">
- 
-</head>
+    <main class="pt-4 mt-4">
+      <section
+        class="banner-section d-flex justify-content-center align-items-center"
+      >
+        <div
+          class="banner-text col-9 text-center d-flex justify-content-center align-items-center"
+        >
+          <p class="mb-0">Restaurantes</p>
+        </div>
+      </section>
+      <br />
+      <section class="pb-4 mx-auto search-section">
+        <div class="input-group">
+          <input
+            class="form-control border-end-0 border rounded-start-pill"
+            type="search"
+            placeholder="Procurar por Restaurantes"
+            id="search-input"
+          />
+          <button
+            class="input-group-append rounded-end-circle lupa restaurant-buttons"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </section>
 
-<body>
-  <header>
-    <nav class="navbar navbar-expand-md bg-light fixed-top py-2 border-bottom px-5" role="navigation">
-      <div class="container-fluid">
-        <a href="./index.html" class="navbar-brand">
-          <img src="../assets/img/logoFilaFacil.png" alt="Logo FilaFácil" width="110" height="40" />
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <ul class="navbar-nav">
-            <li class="nav-item active d-flex justify-content-end px-2">
-              <a href="./index.html" class="nav-link" aria-current="page">Home</a>
-            </li>
-            <li class="nav-item d-flex justify-content-end px-2">
-              <a href="./index.html#about" class="nav-link">Sobre</a>
-            </li>
-            <li class="nav-item d-flex justify-content-end px-2">
-              <a href="#" class="nav-link">Restaurantes</a>
-            </li>
-            <li class="nav-item d-flex justify-content-end">
-              <a href="#" class="nav-link">Pedidos</a>
-            </li>
-            <li class="nav-item d-flex justify-content-end">
-              <a href="#" class="nav-link">Perfil</a>
-            </li>
+      <br />
+      <!--um quebra do cards e a barra de pesquisar-->
+      <div class="container" id="card-container">
+        <!-- Os cards serão inseridos aqui pelo JavaScript -->
+      </div>
+      <div class="pagination">
+        <button class="restaurant-buttons" id="prevBtn">Anterior</button>
+        <button class="restaurant-buttons" id="nextBtn">Próximo</button>
+      </div>
+    </main>
 
-            </li>
-          </ul>
+    <!-- Chat -->
+    <div class="position-fixed bottom-0 end-0 p-4 chat-icon-div">
+      <div id="chat-icon" class="btn btn-danger">
+        <i class="bi bi-chat-right-dots-fill"></i>
+      </div>
+    </div>
+
+    <div
+      id="chat-window"
+      class="d-none position-fixed bottom-0 end-0 py-0 mx-2"
+    >
+      <div class="card bg-light mb-3">
+        <div
+          class="card-header d-flex justify-content-between align-items-center"
+        >
+          <p class="mb-0 text-truncate restaurant-name">Restaurante</p>
+          <button id="minimize-chat" class="btn-close"></button>
+        </div>
+        <div id="chat-messages" class="card-body overflow-auto"></div>
+        <div class="card-footer">
+          <div class="input-group">
+            <input
+              id="chat-input"
+              type="text"
+              class="form-control"
+              autocomplete="off"
+            />
+            <button id="chat-send" class="btn btn-danger">
+              <i class="bi bi-send"></i>
+            </button>
+          </div>
         </div>
       </div>
-    </nav>
-  </header>
-
-  <main class="pt-4 mt-4">
-    <section class="banner-section d-flex justify-content-center align-items-center">
-      <div class="banner-text col-9 text-center d-flex justify-content-center align-items-center">
-        <p class="mb-0">Restaurantes</p>
-      </div>
-    </section>
-    <br>
-    <section class="pb-4 mx-auto search-section">
-      <div class="input-group">
-        <input class="form-control border-end-0 border rounded-start-pill" type="search"
-          placeholder="Procurar por Restaurantes" id="search-input">
-        <button class="input-group-append rounded-end-circle lupa">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-      </div>
-    </section>
-
-    <br> <!--um quebra do cards e a barra de pesquisar-->
-    <div class="container" id="card-container">
-      <!-- Os cards serão inseridos aqui pelo JavaScript -->
-    </div>
-    <div class="pagination">
-      <button id="prevBtn">Anterior</button>
-      <button id="nextBtn">Próximo</button>
     </div>
 
     <footer class="bg-light text-white py-4 mt-4">
@@ -114,23 +188,36 @@
       </div>
     </footer>
     <script type="module" src="../assets/js/restaurantes.js"></script>
-    
-    <script src="../assets/js/restauranteJson.js"></script>
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/66a97ae9e9.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/66a97ae9e9.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"></script>
-</body>
 
+    <script src="../assets/js/restauranteJson.js"></script>
+    <script src="../assets/js/chat.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/66a97ae9e9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/66a97ae9e9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

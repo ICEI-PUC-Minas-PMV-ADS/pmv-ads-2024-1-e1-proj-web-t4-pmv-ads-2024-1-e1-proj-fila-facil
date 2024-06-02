@@ -1,6 +1,6 @@
 import { restaurantes } from './restauranteJson.js';
 
-const searchForm = document.querySelector('.input-group');
+const searchForm = document.querySelector('.input-procura');
 const baseUrl = `${window.location.protocol}//${window.location.host}${window.location.pathname}`;
 const searchParam = getParameter('query');
 const id = getParameter('id');

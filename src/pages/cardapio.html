@@ -14,6 +14,10 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,6 +30,7 @@
     />
     <link rel="stylesheet" href="../assets/css/cardapioStyle.css" />
     <link rel="stylesheet" href="../assets/css/carrinhoStyle.css" />
+    <link rel="stylesheet" href="../assets/css/chatStyle.css" />
 
     <title>Fila Fácil - Cardápio</title>
   </head>
@@ -136,7 +141,7 @@
         <section class="produtos pt-4 pb-4"></section>
 
         <section class="pb-4 mx-auto search-section">
-          <form class="input-group" method="get">
+          <form class="input-group input-procura" method="get">
             <input
               class="form-control border-end-0 border rounded-start-pill"
               type="search"
@@ -157,11 +162,46 @@
       </section>
     </main>
 
+    <!-- Chat -->
+    <div class="position-fixed bottom-0 end-0 p-4 chat-icon-div">
+      <div id="chat-icon" class="btn btn-danger">
+        <i class="bi bi-chat-right-dots-fill"></i>
+      </div>
+    </div>
+
+    <div
+      id="chat-window"
+      class="d-none position-fixed bottom-0 end-0 py-0 mx-2"
+    >
+      <div class="card bg-light mb-3">
+        <div
+          class="card-header d-flex justify-content-between align-items-center"
+        >
+          <p class="mb-0 text-truncate restaurant-name">Restaurante</p>
+          <button id="minimize-chat" class="btn-close"></button>
+        </div>
+        <div id="chat-messages" class="card-body overflow-auto"></div>
+        <div class="card-footer">
+          <div class="input-group">
+            <input
+              id="chat-input"
+              type="text"
+              class="form-control"
+              autocomplete="off"
+            />
+            <button id="chat-send" class="btn btn-danger">
+              <i class="bi bi-send"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Carrinho -->
     <div class="cartTab">
       <button
         type="button"
-        class="btn-close"
+        class="btn-close close-cart"
         aria-label="Close"
         style="--bs-btn-close-width: 45px; --bs-btn-close-height: 45px"
       ></button>
@@ -183,7 +223,7 @@
           <h1>Total</h1>
           <h2 id="valorFinal">R$00,00</h2>
         </div>
-        <div class="btn">
+        <div class="btn pay-button">
           <button
             onClick="pagar()"
             type="button"
@@ -223,6 +263,7 @@
         </div>
       </div>
     </footer>
+    <script src="../assets//js/chat.js"></script>
     <script src="../assets/js/renderCategoriesCardapioUtils.js"></script>
     <script src="../assets/js/renderPratosCardapioUtils.js"></script>
     <script type="module" src="../assets/js/carrinho.js"></script>

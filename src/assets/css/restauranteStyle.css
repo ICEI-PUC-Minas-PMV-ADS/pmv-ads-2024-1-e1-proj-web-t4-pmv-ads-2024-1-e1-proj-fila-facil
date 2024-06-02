@@ -84,7 +84,7 @@ footer > .container > .nav > .nav-item > .nav-link:hover {
   gap: 20px;
 }
 
-button {
+.restaurant-buttons {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
@@ -94,13 +94,13 @@ button {
   color: white;
 }
 
-button:disabled {
+.restaurant-buttons:disabled {
   background-color: #cccccc;
   cursor: not-allowed;
 }
 
 /* Estilo básico dos cards */
-.card {
+.card-div {
   background-color:var(--vermelho-medio);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -111,7 +111,7 @@ button:disabled {
 }
 
 /* Imagem dentro do card */
-.card img {
+.card-div img {
   width:100%;
   height:100%;   
   object-fit: cover;
@@ -149,13 +149,13 @@ button:disabled {
 
 
 @media (max-width: 768px) {
-  .card {
+  .card-div {
       width: calc(50% - 20px); 
   }
 }
 
 @media (max-width: 576px) {
-  .card {
+  .card-div {
       width: calc(100% - 20px);
   }
 }
