@@ -162,7 +162,22 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 ### [0.1.20] - 01/06/2024
 
-#### Adicionado
+#### Alterado
 
 - Alteração na importação do arquivo json na página Restaurates.
 - Ajuste na estilização da página Restaurantes para sua funcionalidade via Java Script.
+
+### [0.1.21] - 02/06/2024
+
+#### Adicionado
+
+- Criação do componente, estilização e lógica do chat.
+
+#### Alterado
+
+- Classes utilizadas nas páginas para que não haja conflito de estilização.
+- Estilização de inputs nas páginas.
+
+### [0.1.22] - xx/xx/xxxx
+
+#### Adicionado / Alterado / Removido

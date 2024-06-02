@@ -1,0 +1,42 @@
+:root {
+  --max-branco: #fff;
+  --branco: #f2f2f2;
+  --cinza: #e4e4e4;
+  --vermelho-claro: #f7dcdc;
+  --vermelho-medio: #d74f4f;
+  --vermelho-escuro: #b13a3a;
+  --vermelho-escuro-2: #750000;
+}
+
+#chat-icon-div,
+#chat-window {
+  z-index: 11;
+}
+
+#chat-window {
+  max-width: 300px;
+}
+
+#chat-messages {
+  height: 200px;
+  overflow-y: auto;
+}
+
+#chat-input {
+  caret-color: var(--vermelho-medio);
+}
+
+#chat-input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1px solid var(--vermelho-medio) !important;
+}
+
+::selection {
+  background-color: var(--vermelho-medio);
+}
+
+.restaurant-name {
+  max-width: 180px;
+}
+

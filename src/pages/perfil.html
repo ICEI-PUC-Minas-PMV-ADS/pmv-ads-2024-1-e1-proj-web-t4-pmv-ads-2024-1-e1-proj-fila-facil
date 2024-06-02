@@ -20,6 +20,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="../assets/css/perfilStyle.css" />
+    <link rel="stylesheet" href="../assets/css/chatStyle.css">
     <title>Meu Perfil</title>
   </head>
   <body>
@@ -264,6 +265,7 @@
                                 id="card-number"
                                 maxlength="16"
                                 required
+                                autocomplete="off"
                               />
                             </div>
                             <div class="mb-3">
@@ -275,6 +277,7 @@
                                 class="form-control"
                                 id="card-name"
                                 required
+                                autocomplete="off"
                               />
                             </div>
                             <div class="mb-3">
@@ -286,6 +289,7 @@
                                 class="form-control"
                                 id="card-expiry-date"
                                 required
+                                autocomplete="off"
                               />
                             </div>
                             <div class="mb-3">
@@ -296,6 +300,7 @@
                                 id="card-cvv"
                                 maxlength="3"
                                 required
+                                autocomplete="off"
                               />
                             </div>
                             <button
@@ -317,6 +322,41 @@
         </div>
       </section>
     </main>
+
+        <!-- Chat -->
+        <div class="position-fixed bottom-0 end-0 p-4 chat-icon-div">
+          <div id="chat-icon" class="btn btn-danger">
+            <i class="bi bi-chat-right-dots-fill"></i>
+          </div>
+        </div>
+    
+        <div
+          id="chat-window"
+          class="d-none position-fixed bottom-0 end-0 py-0 mx-2"
+        >
+          <div class="card bg-light mb-3">
+            <div
+              class="card-header d-flex justify-content-between align-items-center"
+            >
+              <p class="mb-0 text-truncate restaurant-name">Restaurante</p>
+              <button id="minimize-chat" class="btn-close"></button>
+            </div>
+            <div id="chat-messages" class="card-body overflow-auto"></div>
+            <div class="card-footer">
+              <div class="input-group">
+                <input
+                  id="chat-input"
+                  type="text"
+                  class="form-control"
+                  autocomplete="off"
+                />
+                <button id="chat-send" class="btn btn-danger">
+                  <i class="bi bi-send"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
 
     <footer class="bg-light text-white py-4">
       <div class="container">
@@ -349,6 +389,7 @@
       </div>
     </footer>
 
+    <script src="../assets/js/chat.js"></script>
     <script src="../assets/js/perfilScript.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
