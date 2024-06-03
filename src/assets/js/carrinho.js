@@ -47,7 +47,7 @@ window.adicionaItem = function (element) {
   var prato = encontrarPratoPorId(idPrato);
   var quantidadeEmEstoque = prato.quantidadeEstoque;
   // Se disponível, adiciona / cria card
-  if (quantidadeEmEstoque > 1) {
+  if (quantidadeEmEstoque > 0) {
     var idPratoClicado = Number(element.getAttribute("data-id-prato"));
     criarCardCarrinho(idPratoClicado);
     atualizaValorTotal();
@@ -226,7 +226,7 @@ function zerarValorFinal() {
 window.pagar = function () {
   // Impede pagamento se carrinho estiver vazio
   var valorFinal = document.querySelector("#valorFinal");
-  if (valorFinal.textContent == "R$ 0,00") {
+  if (valorFinal.textContent == "R$00,00") {
     alert("Carrinho vazio, faça seu pedido");
     return;
   } else {
@@ -276,31 +276,36 @@ if (localStorage.getItem("pedidos") === null) {
 function pedidoFeito() {
   var cards = document.querySelectorAll("#listCart .card");
   var itensDoPedido = [];
-  const restauranteId = getParameter('id');
-  const restauranteObj = restaurantes.find(restaurante => restaurante.idRestaurante == restauranteId)
+  const restauranteId = getParameter("id");
+  const restauranteObj = restaurantes.find(
+    (restaurante) => restaurante.idRestaurante == restauranteId
+  );
   let tempoPreparo = 0;
   cards.forEach((card) => {
     var idComprado = card.getAttribute("data-id-prato");
     var quantidadeComprada = card.querySelector(".quantidade").textContent;
-    const pratoObj = restauranteObj.cardapio.find(prato => prato.idPrato == idComprado)
+    const pratoObj = restauranteObj.cardapio.find(
+      (prato) => prato.idPrato == idComprado
+    );
     var itemComprado = {
-      "nomePrato": pratoObj.nomePrato,
+      nomePrato: pratoObj.nomePrato,
       quantidadeComprada: quantidadeComprada,
     };
-    if (pratoObj.minutosPreparo > tempoPreparo) tempoPreparo = pratoObj.minutosPreparo;
+    if (pratoObj.minutosPreparo > tempoPreparo)
+      tempoPreparo = pratoObj.minutosPreparo;
     itensDoPedido.push(itemComprado);
   });
-  var pedido = { 
+  var pedido = {
     pedido: numeroPedido,
-    "finalizado": false,
-    "precoTotal": valorFinal.textContent,
-    "avaliacao": 0,
-    "imagemRestaurante": restauranteObj.imagemRestaurante,
-    "horarioPedido": new Date(),
-    "tempoPreparo": tempoPreparo,
-    itens: itensDoPedido };
+    finalizado: false,
+    precoTotal: valorFinal.textContent,
+    avaliacao: 0,
+    imagemRestaurante: restauranteObj.imagemRestaurante,
+    horarioPedido: new Date(),
+    tempoPreparo: tempoPreparo,
+    itens: itensDoPedido,
+  };
   pedidos.push(pedido);
-  console.log(pedidos);
   numeroPedido++;
   localStorage.setItem("pedidos", JSON.stringify(pedidos));
 }
@@ -319,8 +324,47 @@ function alteraQuantidadeEstoque() {
     prato.quantidadeEstoque = novaQuantidade;
     // Salva a nova quantidade em estoque no localStorage
     localStorage.setItem("restaurantes", JSON.stringify(restaurantes));
+    // Busca o campo de quantidade em estoque no card do cardápio
+    var quantidadeEstoqueCardCardapio = document.querySelector(
+      `.quantity[data-id-prato="${idItem}"]`
+    );
+    // Atualiza quantidade em estoque no card do cardápio
+    if (prato.quantidadeEstoque == 0) {
+      quantidadeEstoqueCardCardapio.innerHTML = `Ítem indisponível`;
+    } else {
+      if (prato.quantidadeEstoque == 1) {
+        quantidadeEstoqueCardCardapio.innerHTML = `${prato.quantidadeEstoque} disponível`;
+      } else {
+        quantidadeEstoqueCardCardapio.innerHTML = `${prato.quantidadeEstoque} disponíveis`;
+      }
+    }
   });
 }
+
+// Atualiza a quantidade em estoque no cardápio ao iniciar a página
+function atualizaQuantidadeEstoqueCardapio() {
+  var cards = document.querySelectorAll(".quantity");
+  cards.forEach((card) => {
+    var idItem = card.getAttribute("data-id-prato");
+    var prato = encontrarPratoPorId(idItem);
+    var quantidadeEstoqueCardCardapio = document.querySelector(
+      `.quantity[data-id-prato="${idItem}"]`
+    );
+    if (prato.quantidadeEstoque == 0) {
+      quantidadeEstoqueCardCardapio.innerHTML = `Ítem indisponível`;
+    } else {
+      if (prato.quantidadeEstoque == 1) {
+        quantidadeEstoqueCardCardapio.innerHTML = `${prato.quantidadeEstoque} disponível`;
+      } else {
+        quantidadeEstoqueCardCardapio.innerHTML = `${prato.quantidadeEstoque} disponíveis`;
+      }
+    }
+  });
+}
+
+window.onload = function () {
+  atualizaQuantidadeEstoqueCardapio();
+};
 
 function getParameter(parameter) {
   const queryString = window.location.search;

@@ -190,8 +190,14 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 - Adição da chave contendo o tempo de preparo de cada prato
 - Ajuste no localStorage dos pedidos finalizados no carrinho.js
 
-### [0.1.23] - DD/MM/AAAA
+### [0.1.23] - 03/06/2024
+
+#### Atualizado
+
+- Atualização do estoque nos cards na página de cardápio
+
+### [0.1.24] - DD/MM/AAAA
 
 #### Adicionado/Atualizado/Removido
 
-- 
+-
