@@ -196,8 +196,42 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 - Atualização do estoque nos cards na página de cardápio
 
-### [0.1.24] - DD/MM/AAAA
+### [0.1.24] - 04/06/2024
 
-#### Adicionado/Atualizado/Removido
+#### Adicionado
 
--
+- Adicionado página de gerência do restaurante com suas estilizações e funções
+
+#### Atualizado
+
+- Alterado para a página de cardápio buscar os itens via localStorage
+- Alterado para a página de restaurantes buscar os itens via localStorage
+- Alterado IDs dos pratos no JSON
+
+### [0.1.25] - 05/06/2024
+
+#### Adicionado
+
+- Adicionado campo de Cupom no carrinho e implementada sua funcionalidade
+
+#### Atualizado
+
+- Implementada funcionalidade do carrinho nas páginas de Restaurante e Pedidos
+
+### [0.1.26] - 06/06/2024
+
+#### Adicionado
+
+- Função para calcualo de pedidos vendidos e receita das vendas
+
+#### Atualizado
+
+- Arrumado bug que só permitia modificar um item adicionado após atualizar a página
+- Arrumado bug que altava o item de todos os restaurantes ao editar um prato
+- Alterado forma de renderizar modal de editar e criar via JavaScript para unificar
+
+### [0.1.27] - 09/06/2024
+
+#### Adicionado 
+
+- Plano de testes de software
