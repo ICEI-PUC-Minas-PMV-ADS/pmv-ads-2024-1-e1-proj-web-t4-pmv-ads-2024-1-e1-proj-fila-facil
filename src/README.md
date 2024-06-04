@@ -196,7 +196,19 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 - Atualização do estoque nos cards na página de cardápio
 
-### [0.1.24] - DD/MM/AAAA
+### [0.1.24] - 04/06/2024
+
+#### Adicionado
+
+- Adicionado página de gerência do restaurante com suas estilizações e funções
+
+#### Atualizado
+
+- Alterado para a página de cardápio buscar os itens via localStorage
+- Alterado para a página de restaurantes buscar os itens via localStorage
+- Alterado IDs dos pratos no JSON
+
+### [0.1.25] - DD/MM/AAAA
 
 #### Adicionado/Atualizado/Removido
 

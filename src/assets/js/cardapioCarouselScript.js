@@ -1,4 +1,4 @@
-import { restaurantes } from './restauranteJson.js';
+const restaurantes = JSON.parse(localStorage.getItem('restaurantes'));
 
 const searchForm = document.querySelector('.input-procura');
 const baseUrl = `${window.location.protocol}//${window.location.host}${window.location.pathname}`;

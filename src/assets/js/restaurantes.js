@@ -1,4 +1,4 @@
-import { restaurantes } from './restauranteJson.js';
+const restaurantes = JSON.parse(localStorage.getItem('restaurantes'));
 
 document.addEventListener("DOMContentLoaded", function() {
     const container = document.getElementById('card-container');
