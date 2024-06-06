@@ -1,22 +1,24 @@
-const restaurantes = JSON.parse(localStorage.getItem('restaurantes'));
+import { restaurantes } from './restauranteJson.js';
 
 document.addEventListener("DOMContentLoaded", function() {
     const container = document.getElementById('card-container');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
+    const searchInput = document.getElementById('search-input');
     let currentPage = 1;
     const cardsPerPage = 3;
     let restaurantData = restaurantes; // Use the imported data
+    let filteredData = restaurantData;
 
-    function renderRestaurants(page) {
+    function renderRestaurants(page, data) {
         container.innerHTML = '';
         const start = (page - 1) * cardsPerPage;
         const end = start + cardsPerPage;
-        const restaurantsToDisplay = restaurantData.slice(start, end);
+        const restaurantsToDisplay = data.slice(start, end);
         
         restaurantsToDisplay.forEach(restaurant => {
             const cardElement = document.createElement('div');
-            cardElement.classList.add('card', 'card-div');
+            cardElement.className = 'card';
 
             const imgElement = document.createElement('img');
             imgElement.src = restaurant.imagemRestaurante;
@@ -27,12 +29,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
             const titleElement = document.createElement('h2');
             titleElement.className = 'card-title';
-            titleElement.textContent = restaurant.nomeRestaurante; // Corrigido para acessar o nome do restaurante
+            titleElement.textContent = restaurant.nomeRestaurante;
             cardContent.appendChild(titleElement);
 
             const descriptionElement = document.createElement('p');
             descriptionElement.className = 'card-description';
-            descriptionElement.textContent = restaurant.descricaoRestaurante; 
+            descriptionElement.textContent = restaurant.descricaoRestaurante;
             cardContent.appendChild(descriptionElement);
 
             cardElement.appendChild(cardContent);
@@ -40,23 +42,33 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         prevBtn.disabled = page === 1;
-        nextBtn.disabled = end >= restaurantData.length;
+        nextBtn.disabled = end >= data.length;
     }
 
-    renderRestaurants(currentPage); // Render 
+    function filterRestaurants(event) {
+        const searchText = event.target.value.toLowerCase();
+        filteredData = restaurantData.filter(restaurant =>
+            restaurant.nomeRestaurante.toLowerCase().includes(searchText)
+        );
+        currentPage = 1; // Reset to the first page on search
+        renderRestaurants(currentPage, filteredData);
+    }
+
+    searchInput.addEventListener('input', filterRestaurants);
+
+    renderRestaurants(currentPage, filteredData);
 
     prevBtn.addEventListener('click', () => {
         if (currentPage > 1) {
             currentPage--;
-            renderRestaurants(currentPage);
+            renderRestaurants(currentPage, filteredData);
         }
     });
 
     nextBtn.addEventListener('click', () => {
-        if ((currentPage * cardsPerPage) < restaurantData.length) {
+        if ((currentPage * cardsPerPage) < filteredData.length) {
             currentPage++;
-            renderRestaurants(currentPage);
+            renderRestaurants(currentPage, filteredData);
         }
     });
 });
- 

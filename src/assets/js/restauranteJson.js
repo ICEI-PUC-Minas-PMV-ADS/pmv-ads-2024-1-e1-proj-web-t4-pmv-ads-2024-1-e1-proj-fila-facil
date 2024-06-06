@@ -72,7 +72,7 @@ export const restaurantes =
         "idRestaurante": 2,
         "nomeRestaurante": "Cantina Italiana",
         "imagemRestaurante": "../assets/img/cantinaitalia.png",
-        "descricaoRestaurante": "Autêntica cozinha italiana com massas frescas e vinhos importados.",
+        "descricaoRestaurante": "Cozinha italiana com massas frescas e vinhos importados.",
         "cardapio": [
           {
             "idPrato": 1,

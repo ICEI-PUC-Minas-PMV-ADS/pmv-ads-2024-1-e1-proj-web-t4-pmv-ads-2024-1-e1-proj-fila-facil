@@ -218,8 +218,9 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 - Implementada funcionalidade do carrinho nas páginas de Restaurante e Pedidos
 
-### [0.1.26] - DD/MM/AAAA
+### [0.1.26] - 06/06/2024
 
-#### Adicionado/Atualizado/Removido
+#### Adicionado/Atualizado
 
--
+- Adicionado a funcionalidade do botão de pesquisa "Procurar Restaurante" na página restaurantes.
+- Estilização css e atualização do botão carrosel anterior e próximo dos cards da página Restaurantes.
