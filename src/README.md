@@ -208,7 +208,17 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 - Alterado para a página de restaurantes buscar os itens via localStorage
 - Alterado IDs dos pratos no JSON
 
-### [0.1.25] - DD/MM/AAAA
+### [0.1.25] - 05/06/2024
+
+#### Adicionado
+
+- Adicionado campo de Cupom no carrinho e implementada sua funcionalidade
+
+#### Atualizado
+
+- Implementada funcionalidade do carrinho nas páginas de Restaurante e Pedidos
+
+### [0.1.26] - DD/MM/AAAA
 
 #### Adicionado/Atualizado/Removido
 

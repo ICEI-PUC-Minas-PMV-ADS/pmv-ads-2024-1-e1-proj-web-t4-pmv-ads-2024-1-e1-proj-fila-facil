@@ -29,6 +29,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../assets/css/pedidosstyle.css" />
+    <link rel="stylesheet" href="../assets/css/carrinhoStyle.css" />
     <link rel="stylesheet" href="../assets/css/chatStyle.css" />
     <title>Fila Fácil - Pedidos</title>
   </head>
@@ -262,6 +263,61 @@
         </div>
       </div>
     </div>
+    
+    <!-- Carrinho -->
+    <div class="cartTab">
+      <button
+        type="button"
+        class="btn-close close-cart"
+        aria-label="Close"
+        style="--bs-btn-close-width: 45px; --bs-btn-close-height: 45px"
+      ></button>
+      <!-- Ítens Carrinho -->
+      <div class="listCart" id="listCart"></div>
+      <!-- BOX DE PAGAMENTO -->
+      <div class="boxPagamento">
+        <div class="input-group mb-3">
+          <input
+            id="cupom"
+            type="text"
+            class="form-control"
+            placeholder="Possui cupom de desconto?"
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+            oninput="this.value = this.value.toUpperCase()"
+          />
+          <button
+            class="btn btn-outline-secondary btn-cupom"
+            type="button"
+            id="btn-cupom"
+          >
+            Aplicar
+          </button>
+        </div>
+        <div>
+          <select class="form-control" id="formaDePagamento">
+            <option>Selecionar forma de pagamento</option>
+            <option>Elo Crédito **** **** **** 5698</option>
+            <option>Elo Débito **** **** **** 5698</option>
+            <option>VR Refeição **** **** **** 2357</option>
+          </select>
+        </div>
+        <div class="total">
+          <h1>Total</h1>
+          <h2 id="valorFinal">R$ 00,00</h2>
+        </div>
+        <div class="btn pay-button">
+          <button
+            onClick="pagar()"
+            type="button"
+            id="pagarButton"
+            class="checkout"
+          >
+            Finalizar pedido
+          </button>
+        </div>
+      </div>
+    </div>
 
     <footer class="bg-light text-white py-4">
       <div class="container">
@@ -292,6 +348,7 @@
     <script src="../assets/js/pedidos.js"></script>
     <script src="../assets/js/pedidosCarrousel.js"></script>
     <script src="../assets/js/chat.js"></script>
+    <script type="module" src="../assets/js/carrinho.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

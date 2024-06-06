@@ -75,7 +75,7 @@ function createPriceAndQuantityDiv(prato) {
   priceDiv.classList.add("price_interactions", "row", "align-items-center");
 
   const colMinus = document.createElement("div");
-  colMinus.classList.add("col-auto");
+  colMinus.classList.add("col-auto", "btn-card-cardapio");
 
   const minusButton = document.createElement("i");
   minusButton.classList.add("fa-solid", "fa-circle-minus", "h3", "mb-0");
@@ -87,7 +87,7 @@ function createPriceAndQuantityDiv(prato) {
   price.textContent = `R$ ${prato.precoPrato.toFixed(2).replace(".", ",")}`;
 
   const colPlus = document.createElement("div");
-  colPlus.classList.add("col-auto");
+  colPlus.classList.add("col-auto", "btn-card-cardapio");
 
   const plusButton = document.createElement("i");
   plusButton.classList.add("fa-solid", "fa-circle-plus", "h3", "mb-0");
