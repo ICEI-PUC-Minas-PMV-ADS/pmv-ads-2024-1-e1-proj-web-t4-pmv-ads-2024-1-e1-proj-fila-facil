@@ -218,7 +218,19 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 - Implementada funcionalidade do carrinho nas páginas de Restaurante e Pedidos
 
-### [0.1.26] - DD/MM/AAAA
+### [0.1.26] - 06/06/2024
+
+#### Adicionado
+
+- Função para calcualo de pedidos vendidos e receita das vendas
+
+#### Atualizado
+
+- Arrumado bug que só permitia modificar um item adicionado após atualizar a página
+- Arrumado bug que altava o item de todos os restaurantes ao editar um prato
+- Alterado forma de renderizar modal de editar e criar via JavaScript para unificar
+
+### [0.1.27] - DD/MM/AAAA
 
 #### Adicionado/Atualizado/Removido
 

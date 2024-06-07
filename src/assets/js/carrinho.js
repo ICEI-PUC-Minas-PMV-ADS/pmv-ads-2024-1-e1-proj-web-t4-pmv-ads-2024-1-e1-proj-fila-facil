@@ -303,6 +303,7 @@ function pedidoFeito() {
     itensDoPedido.push(itemComprado);
   });
   var pedido = {
+    idRestaurante: restauranteObj.idRestaurante,
     pedido: numeroPedido,
     finalizado: false,
     precoTotal: valorFinal.textContent,

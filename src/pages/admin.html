@@ -77,118 +77,6 @@
     </header>
 
     <main>
-      <!-- Modal do Bootstrap para editar -->
-      <div
-        class="modal fade"
-        id="modal-edit"
-        tabindex="-1"
-        aria-labelledby="editModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="editModalTitle">Editando prato</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <form id="">
-              <div class="modal-body">
-                <input type="hidden" value="" id="edit-id">
-                <label for="edit-name">Nome</label>
-                <input type="text" class="form-control" id="edit-name" />
-                <label for="edit-image">Imagem</label>
-                <input type="file" class="form-control" id="edit-image" />
-                <label for="edit-description">Descrição</label>
-                <textarea class="form-control" id="edit-description"></textarea>
-                <label for="edit-quantity">Quantidade</label>
-                <input type="number" class="form-control" id="edit-quantity" />
-                <label for="edit-price">Preço</label>
-                <input type="number" step="0.01" class="form-control" id="edit-price" />
-                <label for="edit-time">Tempo de preparo (minutos)</label>
-                <input type="number" class="form-control" id="edit-time" />
-                <label for="edit-category">Categoria</label>
-                <input type="text" class="form-control" id="edit-category" />
-              </div>
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-outline-danger fechar-modal"
-                  data-bs-dismiss="modal"
-                >
-                  Fechar
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-outline-success"
-                  id="confirm-edit"
-                  >Salvar</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-
-      <!-- Modal do Bootstrap para adicionar -->
-      <div
-        class="modal fade"
-        id="modal-add"
-        tabindex="-1"
-        aria-labelledby="addModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="addModalTitle">Adicionando prato</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <form id="form-add">
-              <div class="modal-body">
-                <input type="hidden" value="" id="add-id">
-                <label for="add-name">Nome</label>
-                <input type="text" class="form-control" id="add-name" />
-                <label for="add-image">Imagem</label>
-                <input type="file" class="form-control" id="add-image" />
-                <label for="add-description">Descrição</label>
-                <textarea class="form-control" id="add-description"></textarea>
-                <label for="add-quantity">Quantidade</label>
-                <input type="number" class="form-control" id="add-quantity" />
-                <label for="add-price">Preço</label>
-                <input type="number" step="0.01" class="form-control" id="add-price" />
-                <label for="add-time">Tempo de preparo (minutos)</label>
-                <input type="number" class="form-control" id="add-time" />
-                <label for="add-category">Categoria</label>
-                <input type="text" class="form-control" id="add-category" />
-              </div>
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-outline-danger fechar-modal"
-                  data-bs-dismiss="modal"
-                >
-                  Fechar
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-outline-success"
-                  id="confirm-add"
-                  >Salvar</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-
       <!-- Modal do bootstrap para confirmar exclusão -->
       <div class="modal fade" id="modal-delete" tabindex="-1">
         <div class="modal-dialog">
@@ -253,9 +141,9 @@
                           class="form-control"
                         />
                       </div>
-                      <div class="col-md-3">
-                        <p>Faturamento: <span>R$ 00,00</span></p>
-                        <p>Pedidos realizados: 0</p>
+                      <div class="col-md-3 pt-3">
+                        <p>Faturamento: <span id="faturamento"></span></p>
+                        <p>Pedidos realizados: <span id="pedidosRecebidos"></span></p>
                       </div>
                       <div class="col-md-12">
                         <label class="form-label" for="restaurant-description">Descrição</label>
