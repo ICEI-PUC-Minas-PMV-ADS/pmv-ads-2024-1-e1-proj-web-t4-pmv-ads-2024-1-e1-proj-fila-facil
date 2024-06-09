@@ -222,7 +222,7 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 #### Adicionado
 
-- Função para calcualo de pedidos vendidos e receita das vendas
+- Função para calculo de pedidos vendidos e receita das vendas
 
 #### Atualizado
 
@@ -230,8 +230,10 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 - Arrumado bug que altava o item de todos os restaurantes ao editar um prato
 - Alterado forma de renderizar modal de editar e criar via JavaScript para unificar
 
-### [0.1.27] - DD/MM/AAAA
+### [0.1.27] - 09/06/2024
 
-#### Adicionado/Atualizado/Removido
+#### Adicionado/Atualizado
 
--
+- Adicionado funcionalidade no botão pesquisa na página de restaurantes.
+- Atualizado e estilizado os botões de anterior e próximo da página de restaurantes.
+- Adicionado na imagens do card o link para página cardápio.
