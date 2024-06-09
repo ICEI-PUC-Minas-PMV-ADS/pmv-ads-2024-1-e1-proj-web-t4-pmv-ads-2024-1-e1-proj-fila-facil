@@ -24,14 +24,14 @@ document.addEventListener("DOMContentLoaded", function() {
         restaurantsToDisplay.forEach(restaurant => {
             const cardElement = document.createElement('div');
             cardElement.classList.add('card', 'card-div');
+            cardElement.addEventListener('click', () => {
+                // Redireciona para a página de cardápio ao clicar no card do restaurante
+                window.location.href = `cardapio.html?id=${restaurant.idRestaurante}`; // Altere 'cardapio.html' para a URL desejada
+            });
 
             // Adiciona um evento de clique à imagem para redirecionar para a página de cardápio
             const imgElement = document.createElement('img');
             imgElement.src = restaurant.imagemRestaurante;
-            imgElement.addEventListener('click', () => {
-                // Redireciona para a página de cardápio ao clicar na imagem do restaurante
-                window.location.href = 'cardapio.html'; // Altere 'cardapio.html' para a URL desejada
-            });
             cardElement.appendChild(imgElement);
 
             const cardContent = document.createElement('div');
