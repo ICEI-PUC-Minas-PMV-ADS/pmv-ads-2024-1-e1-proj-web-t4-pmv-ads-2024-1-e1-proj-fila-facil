@@ -230,8 +230,14 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 - Arrumado bug que altava o item de todos os restaurantes ao editar um prato
 - Alterado forma de renderizar modal de editar e criar via JavaScript para unificar
 
-### [0.1.27] - DD/MM/AAAA
+### [0.1.27] - 09/06/2024
+
+#### Adicionado 
+
+- Plano de testes de software
+
+### [0.1.28] - DD/MM/AAAA
 
 #### Adicionado/Atualizado/Removido
 
--
+- 
