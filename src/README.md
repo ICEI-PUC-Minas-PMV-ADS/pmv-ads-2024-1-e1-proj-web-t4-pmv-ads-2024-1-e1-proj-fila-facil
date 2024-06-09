@@ -235,3 +235,9 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 #### Adicionado 
 
 - Plano de testes de software
+
+### [0.1.28] - DD/MM/AAAA
+
+#### Adicionado/Atualizado/Removido
+
+- 

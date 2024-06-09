@@ -90,8 +90,10 @@ function desenhaCard(prato, idPrato) {
   }"  id="imagemPrato" style="max-width: 70px" alt="${prato.nomePrato}">
   </div>
   <div class="col-md-3" id="body-cart-item">
-    <p class="card-title food-name">${prato.nomePrato}</p>
-    <p class="card-price">R$ ${prato.precoPrato
+    <p class="card-title food-name" id = "nome-card-carrinho">${
+      prato.nomePrato
+    }</p>
+    <p class="card-price" id="preco-card-carrinho">R$ ${prato.precoPrato
       .toFixed(2)
       .replace(".", ",")}</p>
   </div>
@@ -158,6 +160,7 @@ window.removeItem = function (element) {
 
   if (quantidadeAtual > 0) {
     quantidadeNoCarrinho.textContent = quantidadeAtual;
+    atualizaValorTotal();
   } else {
     cardExistente.parentNode.remove();
     zerarValorFinal();
@@ -195,6 +198,7 @@ window.removeItemCard = function (idPrato) {
   } else {
     card.parentNode.remove();
     card.remove();
+    atualizaValorTotal();
     zerarValorFinal();
   }
 };
@@ -209,6 +213,7 @@ function atualizaValorTotal() {
     var valorPorItem = Number(preco.split(" ")[1].replace(",", "."));
     valorTotal += valorPorItem * quantidadeItem;
   });
+  valorTotal = desconto(valorTotal);
   var valorFinal = document.querySelector("#valorFinal");
   valorFinal.innerHTML = `R$ ${valorTotal.toFixed(2).replace(".", ",")}`;
 }
@@ -218,7 +223,7 @@ function zerarValorFinal() {
   var cards = document.querySelectorAll("#listCart .card");
   if (cards.length == 0) {
     var valorFinal = document.querySelector("#valorFinal");
-    valorFinal.innerHTML = `R$ 0,00`;
+    valorFinal.innerHTML = `R$ 00,00`;
   }
 }
 
@@ -226,7 +231,7 @@ function zerarValorFinal() {
 window.pagar = function () {
   // Impede pagamento se carrinho estiver vazio
   var valorFinal = document.querySelector("#valorFinal");
-  if (valorFinal.textContent == "R$00,00") {
+  if (valorFinal.textContent == "R$ 00,00") {
     alert("Carrinho vazio, faça seu pedido");
     return;
   } else {
@@ -241,6 +246,8 @@ window.pagar = function () {
       pedidoFeito();
       alteraQuantidadeEstoque();
       limpaCarrinho();
+      var inputCupom = document.getElementById("cupom");
+      inputCupom.value = "";
     }
   }
 };
@@ -296,6 +303,7 @@ function pedidoFeito() {
     itensDoPedido.push(itemComprado);
   });
   var pedido = {
+    idRestaurante: restauranteObj.idRestaurante,
     pedido: numeroPedido,
     finalizado: false,
     precoTotal: valorFinal.textContent,
@@ -371,3 +379,33 @@ function getParameter(parameter) {
   const urlParams = new URLSearchParams(queryString);
   return urlParams.get(parameter);
 }
+
+// Salva cupons de desconto no localStorage
+let cupons = {
+  GANHOU10: 0.1,
+  GANHOU15: 0.15,
+  GANHOU20: 0.2,
+};
+localStorage.setItem("cupons", JSON.stringify(cupons));
+
+// Calcula desconto
+function desconto(valorFinal) {
+  var cupom = document.getElementById("cupom").value;
+  var cupons = JSON.parse(localStorage.getItem("cupons"));
+  var desconto = cupons[cupom];
+  if (cupom == "") {
+    return valorFinal;
+  } else {
+    if (desconto) {
+      valorFinal = valorFinal * (1 - desconto);
+      return valorFinal;
+    } else {
+      alert("Cupom inválido");
+      return valorFinal;
+    }
+  }
+}
+
+// Ativa botão de cupom
+var btnCupom = document.getElementById("btn-cupom");
+btnCupom.addEventListener("click", atualizaValorTotal);
