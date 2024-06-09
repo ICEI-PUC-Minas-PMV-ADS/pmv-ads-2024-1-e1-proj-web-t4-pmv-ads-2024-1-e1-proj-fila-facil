@@ -238,11 +238,14 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 ### [0.1.28] - 09/06/2024
 
-#### Adicionado/Atualizado
+#### Adicionado
 
 - Adicionado funcionalidade no botão pesquisa na página de restaurantes.
-- Atualizado e estilizado os botões de anterior e próximo da página de restaurantes.
 - Adicionado na imagens do card o link para página cardápio.
+
+#### Atualizado
+
+- Atualizado e estilizado os botões de anterior e próximo da página de restaurantes.
 
 ### [0.1.29] - DD/MM/AAAA
 
