@@ -79,6 +79,9 @@
                 <a href="./pedidos.html" class="nav-link">Pedidos</a>
               </li>
               <li class="nav-item d-flex justify-content-end">
+                <a href="./perfil.html" class="nav-link">Perfil</a>
+              </li>
+              <li class="nav-item d-flex justify-content-end">
                 <div class="icon-cart">
                   <i class="fa-solid fa-cart-shopping h3 mt-1"></i>
                 </div>
@@ -100,7 +103,6 @@
         </div>
       </section>
 
-      
       <section class="cardapio-section">
         <section class="produtos pt-4 pb-4">
           <nav>
@@ -147,12 +149,14 @@
             id="pills-abertos"
             role="tabpanel"
             aria-labelledby="pills-abertos-tab"
-            tabindex="0">
+            tabindex="0"
+          >
             <section class="container cardapio-items">
               <div
                 id="carouselControls-abertos"
                 class="carousel"
-                data-bs-ride="carousel">
+                data-bs-ride="carousel"
+              >
                 <div class="carousel-inner">
                   <!-- pedidos comprados a serem renderizados -->
                 </div>
@@ -189,12 +193,14 @@
             id="pills-finalizados"
             role="tabpanel"
             aria-labelledby="pills-finalizados-tab"
-            tabindex="0">
+            tabindex="0"
+          >
             <section class="container cardapio-items">
               <div
                 id="carouselControls-finalizados"
                 class="carousel"
-                data-bs-ride="carousel">
+                data-bs-ride="carousel"
+              >
                 <div class="carousel-inner inner-finalizado">
                   <!-- pedidos comprados a serem renderizados -->
                 </div>
@@ -225,8 +231,8 @@
               </div>
             </section>
           </section>
-
         </section>
+      </section>
     </main>
 
     <!-- Chat -->
@@ -263,7 +269,7 @@
         </div>
       </div>
     </div>
-    
+
     <!-- Carrinho -->
     <div class="cartTab">
       <button
@@ -345,6 +351,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="../assets/js/checkLogin.js"></script>
     <script src="../assets/js/pedidos.js"></script>
     <script src="../assets/js/pedidosCarrousel.js"></script>
     <script src="../assets/js/chat.js"></script>
