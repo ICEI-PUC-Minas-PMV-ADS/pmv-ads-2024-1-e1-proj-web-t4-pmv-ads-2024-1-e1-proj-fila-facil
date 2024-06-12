@@ -236,7 +236,18 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 - Plano de testes de software
 
-### [0.1.28] - DD/MM/AAAA
+### [0.1.28] - 11/06/2024
+
+#### Adicionado
+
+- Lógica para validação de usuário logado
+
+#### Atualizado
+
+- Navbar da página de pedidos
+- Demais lógicas envolvidas no login e/ou cadastro de usuário
+
+### [0.1.29] - DD/MM/AAAA
 
 #### Adicionado/Atualizado/Removido
 

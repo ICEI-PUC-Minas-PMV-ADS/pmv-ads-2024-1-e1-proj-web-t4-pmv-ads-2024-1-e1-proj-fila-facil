@@ -56,7 +56,9 @@ function passwordsMatch() {
 }
 
 function displayPasswordError() {
-  repeatPasswordError.textContent = passwordsMatch() ? "" : "As senhas não coincidem.";
+  repeatPasswordError.textContent = passwordsMatch()
+    ? ""
+    : "As senhas não coincidem.";
 }
 
 function getUserFromLocalStorage(email) {
@@ -75,7 +77,8 @@ function createUser() {
 
 function saveUserToLocalStorage(user) {
   localStorage.setItem(user.email, JSON.stringify(user));
-  localStorage.setItem('lastEmail', user.email);
+  localStorage.setItem("lastEmail", user.email);
+  localStorage.setItem("userLoggedIn", "false");
 }
 
 form.addEventListener("submit", function (event) {
