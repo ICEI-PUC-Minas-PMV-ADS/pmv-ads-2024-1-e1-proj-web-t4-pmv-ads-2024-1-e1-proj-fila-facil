@@ -17,17 +17,18 @@ const totalSold = document.getElementById('faturamento');
 const totalOrders = document.getElementById('pedidosRecebidos');
 
 // Variáveis globais
-let modalEdit, modalAdd, modalDelete;
+let modalEdit;
+let modalAdd;
+let modalDelete;
+let restaurantJSON;
+let restaurantInfos;
+let restaurantIndex;
+let currentName;
+let currentDescription;
+let currentPhoto;
 
 const orders = JSON.parse(localStorage.getItem('pedidos')) || [];
-let restaurantJSON = JSON.parse(localStorage.getItem('restaurantes'));
 const restaurantId = parseInt(getParameter('id'));
-let restaurantInfos = getRestaurantById(restaurantId);
-const restaurantIndex = getIndexOfRestaurant(restaurantId);
-
-let currentName = restaurantInfos.nomeRestaurante;
-let currentDescription = restaurantInfos.descricaoRestaurante;
-let currentPhoto = restaurantInfos.imagemRestaurante;
 
 // Funções auxiliares
 /**
@@ -483,9 +484,9 @@ updateItemBtn.addEventListener('click', function() {
 
 deleteItemBtn.addEventListener('click', function() {
   const idPrato = parseInt(deleteId.value);
-  restaurantJSON.forEach(restaurante => {
-    restaurante.cardapio = restaurante.cardapio.filter(item => item.idPrato !== idPrato);
-  });
+  const restaurante = restaurantJSON.find(r => r.idRestaurante === restaurantId);
+
+  restaurante.cardapio = restaurante.cardapio.filter(item => item.idPrato !== idPrato);
   localStorage.setItem('restaurantes', JSON.stringify(restaurantJSON));
   document.querySelector(`tr[data-prato-id="${idPrato}"]`).remove();
   modalDelete.hide();
@@ -537,7 +538,21 @@ document.getElementById('confirm-add').addEventListener('click', function() {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", async function() {
+  restaurantJSON = JSON.parse(localStorage.getItem('restaurantes'));
+
+  if (!restaurantJSON) {
+    await fetchAndStoreJson('../assets/js/restaurante.json', 'restaurantes');
+    restaurantJSON = JSON.parse(localStorage.getItem('restaurantes'));
+  }
+
+  restaurantInfos = getRestaurantById(restaurantId);
+  restaurantIndex = getIndexOfRestaurant(restaurantId);
+
+  currentName = restaurantInfos.nomeRestaurante;
+  currentDescription = restaurantInfos.descricaoRestaurante;
+  currentPhoto = restaurantInfos.imagemRestaurante;
+
   setRestaurantName();
   setRestaurantDescription();
   setRestaurantImage();
