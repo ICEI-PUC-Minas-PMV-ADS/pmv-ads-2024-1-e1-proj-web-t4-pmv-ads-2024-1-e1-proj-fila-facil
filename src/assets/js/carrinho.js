@@ -1,22 +1,12 @@
-import { restaurantes as restaurantesArquivoJSON } from "./restauranteJson.js";
-
-let restaurantes;
+let restaurantes = JSON.parse(localStorage.getItem("restaurantes"));
 
 // Salva o array de restauranteJson.js no localStorage COMO STRING e já obtém como objeto para uso local
-if (localStorage.getItem("restaurantes") === null) {
-  function criaRestaurantes() {
-    localStorage.setItem(
-      "restaurantes",
-      JSON.stringify(restaurantesArquivoJSON)
-    );
-    restaurantes = [restaurantesArquivoJSON];
+document.addEventListener("DOMContentLoaded", async function () {
+  if (!restaurantes) {
+    await fetchAndStoreJson('../assets/js/restaurante.json', 'restaurantes');
+    restaurantes = JSON.stringify(localStorage.getItem('restaurantes'));  
   }
-  criaRestaurantes();
-  restaurantes = JSON.parse(localStorage.getItem("restaurantes"));
-} else {
-  // Se já existir no localStorage, recupera os dados por lá
-  restaurantes = JSON.parse(localStorage.getItem("restaurantes"));
-}
+});
 
 // Abre e fecha a lateral do carrinho
 const iconCart = document.querySelector(".icon-cart");

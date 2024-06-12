@@ -247,7 +247,23 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 - Navbar da página de pedidos
 - Demais lógicas envolvidas no login e/ou cadastro de usuário
 
-### [0.1.29] - DD/MM/AAAA
+### [0.1.29] - 12/06/2024
+
+#### Adicionado
+
+- Arquivo restaurante.json
+- Script para carregar o arquivo JSON
+
+#### Alterado
+
+- Adicionado lógica para carregar o arquivo JSON ao localStorage caso a chave ainda não exista
+- Ajustado navbar da página de cardápio e perfil
+
+#### Removido
+
+- Arquivo src/assets/js/restauranteJson.js
+
+### [0.1.30] - DD/MM/AAAA
 
 #### Adicionado/Atualizado/Removido
 

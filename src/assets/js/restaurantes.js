@@ -1,6 +1,11 @@
-const restaurantes = JSON.parse(localStorage.getItem('restaurantes'));
+document.addEventListener("DOMContentLoaded", async function() {
+    let restaurantes = JSON.parse(localStorage.getItem('restaurantes'));
 
-document.addEventListener("DOMContentLoaded", function() {
+    if (!restaurantes) {
+        await fetchAndStoreJson('../assets/js/restaurante.json', 'restaurantes');
+        restaurantes = JSON.parse(localStorage.getItem('restaurantes'));
+    }
+
     const container = document.getElementById('card-container');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
