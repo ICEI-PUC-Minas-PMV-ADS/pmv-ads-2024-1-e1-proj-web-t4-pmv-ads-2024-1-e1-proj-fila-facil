@@ -3,8 +3,8 @@ let restaurantes = JSON.parse(localStorage.getItem("restaurantes"));
 // Salva o array de restauranteJson.js no localStorage COMO STRING e já obtém como objeto para uso local
 document.addEventListener("DOMContentLoaded", async function () {
   if (!restaurantes) {
-    await fetchAndStoreJson('../assets/js/restaurante.json', 'restaurantes');
-    restaurantes = JSON.stringify(localStorage.getItem('restaurantes'));  
+    await fetchAndStoreJson("../assets/js/restaurante.json", "restaurantes");
+    restaurantes = JSON.stringify(localStorage.getItem("restaurantes"));
   }
 });
 
@@ -399,3 +399,93 @@ function desconto(valorFinal) {
 // Ativa botão de cupom
 var btnCupom = document.getElementById("btn-cupom");
 btnCupom.addEventListener("click", atualizaValorTotal);
+
+/**
+ * Recupera os últimos quatro dígitos de um número de cartão.
+ * @param {number} cardNumber
+ * @returns
+ */
+function getLastFourDigits(cardNumber) {
+  return cardNumber.slice(-4);
+}
+
+/**
+ * Recupera o usuário atual a partir do armazenamento local utilizando o email cadastrado.
+ * @returns {Object} - O usuário atual.
+ */
+function getUser() {
+  const email = localStorage.getItem("lastEmail");
+  return JSON.parse(localStorage.getItem(email));
+}
+
+/*
+ * Cria uma nova opção para um elemento select.
+ * @param {string} value - O valor da opção.
+ * @param {string} text - O texto da opção.
+ * @returns {HTMLOptionElement} - A opção criada.
+ */
+function createOption(value, text) {
+  const option = document.createElement("option");
+  option.value = value;
+  option.text = text;
+  return option;
+}
+
+/**
+ * Adiciona uma opção a um elemento select.
+ * @param {HTMLSelectElement} selectElement
+ * @param {HTMLOptionElement} option
+ * @returns {void}
+ */
+function addOptionToSelect(selectElement, option) {
+  selectElement.add(option);
+}
+
+/**
+ * Altera o texto de um botão com base na forma de pagamento selecionada.
+ * @param {*} selectElement
+ * @param {*} buttonElement
+ * @returns {void}
+ */
+function changeButtonText(selectElement, buttonElement) {
+  selectElement.addEventListener("change", function () {
+    if (this.value === "") {
+      buttonElement.textContent = "Pagar na entrega";
+    } else {
+      buttonElement.textContent = "Finalizar pedido";
+    }
+  });
+}
+
+/**
+ * Preenche o select de formas de pagamento com os cartões de crédito cadastrados pelo usuário.
+ * Caso o usuário não tenha nenhum cartão cadastrado, exibe apenas a opção de pagamento na entrega.
+ */
+function populateCreditCards() {
+  const user = getUser();
+  const creditCards = user.creditCards;
+  const selectElement = document.getElementById("formaDePagamento");
+  const pagarButton = document.getElementById("pagarButton");
+  addOptionToSelect(selectElement, createOption("", "Pagar na entrega"));
+
+  if (creditCards.length === 0) {
+    addOptionToSelect(
+      selectElement,
+      createOption("", "Cadastre um cartão no perfil")
+    );
+    pagarButton.textContent = "Pagar na entrega";
+  } else {
+    creditCards.forEach((card) => {
+      const lastFourDigits = getLastFourDigits(card.number);
+      addOptionToSelect(
+        selectElement,
+        createOption(card.number, `Cartão **** **** **** ${lastFourDigits}`)
+      );
+    });
+  }
+  changeButtonText(selectElement, pagarButton);
+}
+
+window.onload = function () {
+  populateCreditCards();
+};
