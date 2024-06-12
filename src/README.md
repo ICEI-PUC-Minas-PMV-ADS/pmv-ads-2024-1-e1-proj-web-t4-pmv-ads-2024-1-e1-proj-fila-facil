@@ -263,7 +263,13 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 - Arquivo src/assets/js/restauranteJson.js
 
-### [0.1.30] - DD/MM/AAAA
+### [0.1.30] - 12/06/2024
+
+#### Adicionado
+
+- Lógica para buscar os cartões de crédito cadastrados
+
+### [0.1.31] - DD/MM/AAAA
 
 #### Adicionado/Atualizado/Removido
 
