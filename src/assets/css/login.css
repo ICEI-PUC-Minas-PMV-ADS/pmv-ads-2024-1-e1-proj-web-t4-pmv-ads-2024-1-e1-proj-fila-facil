@@ -67,7 +67,6 @@ form
 
 .formulario 
 {
-    color: #343F4B;
     font-family: Lato;
 }
 
@@ -79,7 +78,7 @@ form
     border-radius: 5px;
     width: 280px;
     height: 38px;
-    color: #8190A5;
+    color: #000000;
     font-family: Lato;
     font-size: 16px;
     text-align: left;
