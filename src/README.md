@@ -232,7 +232,7 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 ### [0.1.27] - 09/06/2024
 
-#### Adicionado 
+#### Adicionado
 
 - Plano de testes de software
 
@@ -269,8 +269,14 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 - Lógica para buscar os cartões de crédito cadastrados
 
-### [0.1.31] - DD/MM/AAAA
+### [0.1.31] - 14/06/2024
+
+#### Atualizado
+
+- Ajustes para buscar o prato correto a ser adicionado ao carrinho
+
+### [0.1.32] - DD/MM/AAAA
 
 #### Adicionado/Atualizado/Removido
 
-- 
+-
