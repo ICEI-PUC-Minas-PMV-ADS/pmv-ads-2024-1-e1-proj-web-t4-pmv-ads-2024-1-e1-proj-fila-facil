@@ -8,7 +8,7 @@
       {
         "idPrato": 1,
         "nomePrato": "Feijoada Completa",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/AufVOxf",
         "descricaoPrato": "Um prato clássico brasileiro com feijão preto, carne suína e acompanhamentos.",
         "quantidadeEstoque": 10,
         "precoPrato": 29.90,
@@ -18,7 +18,7 @@
       {
         "idPrato": 2,
         "nomePrato": "Moqueca de Peixe",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/SGhmDiW",
         "descricaoPrato": "Peixe cozido em leite de coco, azeite de dendê e pimentões, servido com arroz.",
         "quantidadeEstoque": 8,
         "precoPrato": 34.50,
@@ -28,7 +28,7 @@
       {
         "idPrato": 3,
         "nomePrato": "Coxinha de Frango",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/5hLViaX",
         "descricaoPrato": "Salgadinho brasileiro recheado com frango desfiado e temperado.",
         "quantidadeEstoque": 50,
         "precoPrato": 5.00,
@@ -38,7 +38,7 @@
       {
         "idPrato": 4,
         "nomePrato": "Picanha na Chapa",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/xiFjphc",
         "descricaoPrato": "Picanha suculenta grelhada na chapa, servida com farofa e vinagrete.",
         "quantidadeEstoque": 6,
         "precoPrato": 45.00,
@@ -48,7 +48,7 @@
       {
         "idPrato": 5,
         "nomePrato": "Brigadeiro",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/JmO9S52",
         "descricaoPrato": "Doce brasileiro feito com leite condensado, chocolate e granulado.",
         "quantidadeEstoque": 30,
         "precoPrato": 2.50,
@@ -58,7 +58,7 @@
       {
         "idPrato": 6,
         "nomePrato": "Caipirinha",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/CFFpBTg",
         "descricaoPrato": "Bebida tradicional brasileira feita com cachaça, limão e açúcar.",
         "quantidadeEstoque": 20,
         "precoPrato": 15.00,
@@ -76,7 +76,7 @@
       {
         "idPrato": 1,
         "nomePrato": "Spaghetti Carbonara",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/vjerHgS",
         "descricaoPrato": "Tradicional prato italiano feito com ovos, queijo, pancetta e pimenta preta.",
         "quantidadeEstoque": 15,
         "precoPrato": 22.00,
@@ -86,7 +86,7 @@
       {
         "idPrato": 2,
         "nomePrato": "Lasagna alla Bolognese",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/uzJKq9y",
         "descricaoPrato": "Lasanha clássica com molho bolognese, queijo e massa fresca.",
         "quantidadeEstoque": 12,
         "precoPrato": 26.00,
@@ -96,7 +96,7 @@
       {
         "idPrato": 3,
         "nomePrato": "Tiramisu",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/CZyX7QK",
         "descricaoPrato": "Sobremesa italiana feita com mascarpone, café e cacau.",
         "quantidadeEstoque": 20,
         "precoPrato": 12.00,
@@ -106,7 +106,7 @@
       {
         "idPrato": 4,
         "nomePrato": "Pizza Margherita",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/tF1q1nR",
         "descricaoPrato": "Pizza clássica italiana com molho de tomate, mozzarella e manjericão.",
         "quantidadeEstoque": 10,
         "precoPrato": 30.00,
@@ -116,7 +116,7 @@
       {
         "idPrato": 5,
         "nomePrato": "Risotto ai Funghi",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/p6Wk6F9",
         "descricaoPrato": "Risoto cremoso com cogumelos frescos e queijo parmesão.",
         "quantidadeEstoque": 10,
         "precoPrato": 24.00,
@@ -126,7 +126,7 @@
       {
         "idPrato": 6,
         "nomePrato": "Panna Cotta",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/hDVNfUa",
         "descricaoPrato": "Sobremesa italiana suave feita com creme de leite, açúcar e baunilha.",
         "quantidadeEstoque": 15,
         "precoPrato": 10.00,
@@ -136,7 +136,7 @@
       {
         "idPrato": 7,
         "nomePrato": "Vinho Chianti",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/bBUCG9f",
         "descricaoPrato": "Vinho tinto italiano da região da Toscana, perfeito para acompanhar massas.",
         "quantidadeEstoque": 25,
         "precoPrato": 45.00,
@@ -154,7 +154,7 @@
       {
         "idPrato": 1,
         "nomePrato": "Sashimi de Salmão",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/aGSavc0",
         "descricaoPrato": "Fatias finas de salmão fresco servidas com molho de soja e wasabi.",
         "quantidadeEstoque": 20,
         "precoPrato": 28.00,
@@ -164,7 +164,7 @@
       {
         "idPrato": 2,
         "nomePrato": "Temaki de Atum",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/39Z9gZx",
         "descricaoPrato": "Cone de alga nori recheado com arroz e atum fresco temperado.",
         "quantidadeEstoque": 25,
         "precoPrato": 18.50,
@@ -174,7 +174,7 @@
       {
         "idPrato": 3,
         "nomePrato": "Uramaki Califórnia",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/jVCq3mP",
         "descricaoPrato": "Rolo de sushi invertido com abacate, kani e pepino, coberto com gergelim.",
         "quantidadeEstoque": 30,
         "precoPrato": 22.00,
@@ -184,7 +184,7 @@
       {
         "idPrato": 4,
         "nomePrato": "Hot Roll",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/RK1u2jA",
         "descricaoPrato": "Rolo de sushi empanado e frito, recheado com salmão e cream cheese.",
         "quantidadeEstoque": 15,
         "precoPrato": 20.00,
@@ -194,7 +194,7 @@
       {
         "idPrato": 5,
         "nomePrato": "Missoshiro",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/Yi4tQE3",
         "descricaoPrato": "Sopa tradicional japonesa feita com pasta de miso, tofu e cebolinha.",
         "quantidadeEstoque": 25,
         "precoPrato": 12.00,
@@ -204,7 +204,7 @@
       {
         "idPrato": 6,
         "nomePrato": "Tempura",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/1pMrDKY",
         "descricaoPrato": "Legumes e frutos do mar fritos em uma massa leve e crocante.",
         "quantidadeEstoque": 20,
         "precoPrato": 24.00,
@@ -214,7 +214,7 @@
       {
         "idPrato": 7,
         "nomePrato": "Sake",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/76yoDBQ",
         "descricaoPrato": "Bebida alcoólica tradicional japonesa feita a partir da fermentação do arroz.",
         "quantidadeEstoque": 30,
         "precoPrato": 18.00,
@@ -224,7 +224,7 @@
       {
         "idPrato": 8,
         "nomePrato": "Sushi",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/C0mMpcg",
         "descricaoPrato": "Uma seleção de peixe cru, arroz temperado e algas marinhas, habilmente enrolados e cortados em pedaços pequenos, servidos com wasabi e molho de soja.",
         "quantidadeEstoque": 20,
         "precoPrato": 24.00,
@@ -242,7 +242,7 @@
       {
         "idPrato": 1,
         "nomePrato": "Classic Burger",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/fpbDjim",
         "descricaoPrato": "Hambúrguer clássico com carne bovina, queijo cheddar, alface e tomate.",
         "quantidadeEstoque": 20,
         "precoPrato": 19.90,
@@ -252,7 +252,7 @@
       {
         "idPrato": 2,
         "nomePrato": "Bacon BBQ Burger",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/ODRkFAL",
         "descricaoPrato": "Hambúrguer com bacon crocante, molho barbecue, queijo e cebola caramelizada.",
         "quantidadeEstoque": 15,
         "precoPrato": 24.90,
@@ -262,7 +262,7 @@
       {
         "idPrato": 3,
         "nomePrato": "Veggie Burger",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/rnCNJQv",
         "descricaoPrato": "Hambúrguer vegetariano feito com grão-de-bico, quinoa e especiarias.",
         "quantidadeEstoque": 10,
         "precoPrato": 22.00,
@@ -272,7 +272,7 @@
       {
         "idPrato": 4,
         "nomePrato": "Chicken Burger",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/FdYu2cm",
         "descricaoPrato": "Hambúrguer de frango grelhado com queijo suíço, alface e maionese.",
         "quantidadeEstoque": 12,
         "precoPrato": 20.00,
@@ -282,7 +282,7 @@
       {
         "idPrato": 5,
         "nomePrato": "Onion Rings",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/AVOi9Aa",
         "descricaoPrato": "Anéis de cebola empanados e fritos, crocantes por fora e macios por dentro.",
         "quantidadeEstoque": 25,
         "precoPrato": 8.00,
@@ -292,7 +292,7 @@
       {
         "idPrato": 6,
         "nomePrato": "Milkshake de Chocolate",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/ye8wWin",
         "descricaoPrato": "Milkshake cremoso feito com sorvete de chocolate e chantilly.",
         "quantidadeEstoque": 18,
         "precoPrato": 14.00,
@@ -302,7 +302,7 @@
       {
         "idPrato": 7,
         "nomePrato": "Batata Frita",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/wifVNTy",
         "descricaoPrato": "Batatas fritas crocantes, servidas com ketchup e maionese.",
         "quantidadeEstoque": 30,
         "precoPrato": 10.00,
@@ -312,7 +312,7 @@
       {
         "idPrato": 8,
         "nomePrato": "Cheesecake",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/n8ZSk4S",
         "descricaoPrato": "Torta de queijo cremosa com calda de frutas vermelhas.",
         "quantidadeEstoque": 12,
         "precoPrato": 15.00,
@@ -322,7 +322,7 @@
       {
         "idPrato": 9,
         "nomePrato": "Limonada",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/WBtCCvh",
         "descricaoPrato": "Bebida refrescante feita com suco de limão fresco, água e açúcar.",
         "quantidadeEstoque": 20,
         "precoPrato": 7.00,
@@ -340,7 +340,7 @@
       {
         "idPrato": 1,
         "nomePrato": "Pizza Margherita",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/yRkjMxo",
         "descricaoPrato": "Pizza clássica com molho de tomate, mozzarella de búfala e manjericão.",
         "quantidadeEstoque": 15,
         "precoPrato": 35.00,
@@ -350,7 +350,7 @@
       {
         "idPrato": 2,
         "nomePrato": "Pizza Quattro Formaggi",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/rec3MTl",
         "descricaoPrato": "Pizza com mistura de quatro queijos: mozzarella, gorgonzola, parmesão e provolone.",
         "quantidadeEstoque": 12,
         "precoPrato": 38.00,
@@ -360,7 +360,7 @@
       {
         "idPrato": 3,
         "nomePrato": "Calzone",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/0Q9coyH",
         "descricaoPrato": "Pizza fechada recheada com presunto, queijo, tomate e orégano.",
         "quantidadeEstoque": 10,
         "precoPrato": 32.00,
@@ -370,7 +370,7 @@
       {
         "idPrato": 4,
         "nomePrato": "Pizza Pepperoni",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/iIPHBnh",
         "descricaoPrato": "Pizza com molho de tomate, mozzarella e fatias de pepperoni picante.",
         "quantidadeEstoque": 18,
         "precoPrato": 36.00,
@@ -380,7 +380,7 @@
       {
         "idPrato": 5,
         "nomePrato": "Pizza Portuguesa",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/bM2y1ES",
         "descricaoPrato": "Pizza com presunto, ovo, cebola, azeitona e mozzarella.",
         "quantidadeEstoque": 14,
         "precoPrato": 37.00,
@@ -390,7 +390,7 @@
       {
         "idPrato": 6,
         "nomePrato": "Pizza de Calabresa",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/iIPHBnh",
         "descricaoPrato": "Pizza com calabresa, cebola, azeitona e orégano.",
         "quantidadeEstoque": 20,
         "precoPrato": 35.00,
@@ -400,7 +400,7 @@
       {
         "idPrato": 7,
         "nomePrato": "Pizza de Frango com Catupiry",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/0DsI9R1",
         "descricaoPrato": "Pizza com frango desfiado, catupiry, milho e orégano.",
         "quantidadeEstoque": 16,
         "precoPrato": 34.00,
@@ -410,7 +410,7 @@
       {
         "idPrato": 8,
         "nomePrato": "Pizza Vegetariana",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/myX34uN",
         "descricaoPrato": "Pizza com legumes grelhados, mozzarella e manjericão.",
         "quantidadeEstoque": 15,
         "precoPrato": 33.00,
@@ -420,7 +420,7 @@
       {
         "idPrato": 9,
         "nomePrato": "Pizza de Nutella",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/1lkQPtI",
         "descricaoPrato": "Pizza doce coberta com Nutella e morangos frescos.",
         "quantidadeEstoque": 8,
         "precoPrato": 28.00,
@@ -430,7 +430,7 @@
       {
         "idPrato": 10,
         "nomePrato": "Cerveja Artesanal",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/3STSjKd",
         "descricaoPrato": "Cerveja artesanal produzida localmente, perfeita para acompanhar uma pizza.",
         "quantidadeEstoque": 30,
         "precoPrato": 15.00,
@@ -448,7 +448,7 @@
       {
         "idPrato": 1,
         "nomePrato": "Taco de Carne",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/latlDLP",
         "descricaoPrato": "Taco recheado com carne bovina temperada, alface, queijo e salsa.",
         "quantidadeEstoque": 20,
         "precoPrato": 12.00,
@@ -458,7 +458,7 @@
       {
         "idPrato": 2,
         "nomePrato": "Burrito de Frango",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/24Jl7th",
         "descricaoPrato": "Burrito com frango grelhado, feijão preto, arroz, queijo e guacamole.",
         "quantidadeEstoque": 15,
         "precoPrato": 18.00,
@@ -468,7 +468,7 @@
       {
         "idPrato": 3,
         "nomePrato": "Nachos com Queijo",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/ndk66J9",
         "descricaoPrato": "Tortilhas crocantes cobertas com queijo derretido e jalapeños.",
         "quantidadeEstoque": 25,
         "precoPrato": 10.00,
@@ -478,7 +478,7 @@
       {
         "idPrato": 4,
         "nomePrato": "Quesadilla de Queijo",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/9wGqlWn",
         "descricaoPrato": "Quesadilla recheada com queijo derretido e acompanhada de salsa.",
         "quantidadeEstoque": 12,
         "precoPrato": 14.00,
@@ -488,7 +488,7 @@
       {
         "idPrato": 5,
         "nomePrato": "Guacamole",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/aDvVWpj",
         "descricaoPrato": "Pasta de abacate temperada com limão, cebola e coentro.",
         "quantidadeEstoque": 20,
         "precoPrato": 8.00,
@@ -498,7 +498,7 @@
       {
         "idPrato": 6,
         "nomePrato": "Taco de Peixe",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/bShv8k2",
         "descricaoPrato": "Taco recheado com peixe grelhado, repolho, molho de iogurte e limão.",
         "quantidadeEstoque": 18,
         "precoPrato": 15.00,
@@ -508,7 +508,7 @@
       {
         "idPrato": 7,
         "nomePrato": "Churros",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/qPjzP7q",
         "descricaoPrato": "Massa frita coberta com açúcar e canela, servida com doce de leite.",
         "quantidadeEstoque": 30,
         "precoPrato": 10.00,
@@ -518,7 +518,7 @@
       {
         "idPrato": 8,
         "nomePrato": "Margarita Clássica",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/Jq37bXo",
         "descricaoPrato": "Bebida refrescante feita com tequila, suco de limão e licor de laranja.",
         "quantidadeEstoque": 25,
         "precoPrato": 20.00,
@@ -528,7 +528,7 @@
       {
         "idPrato": 9,
         "nomePrato": "Tostada de Frijoles",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/sicYPs0",
         "descricaoPrato": "Tostada crocante com feijão preto refrito, alface, queijo e salsa.",
         "quantidadeEstoque": 15,
         "precoPrato": 12.00,
@@ -538,7 +538,7 @@
       {
         "idPrato": 10,
         "nomePrato": "Fajitas de Carne",
-        "imagemPrato": "https://placehold.co/600x400/EEE/31343C",
+        "imagemPrato": "https://imgur.com/trbQ2lq",
         "descricaoPrato": "Carne bovina grelhada com pimentões e cebola, servida com tortilhas.",
         "quantidadeEstoque": 10,
         "precoPrato": 22.00,
