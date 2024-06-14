@@ -269,6 +269,16 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 - Lógica para buscar os cartões de crédito cadastrados
 
+### [0.1.31] - 12/06/2024
+
+#### Atualizado
+
+- Lógica de reset da senha na página de Login
+
+#### Removido
+
+- Página de reset de senha
+
 ### [0.1.31] - DD/MM/AAAA
 
 #### Adicionado/Atualizado/Removido
