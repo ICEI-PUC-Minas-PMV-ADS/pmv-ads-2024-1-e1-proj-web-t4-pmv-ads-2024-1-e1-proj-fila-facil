@@ -119,10 +119,10 @@ footer > .container > .nav > .nav-item > .nav-link:hover {
 
 /* Estilos para a paginação */
 .pagination {
-  margin-top: -250px; /* Margem superior */
+  margin-top: 20px; /* Margem superior */
   display: flex; /* Exibição flexível */
   justify-content: center; /* Alinhamento central */
-  gap: 999px; /* Espaçamento entre os botões */
+  gap: 9px; /* Espaçamento entre os botões */
 }
 
 /* Estilo dos botões de restaurante */
