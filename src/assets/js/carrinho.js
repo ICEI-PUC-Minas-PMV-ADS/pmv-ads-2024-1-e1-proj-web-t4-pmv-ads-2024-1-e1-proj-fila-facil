@@ -19,12 +19,18 @@ closeBtn.addEventListener("click", () => {
   document.body.classList.toggle("activeTabCart");
 });
 
-// Função para encontrar um prato (com seu array) a partir de seu id
+// Função para encontrar um prato pelo id
 function encontrarPratoPorId(idPrato) {
+  let obtemURL = new URLSearchParams(window.location.search);
+  let idRestaurante = obtemURL.get("id");
   for (let restaurante of restaurantes) {
-    for (let prato of restaurante.cardapio) {
-      if (prato.idPrato == idPrato) {
-        return prato;
+    for (restaurante of restaurantes) {
+      if (restaurante.idRestaurante == idRestaurante) {
+        for (let prato of restaurante.cardapio) {
+          if (prato.idPrato == idPrato) {
+            return prato;
+          }
+        }
       }
     }
   }
@@ -221,33 +227,30 @@ function zerarValorFinal() {
 window.pagar = function () {
   // Impede pagamento se carrinho estiver vazio
   var valorFinal = document.querySelector("#valorFinal");
+  var formaDePagamento = document.getElementById("formaDePagamento");
   if (valorFinal.textContent == "R$ 00,00") {
     alert("Carrinho vazio, faça seu pedido");
     return;
+  }
+  if (formaDePagamento.value == "cadastreCartao") {
+    // Impede pagamento se não houver forma de pagamento selecionada
+    alert("Cadastre um cartão no perfil para finalizar o pedido");
+    return;
   } else {
-    // Não permite pagar se não selecionar a forma de pagamento:
-    var pagamentoSelecionado = document.getElementById("formaDePagamento");
-    if (pagamentoSelecionado.value == "Selecionar forma de pagamento") {
-      alert("Selecione a forma de pagamento");
-      return;
-    } else {
-      // Finaliza o pedido: salva o pedido no localStorage, limpa o carrinho e altera a quantidade em estoque no localStorage
-      alert("Seu pedido foi enviado ao restaurante e está sendo preparado!");
-      pedidoFeito();
-      alteraQuantidadeEstoque();
-      limpaCarrinho();
-      var inputCupom = document.getElementById("cupom");
-      inputCupom.value = "";
-    }
+    // Finaliza o pedido: salva o pedido no localStorage, limpa o carrinho e altera a quantidade em estoque no localStorage
+    alert("Seu pedido foi enviado ao restaurante e está sendo preparado!");
+    pedidoFeito();
+    alteraQuantidadeEstoque();
+    limpaCarrinho();
+    var inputCupom = document.getElementById("cupom");
+    inputCupom.value = "";
   }
 };
 
 // Zera o carrinho após pagamento
 function limpaCarrinho() {
-  var containerCards = document.querySelector("#listCart");
-  var formaDePagamento = document.getElementById("formaDePagamento");
-  formaDePagamento.value = "Selecionar forma de pagamento";
   // Ao remover um card do carrinho, faz o card seguinte ocupar o espaço dele (não ficam divs entre os cards)
+  var containerCards = document.querySelector("#listCart");
   while (containerCards.firstChild) {
     containerCards.removeChild(containerCards.firstChild);
   }
@@ -360,10 +363,6 @@ function atualizaQuantidadeEstoqueCardapio() {
   });
 }
 
-window.onload = function () {
-  atualizaQuantidadeEstoqueCardapio();
-};
-
 function getParameter(parameter) {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
@@ -466,12 +465,15 @@ function populateCreditCards() {
   const creditCards = user.creditCards;
   const selectElement = document.getElementById("formaDePagamento");
   const pagarButton = document.getElementById("pagarButton");
-  addOptionToSelect(selectElement, createOption("", "Pagar na entrega"));
+  addOptionToSelect(
+    selectElement,
+    createOption("pagarNaEntrega", "Pagar na entrega")
+  );
 
   if (creditCards.length === 0) {
     addOptionToSelect(
       selectElement,
-      createOption("", "Cadastre um cartão no perfil")
+      createOption("cadastreCartao", "Cadastre um cartão no perfil")
     );
     pagarButton.textContent = "Pagar na entrega";
   } else {
@@ -488,4 +490,5 @@ function populateCreditCards() {
 
 window.onload = function () {
   populateCreditCards();
+  atualizaQuantidadeEstoqueCardapio();
 };
