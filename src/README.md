@@ -232,7 +232,7 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 ### [0.1.27] - 09/06/2024
 
-#### Adicionado 
+#### Adicionado
 
 - Plano de testes de software
 
