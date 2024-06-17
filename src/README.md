@@ -285,8 +285,12 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 - Ajustes para buscar o prato correto a ser adicionado ao carrinho
 
-### [0.1.33] - DD/MM/AAAA
+### [0.1.33] - 14/06/2024
+
+#### Adicionado
+
+- Adicionado links das imagens nos pratos do cardápio
+
+### [0.1.34] - DD/MM/AAAA
 
 #### Adicionado/Atualizado/Removido
-
--
