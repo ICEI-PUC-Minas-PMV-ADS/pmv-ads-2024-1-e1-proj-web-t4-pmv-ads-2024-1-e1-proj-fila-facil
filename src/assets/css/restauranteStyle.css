@@ -86,6 +86,7 @@ footer > .container > .nav > .nav-item > .nav-link:hover {
   width: 300px; /* Largura do card */
   text-align: center;
   margin-bottom: 20px; /* Margem inferior */
+  cursor: pointer;
 }
 
 /* Estilos para a imagem dentro do card */
@@ -94,7 +95,6 @@ footer > .container > .nav > .nav-item > .nav-link:hover {
   height: 100%;
   object-fit: cover; /* Ajusta a imagem ao tamanho do contêiner */
   border: 1px solid rgb(230, 224, 224); /* Borda */
-  cursor: pointer; /* Cursor de mão ao passar por cima */
   background-color: #fff; /* Cor de fundo */
 }
 
@@ -133,10 +133,12 @@ footer > .container > .nav > .nav-item > .nav-link:hover {
 /* Estilo do botão de restaurante "Anterior" */
 #prevBtn {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23D55' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  background-color: transparent;
 }
 /* Estilo do botão de restaurante "Próximo" */
 #nextBtn {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23D55' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  background-color: transparent;
 }
 /* Estilos para os botões desabilitados */
 .restaurant-buttons:disabled {
