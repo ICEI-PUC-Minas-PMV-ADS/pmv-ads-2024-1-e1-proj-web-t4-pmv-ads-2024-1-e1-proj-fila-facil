@@ -222,7 +222,7 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 #### Adicionado
 
-- Função para cálculo de pedidos vendidos e receita das vendas
+- Função para calcualo de pedidos vendidos e receita das vendas
 
 #### Atualizado
 
@@ -232,23 +232,67 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 ### [0.1.27] - 09/06/2024
 
-#### Adicionado 
+#### Adicionado
 
 - Plano de testes de software
 
-### [0.1.28] - 09/06/2024
+### [0.1.28] - 11/06/2024
 
 #### Adicionado
 
-- Adicionado funcionalidade no botão pesquisa na página de restaurantes.
-- Adicionado na imagens do card o link para página cardápio.
+- Lógica para validação de usuário logado
 
 #### Atualizado
 
-- Atualizado e estilizado os botões de anterior e próximo da página de restaurantes.
+- Navbar da página de pedidos
+- Demais lógicas envolvidas no login e/ou cadastro de usuário
 
-### [0.1.29] - DD/MM/AAAA
+### [0.1.29] - 12/06/2024
 
-#### Adicionado/Atualizado
+#### Adicionado
 
-- 
+- Arquivo restaurante.json
+- Script para carregar o arquivo JSON
+
+#### Alterado
+
+- Adicionado lógica para carregar o arquivo JSON ao localStorage caso a chave ainda não exista
+- Ajustado navbar da página de cardápio e perfil
+
+#### Removido
+
+- Arquivo src/assets/js/restauranteJson.js
+
+### [0.1.30] - 12/06/2024
+
+#### Adicionado
+
+- Lógica para buscar os cartões de crédito cadastrados
+
+### [0.1.31] - 12/06/2024
+
+#### Atualizado
+
+- Lógica de reset da senha na página de Login
+
+#### Removido
+
+- Página de reset de senha
+
+### [0.1.32] - 14/06/2024
+
+#### Atualizado
+
+- Ajustes para buscar o prato correto a ser adicionado ao carrinho
+
+### [0.1.33] - 14/06/2024
+
+#### Adicionado
+
+- Adicionado links das imagens nos pratos do cardápio
+
+### [0.1.34] - 19/06/2024
+
+- Adicionado botão funcional de pesquisa página restaurantes.
+
+#### Adicionado

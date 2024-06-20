@@ -119,27 +119,27 @@ footer > .container > .nav > .nav-item > .nav-link:hover {
 
 /* Estilos para a paginação */
 .pagination {
-  margin-top: 20px; /* Margem superior */
-  display: flex; /* Exibição flexível */
-  justify-content: center; /* Alinhamento central */
-  gap: 9px; /* Espaçamento entre os botões */
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-/* Estilo dos botões de restaurante */
 .restaurant-buttons {
-  padding: 15px 15px; /* Preenchimento */
-  cursor: pointer; /* Cursor de mão */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #b13a3a;
+  color: white;
 }
-/* Estilo do botão de restaurante "Anterior" */
-#prevBtn {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23D55' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-  background-color: transparent;
+
+.restaurant-buttons:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
 }
-/* Estilo do botão de restaurante "Próximo" */
-#nextBtn {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23D55' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-  background-color: transparent;
-}
+
 /* Estilos para os botões desabilitados */
 .restaurant-buttons:disabled {
   cursor: not-allowed; /* Cursor não permitido */
