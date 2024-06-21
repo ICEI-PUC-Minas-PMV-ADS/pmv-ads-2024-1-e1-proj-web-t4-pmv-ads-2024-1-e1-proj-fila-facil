@@ -291,8 +291,12 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 
 - Adicionado links das imagens nos pratos do cardápio
 
-### [0.1.34] - 19/06/2024
+### [0.1.34] - DD/MM/AAAA
+
+#### Adicionado
 
 - Adicionado botão funcional de pesquisa página restaurantes.
 
-#### Adicionado
+### [0.1.35] - DD/MM/AAAA
+
+#### Adicionado/Atualizado/Removido

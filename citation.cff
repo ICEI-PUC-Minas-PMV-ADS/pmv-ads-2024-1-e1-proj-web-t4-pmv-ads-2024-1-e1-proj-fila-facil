@@ -1,0 +1,25 @@
+message: Please cite this software using these metadata.
+title: FilaFácil
+authors:
+  - family-names: Chaves dos Anjos
+    given-names: Diego
+  - family-names: Avner Gorenstein Brasil
+    given-names: Gabriel
+  - family-names: Roeder
+    given-names: Gabriel
+  - family-names: Furtado Amaral
+    given-names: Laura
+  - family-names: Emanuel da Costa
+    given-names: Thiago
+  - family-names: Bruno Canuto Guedes
+    given-names: Ytallo
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Rodrigo Costa
+    given-names: Marco
+keywords:
+  - Gestão
+  - Filas
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil
+version: 1.0.0
+date-released: 2024-06-21

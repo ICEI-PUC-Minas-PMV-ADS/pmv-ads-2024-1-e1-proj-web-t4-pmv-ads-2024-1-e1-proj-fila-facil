@@ -1,6 +1,11 @@
-// Aguarda o carregamento do DOM antes de executar o código
-document.addEventListener("DOMContentLoaded", function() {
-    // Obtém referências aos elementos HTML relevantes
+document.addEventListener("DOMContentLoaded", async function() {
+    let restaurantes = JSON.parse(localStorage.getItem('restaurantes'));
+
+    if (!restaurantes) {
+        await fetchAndStoreJson('../assets/js/restaurante.json', 'restaurantes');
+        restaurantes = JSON.parse(localStorage.getItem('restaurantes'));
+    }
+
     const container = document.getElementById('card-container');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
@@ -26,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
             cardElement.classList.add('card', 'card-div');
             cardElement.addEventListener('click', () => {
                 // Redireciona para a página de cardápio ao clicar no card do restaurante
-                window.location.href = `cardapio.html?id=${restaurant.idRestaurante}`; // Altere 'cardapio.html' para a URL desejada
+                window.open(`cardapio.html?id=${restaurant.idRestaurante}`, '_blank');
             });
 
             // Adiciona um evento de clique à imagem para redirecionar para a página de cardápio

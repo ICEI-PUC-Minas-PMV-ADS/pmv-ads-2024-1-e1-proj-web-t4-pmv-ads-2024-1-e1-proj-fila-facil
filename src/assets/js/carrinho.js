@@ -1,22 +1,12 @@
-import { restaurantes as restaurantesArquivoJSON } from "./restauranteJson.js";
-
-let restaurantes;
+let restaurantes = JSON.parse(localStorage.getItem("restaurantes"));
 
 // Salva o array de restauranteJson.js no localStorage COMO STRING e já obtém como objeto para uso local
-if (localStorage.getItem("restaurantes") === null) {
-  function criaRestaurantes() {
-    localStorage.setItem(
-      "restaurantes",
-      JSON.stringify(restaurantesArquivoJSON)
-    );
-    restaurantes = [restaurantesArquivoJSON];
+document.addEventListener("DOMContentLoaded", async function () {
+  if (!restaurantes) {
+    await fetchAndStoreJson("../assets/js/restaurante.json", "restaurantes");
+    restaurantes = JSON.stringify(localStorage.getItem("restaurantes"));
   }
-  criaRestaurantes();
-  restaurantes = JSON.parse(localStorage.getItem("restaurantes"));
-} else {
-  // Se já existir no localStorage, recupera os dados por lá
-  restaurantes = JSON.parse(localStorage.getItem("restaurantes"));
-}
+});
 
 // Abre e fecha a lateral do carrinho
 const iconCart = document.querySelector(".icon-cart");
@@ -29,12 +19,18 @@ closeBtn.addEventListener("click", () => {
   document.body.classList.toggle("activeTabCart");
 });
 
-// Função para encontrar um prato (com seu array) a partir de seu id
+// Função para encontrar um prato pelo id
 function encontrarPratoPorId(idPrato) {
+  let obtemURL = new URLSearchParams(window.location.search);
+  let idRestaurante = obtemURL.get("id");
   for (let restaurante of restaurantes) {
-    for (let prato of restaurante.cardapio) {
-      if (prato.idPrato == idPrato) {
-        return prato;
+    for (restaurante of restaurantes) {
+      if (restaurante.idRestaurante == idRestaurante) {
+        for (let prato of restaurante.cardapio) {
+          if (prato.idPrato == idPrato) {
+            return prato;
+          }
+        }
       }
     }
   }
@@ -231,33 +227,30 @@ function zerarValorFinal() {
 window.pagar = function () {
   // Impede pagamento se carrinho estiver vazio
   var valorFinal = document.querySelector("#valorFinal");
+  var formaDePagamento = document.getElementById("formaDePagamento");
   if (valorFinal.textContent == "R$ 00,00") {
     alert("Carrinho vazio, faça seu pedido");
     return;
+  }
+  if (formaDePagamento.value == "cadastreCartao") {
+    // Impede pagamento se não houver forma de pagamento selecionada
+    alert("Cadastre um cartão no perfil para finalizar o pedido");
+    return;
   } else {
-    // Não permite pagar se não selecionar a forma de pagamento:
-    var pagamentoSelecionado = document.getElementById("formaDePagamento");
-    if (pagamentoSelecionado.value == "Selecionar forma de pagamento") {
-      alert("Selecione a forma de pagamento");
-      return;
-    } else {
-      // Finaliza o pedido: salva o pedido no localStorage, limpa o carrinho e altera a quantidade em estoque no localStorage
-      alert("Seu pedido foi enviado ao restaurante e está sendo preparado!");
-      pedidoFeito();
-      alteraQuantidadeEstoque();
-      limpaCarrinho();
-      var inputCupom = document.getElementById("cupom");
-      inputCupom.value = "";
-    }
+    // Finaliza o pedido: salva o pedido no localStorage, limpa o carrinho e altera a quantidade em estoque no localStorage
+    alert("Seu pedido foi enviado ao restaurante e está sendo preparado!");
+    pedidoFeito();
+    alteraQuantidadeEstoque();
+    limpaCarrinho();
+    var inputCupom = document.getElementById("cupom");
+    inputCupom.value = "";
   }
 };
 
 // Zera o carrinho após pagamento
 function limpaCarrinho() {
-  var containerCards = document.querySelector("#listCart");
-  var formaDePagamento = document.getElementById("formaDePagamento");
-  formaDePagamento.value = "Selecionar forma de pagamento";
   // Ao remover um card do carrinho, faz o card seguinte ocupar o espaço dele (não ficam divs entre os cards)
+  var containerCards = document.querySelector("#listCart");
   while (containerCards.firstChild) {
     containerCards.removeChild(containerCards.firstChild);
   }
@@ -370,10 +363,6 @@ function atualizaQuantidadeEstoqueCardapio() {
   });
 }
 
-window.onload = function () {
-  atualizaQuantidadeEstoqueCardapio();
-};
-
 function getParameter(parameter) {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
@@ -409,3 +398,97 @@ function desconto(valorFinal) {
 // Ativa botão de cupom
 var btnCupom = document.getElementById("btn-cupom");
 btnCupom.addEventListener("click", atualizaValorTotal);
+
+/**
+ * Recupera os últimos quatro dígitos de um número de cartão.
+ * @param {number} cardNumber
+ * @returns
+ */
+function getLastFourDigits(cardNumber) {
+  return cardNumber.slice(-4);
+}
+
+/**
+ * Recupera o usuário atual a partir do armazenamento local utilizando o email cadastrado.
+ * @returns {Object} - O usuário atual.
+ */
+function getUser() {
+  const email = localStorage.getItem("lastEmail");
+  return JSON.parse(localStorage.getItem(email));
+}
+
+/*
+ * Cria uma nova opção para um elemento select.
+ * @param {string} value - O valor da opção.
+ * @param {string} text - O texto da opção.
+ * @returns {HTMLOptionElement} - A opção criada.
+ */
+function createOption(value, text) {
+  const option = document.createElement("option");
+  option.value = value;
+  option.text = text;
+  return option;
+}
+
+/**
+ * Adiciona uma opção a um elemento select.
+ * @param {HTMLSelectElement} selectElement
+ * @param {HTMLOptionElement} option
+ * @returns {void}
+ */
+function addOptionToSelect(selectElement, option) {
+  selectElement.add(option);
+}
+
+/**
+ * Altera o texto de um botão com base na forma de pagamento selecionada.
+ * @param {*} selectElement
+ * @param {*} buttonElement
+ * @returns {void}
+ */
+function changeButtonText(selectElement, buttonElement) {
+  selectElement.addEventListener("change", function () {
+    if (this.value === "") {
+      buttonElement.textContent = "Pagar na entrega";
+    } else {
+      buttonElement.textContent = "Finalizar pedido";
+    }
+  });
+}
+
+/**
+ * Preenche o select de formas de pagamento com os cartões de crédito cadastrados pelo usuário.
+ * Caso o usuário não tenha nenhum cartão cadastrado, exibe apenas a opção de pagamento na entrega.
+ */
+function populateCreditCards() {
+  const user = getUser();
+  const creditCards = user.creditCards;
+  const selectElement = document.getElementById("formaDePagamento");
+  const pagarButton = document.getElementById("pagarButton");
+  addOptionToSelect(
+    selectElement,
+    createOption("pagarNaEntrega", "Pagar na entrega")
+  );
+
+  if (creditCards.length === 0) {
+    addOptionToSelect(
+      selectElement,
+      createOption("cadastreCartao", "Cadastre um cartão no perfil")
+    );
+    pagarButton.textContent = "Pagar na entrega";
+  } else {
+    creditCards.forEach((card) => {
+      const lastFourDigits = getLastFourDigits(card.number);
+      addOptionToSelect(
+        selectElement,
+        createOption(card.number, `Cartão **** **** **** ${lastFourDigits}`)
+      );
+    });
+  }
+  changeButtonText(selectElement, pagarButton);
+}
+
+window.onload = function () {
+  populateCreditCards();
+  atualizaQuantidadeEstoqueCardapio();
+};

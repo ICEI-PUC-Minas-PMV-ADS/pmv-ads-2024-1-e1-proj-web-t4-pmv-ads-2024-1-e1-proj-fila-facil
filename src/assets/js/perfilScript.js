@@ -58,10 +58,6 @@ function formatPhoneNumber(phoneNumber) {
  * @returns {void}
  */
 function setUserData(user) {
-  if (!user) {
-    alert("Usuário não encontrado, cadastre-se por favor!");
-    return;
-  }
   var { firstName, lastName } = splitName(user.name);
   userNameInput.value = firstName;
   userLastNameInput.value = lastName || "";
@@ -110,14 +106,14 @@ function loadUserPhoto() {
 }
 
 /**
- * Carrega os dados do usuário.
+ * Carrega os dados do usuário a partir do armazenamento local.
  * @returns {void}
  */
 function loadUserData() {
   var user = getUser();
-
   if (!user) {
     alert("Usuário não encontrado, cadastre-se por favor!");
+    window.location.href = "./login.html";
     var mainElement = document.getElementsByTagName("main")[0];
     mainElement.style.pointerEvents = "none";
     return;
