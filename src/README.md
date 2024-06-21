@@ -296,6 +296,7 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 #### Adicionado
 
 - Adicionado botão funcional de pesquisa página restaurantes.
+- Fotos dos restaurantes hospedados externamente
 
 ### [0.1.35] - DD/MM/AAAA
 
