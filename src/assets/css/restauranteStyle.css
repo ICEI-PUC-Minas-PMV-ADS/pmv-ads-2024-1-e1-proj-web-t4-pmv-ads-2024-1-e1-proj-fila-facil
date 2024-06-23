@@ -1,3 +1,4 @@
+/* Define estilos padrão para todos os elementos, evitando margens, preenchimentos, bordas e outros estilos padrão */
 * {
   margin: 0;
   padding: 0;
@@ -7,76 +8,116 @@
   vertical-align: baseline;
   box-sizing: border-box;
   scroll-behavior: smooth;
-
 }
 
+/* Define estilos para o HTML e o corpo da página, garantindo que ocupem toda a largura e altura disponíveis */
 html,
 body {
   width: 100%;
-  height: calc(100% - 50px);
-
+  height: calc(100% - 50px); /* Altura total menos a altura da barra de navegação */
 }
 
+/* Define variáveis para cores usadas no site */
 :root {
-  --max-branco: #fff;
-  --branco: #f2f2f2;
-  --cinza: #e4e4e4;
-  --vermelho-claro: #f7dcdc;
-  --vermelho-medio: #d74f4f;
-  --vermelho-escuro: #b13a3a;
-  --vermelho-escuro-2: #750000;
+  --max-branco: #fff; /* Cor branca máxima */
+  --branco: #f2f2f2; /* Cor branca */
+  --cinza: #e4e4e4; /* Cor cinza */
+  --vermelho-claro: #f7dcdc; /* Tom claro de vermelho */
+  --vermelho-medio: #d74f4f; /* Tom médio de vermelho */
+  --vermelho-escuro: #b13a3a; /* Tom escuro de vermelho */
+  --vermelho-escuro-2: #750000; /* Tom mais escuro de vermelho */
 }
 
+/* Estilos para a barra de rolagem do navegador */
 ::-webkit-scrollbar {
   width: 0.8rem;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--branco);
+  background: var(--branco); /* Cor do fundo da barra de rolagem */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--vermelho-escuro);
-  border: 0.2rem solid var(--branco);
+  background-color: var(--vermelho-escuro); /* Cor do puxador da barra de rolagem */
+  border: 0.2rem solid var(--branco); /* Borda do puxador */
 }
 
+/* Define a altura de seções específicas */
 .section__height {
-  height: calc(100vh - 250px);
+  height: calc(100vh - 250px); /* Altura da seção menos a altura da barra de navegação e rodapé */
 }
 
+/* Estilos para os links na barra de navegação */
 .navbar-nav > .nav-item a {
   font-weight: 500;
-  transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s; /* Transição suave ao passar o mouse */
 }
 
+/* Estilos para os links na barra de navegação ao passar o mouse */
 .navbar-nav > .nav-item a:hover {
-  color: var(--vermelho-medio);
+  color: var(--vermelho-medio); /* Altera a cor ao passar o mouse */
 }
 
+/* Estilos para os links no rodapé */
 footer > .container > .nav > .nav-item > .nav-link {
   color: var(--vermelho-medio);
-  transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s; /* Transição suave ao passar o mouse */
 }
 
+/* Estilos para os links no rodapé ao passar o mouse */
 footer > .container > .nav > .nav-item > .nav-link:hover {
-  color: var(--vermelho-escuro);
+  color: var(--vermelho-escuro); /* Altera a cor ao passar o mouse */
 }
 
+.container-css {
+  display: flex; /* Adiciona exibição flexível */
+  gap: 20px; /* Espaçamento entre os cards */
+  justify-content: center; /* Alinha os cards ao centro horizontalmente */
+  flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha quando não houver espaço suficiente */
+  padding: 0 20px; /* Adiciona preenchimento às margens esquerda e direita */
+}
 
+/* Estilos básicos para os cards */
+.card-div {
+  background-color: var(--vermelho-medio); /* Cor de fundo dos cards */
+  border-radius: 8px; /* Borda arredondada */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  overflow: hidden;
+  width: 300px; /* Largura do card */
+  text-align: center;
+  margin-bottom: 20px; /* Margem inferior */
+  cursor: pointer;
+}
+
+/* Estilos para a imagem dentro do card */
+.card-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta a imagem ao tamanho do contêiner */
+  border: 1px solid rgb(230, 224, 224); /* Borda */
+  background-color: #fff; /* Cor de fundo */
+}
+
+/* Estilos para o conteúdo do card */
 .card-content {
-  padding: 16px;
+  align-items: center; /* Alinhamento dos itens */
+  padding: 16px; /* Preenchimento */
 }
 
+/* Estilos para o título do card */
 .card-title {
-  font-size: 1.5em;
-  margin: 0;
+  font-size: 1.5em; /* Tamanho da fonte */
+  margin: 0; /* Margem */
+  color: var(--max-branco); /* Cor do texto */
 }
 
+/* Estilos para a descrição do card */
 .card-description {
-  color: #555;
-  margin: 16px 0 0 0;
+  color: var(--branco); /* Cor do texto */
+  margin: 16px 0 0 0; /* Margem */
 }
 
+/* Estilos para a paginação */
 .pagination {
   margin-top: 20px;
   display: flex;
@@ -99,123 +140,76 @@ footer > .container > .nav > .nav-item > .nav-link:hover {
   cursor: not-allowed;
 }
 
-/* Estilo básico dos cards */
-.card-div {
-  background-color:var(--vermelho-medio);
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  width:300px;
-  text-align: center;
-  margin-bottom: 20px;
+/* Estilos para os botões desabilitados */
+.restaurant-buttons:disabled {
+  cursor: not-allowed; /* Cursor não permitido */
 }
 
-/* Imagem dentro do card */
-.card-div img {
-  width:100%;
-  height:100%;   
-  object-fit: cover;
-  border: 1px solid rgb(230, 224, 224);
-  cursor: pointer;
-  background-color: #FFF;
-}
-
-
-.card-content {
-  align-items: center;
-  padding: 16px;
-}
-
-
-.card-title {
-  font-size: 1.5em;
-  margin: 0;
-  color: var(--max-branco);
-}
-
-
-.card-description {
-  color:var(--branco);
-  margin: 16px 0 0 0;
-}
-
-.container {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap; 
-  padding: 0 20px; 
-}
-
-
+/* Estilos para os cards em dispositivos menores */
 @media (max-width: 768px) {
   .card-div {
-      width: calc(50% - 20px); 
+    width: calc(50% - 20px); /* Largura dos cards em telas menores */
   }
 }
 
+/* Estilos para os cards em dispositivos ainda menores */
 @media (max-width: 576px) {
   .card-div {
-      width: calc(100% - 20px);
+    width: calc(100% - 20px); /* Largura dos cards em telas ainda menores */
   }
 }
 
-.banner {
-  background-color: #b13a3a;
-  padding:2%;
-  text-align:center;
-  
-}
-.texto {
-  color: var(--max-branco);
-  align-items: center;
-}
-.text-rodape {
-  color:black;
-}
-
+/* Estilos para a seção de banner */
 .banner-section {
-  background-color: rgba(215, 79, 79, 0.1);
-  height: 200px;
+  background-color: rgba(215, 79, 79, 0.1); /* Cor de fundo da seção */
+  height: 200px; /* Altura da seção */
 }
 
+/* Estilos para o texto no banner */
 .banner-text {
-  background-color: #B13A3A;
-  border-radius: 10px;
-  max-width: 605px;
-  height: 120px;
+  background-color: #b13a3a; /* Cor de fundo */
+  border-radius: 10px; /* Borda arredondada */
+  max-width: 605px; /* Largura máxima */
+  height: 120px; /* Altura */
 }
 
+/* Estilos para o texto no banner */
 .banner-text > p {
-  color: #F8F8F8;
-  font-family: Arvo;
-  font-weight: 700;
-  font-size: 30px;
+  color: #f8f8f8; /* Cor do texto */
+  font-family: Arvo; /* Fonte */
+  font-weight: 700; /* Peso da fonte */
+  font-size: 30px; /* Tamanho da fonte */
 }
-  
 
-/* Barra de Pesquisa */
-
+/* Estilos para a barra de pesquisa */
 .search-section {
-width: 350px;
-height: 43px;
+  width: 350px; /* Largura */
+  height: 43px; /* Altura */
 }
 
 #search-input[type=text] {
-text-align: center;
-
+  text-align: center; /* Alinhamento do texto */
 }
 
 #search-input::placeholder {
-color: #A6A6A6;
-font-size: 16px;
-text-align: center;
+  color: #a6a6a6; /* Cor do texto do espaço reservado */
+  font-size: 16px; /* Tamanho da fonte do espaço reservado */
+  text-align: center; /* Alinhamento do texto do espaço reservado */
 }
 
 .lupa {
-background-color: #B13A3A;
-width: none;
-border: none;
-align-items: flex-start;
-color: #FFF;
+  background-color: #b13a3a; /* Cor de fundo do botão */
+  width: none; /* Largura automática */
+  border: none; /* Sem borda */
+  align-items: flex-start; /* Alinhamento */
+  color: #fff; /* Cor do texto */
+}
+
+.text-rodape{
+  color: rgb(53, 46, 46); /* Cor do texto */
+
+}
+
+.restaurantes-div {
+  margin-top: 30px;
 }

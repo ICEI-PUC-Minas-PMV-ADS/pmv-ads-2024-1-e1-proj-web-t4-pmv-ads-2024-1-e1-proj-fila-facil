@@ -2,7 +2,7 @@
   {
     "idRestaurante": 1,
     "nomeRestaurante": "Sabor Brasileiro",
-    "imagemRestaurante": "../assets/img/saborbrasil.jpeg",
+    "imagemRestaurante": "https://i.imgur.com/pwrHNrv.jpeg",
     "descricaoRestaurante": "Restaurante tradicional brasileiro oferecendo pratos típicos.",
     "cardapio": [
       {
@@ -70,7 +70,7 @@
   {
     "idRestaurante": 2,
     "nomeRestaurante": "Cantina Italiana",
-    "imagemRestaurante": "../assets/img/cantinaitalia.png",
+    "imagemRestaurante": "https://i.imgur.com/EsWYpd4.png",
     "descricaoRestaurante": "Autêntica cozinha italiana com massas frescas e vinhos importados.",
     "cardapio": [
       {
@@ -148,7 +148,7 @@
   {
     "idRestaurante": 3,
     "nomeRestaurante": "Sushi Zen",
-    "imagemRestaurante": "../assets/img/sushizen.png",
+    "imagemRestaurante": "https://i.imgur.com/9torbSS.png",
     "descricaoRestaurante": "Experiência de pratos japoneses com ingredientes de alta qualidade.",
     "cardapio": [
       {
@@ -236,7 +236,7 @@
   {
     "idRestaurante": 4,
     "nomeRestaurante": "Burger House",
-    "imagemRestaurante": "../assets/img/burgerhouse.jpeg",
+    "imagemRestaurante": "https://i.imgur.com/8Ioad27.png",
     "descricaoRestaurante": "Hambúrgueres artesanais e batatas crocantes.",
     "cardapio": [
       {
@@ -334,7 +334,7 @@
   {
     "idRestaurante": 5,
     "nomeRestaurante": "Pizzaria Bella Napoli",
-    "imagemRestaurante": "../assets/img/bela.png",
+    "imagemRestaurante": "https://i.imgur.com/2uwpRlH.png",
     "descricaoRestaurante": "Pizzas artesanais italianas assadas em forno a lenha.",
     "cardapio": [
       {
@@ -442,7 +442,7 @@
   {
     "idRestaurante": 6,
     "nomeRestaurante": "Taco Fiesta",
-    "imagemRestaurante": "../assets/img/taco.png",
+    "imagemRestaurante": "https://i.imgur.com/4MSTmgc.png",
     "descricaoRestaurante": "Autêntica comida mexicana com tacos, burritos e margaritas.",
     "cardapio": [
       {

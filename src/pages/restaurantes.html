@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="../assets/css/restauranteStyle.css" />
     <link rel="stylesheet" href="../assets/css/chatStyle.css" />
     <link rel="stylesheet" href="../assets/css/carrinhoStyle.css" />
+    
   </head>
 
   <body>
@@ -89,7 +90,7 @@
       </nav>
     </header>
 
-    <main class="pt-4 mt-4">
+    <main class="pt-4 mt-4 vh-100">
       <section
         class="banner-section d-flex justify-content-center align-items-center"
       >
@@ -116,15 +117,15 @@
         </div>
       </section>
 
-      <br />
       <!--um quebra do cards e a barra de pesquisar-->
-      <div class="container" id="card-container">
+      <div class="container container-css restaurantes-div" id="card-container">
         <!-- Os cards serão inseridos aqui pelo JavaScript -->
       </div>
       <div class="pagination">
         <button class="restaurant-buttons" id="prevBtn">Anterior</button>
         <button class="restaurant-buttons" id="nextBtn">Próximo</button>
       </div>
+      
     </main>
 
     <!-- Chat -->
@@ -216,23 +217,27 @@
       <div class="container">
         <ul class="nav justify-content-center border-bottom pb-2 mb-2">
           <li class="nav-item px-2">
-            <a href="../index.html" target="_blank" class="nav-link px-0">
+            <a href="http://facebook.com" target="_blank" class="nav-link px-0">
               <i class="fa-brands fa-square-facebook fs-2"></i>
             </a>
           </li>
           <li class="nav-item px-2">
-            <a href="../index.html" target="_blank" class="nav-link px-0">
+            <a href="http://twitter.com" target="_blank" class="nav-link px-0">
               <i class="fa-brands fa-square-twitter fs-2"></i>
             </a>
           </li>
           <li class="nav-item px-2">
-            <a href="../index.html" target="_blank" class="nav-link px-0">
+            <a
+              href="http://instagram.com"
+              target="_blank"
+              class="nav-link px-0"
+            >
               <i class="fa-brands fa-square-instagram fs-2"></i>
             </a>
           </li>
         </ul>
         <div class="col-12 text-center pt-2">
-          <p class="text-rodape">
+          <p class="mb-0 text-body-secondary">
             &#169; 2024, Fila Fácil | Todos os direitos reservados.
           </p>
         </div>
